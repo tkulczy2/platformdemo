@@ -1,0 +1,55 @@
+{
+  "report_metadata": {
+    "payer": "CMS / Medicare Shared Savings Program",
+    "contract_id": "CONTRACT-MSSP-2025",
+    "performance_year": 2025,
+    "report_date": "2026-03-15",
+    "report_type": "preliminary_settlement"
+  },
+  "attribution": {
+    "total_attributed": 860,
+    "attributed_by_step1": 731,
+    "attributed_by_step2": 129
+  },
+  "quality": {
+    "composite_score": 65.5,
+    "measures": {
+      "hba1c_poor_control": {
+        "rate": 23.9,
+        "numerator": 42,
+        "denominator": 176
+      },
+      "controlling_bp": {
+        "rate": 64.4,
+        "numerator": 246,
+        "denominator": 382
+      },
+      "breast_cancer_screening": {
+        "rate": 72.0,
+        "numerator": 139,
+        "denominator": 193
+      },
+      "colorectal_screening": {
+        "rate": 61.7,
+        "numerator": 187,
+        "denominator": 303
+      },
+      "depression_screening": {
+        "rate": 53.1,
+        "numerator": 424,
+        "denominator": 799
+      }
+    }
+  },
+  "cost": {
+    "benchmark_pmpm": 1187.0,
+    "actual_pmpm": 1147.6,
+    "total_benchmark": 10208200.0,
+    "total_actual": 9869360.0,
+    "gross_savings": 338840.0,
+    "minimum_savings_rate": 0.02,
+    "savings_rate_achieved": 0.0332,
+    "shared_savings_rate": 0.5,
+    "shared_savings_amount": 169420.0
+  }
+}

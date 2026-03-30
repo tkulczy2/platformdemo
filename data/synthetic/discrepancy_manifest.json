@@ -1,0 +1,331 @@
+{
+  "description": "Planted discrepancies for reconciliation demo validation",
+  "seed": 42,
+  "attribution_discrepancies": [
+    {
+      "member_id": "MBR-000433",
+      "type": "platform_only",
+      "reason": "Late-arriving claims establish plurality for platform but fall outside payer run-out window",
+      "financial_impact_estimate": 2009.95
+    },
+    {
+      "member_id": "MBR-000544",
+      "type": "platform_only",
+      "reason": "Late-arriving claims establish plurality for platform but fall outside payer run-out window",
+      "financial_impact_estimate": 1398.28
+    },
+    {
+      "member_id": "MBR-000199",
+      "type": "platform_only",
+      "reason": "Late-arriving claims establish plurality for platform but fall outside payer run-out window",
+      "financial_impact_estimate": 1182.23
+    },
+    {
+      "member_id": "MBR-000195",
+      "type": "platform_only",
+      "reason": "Late-arriving claims establish plurality for platform but fall outside payer run-out window",
+      "financial_impact_estimate": 1446.22
+    },
+    {
+      "member_id": "MBR-000692",
+      "type": "platform_only",
+      "reason": "Late-arriving claims establish plurality for platform but fall outside payer run-out window",
+      "financial_impact_estimate": 1549.52
+    },
+    {
+      "member_id": "MBR-000121",
+      "type": "platform_only",
+      "reason": "Late-arriving claims establish plurality for platform but fall outside payer run-out window",
+      "financial_impact_estimate": 2307.02
+    },
+    {
+      "member_id": "MBR-000663",
+      "type": "platform_only",
+      "reason": "Late-arriving claims establish plurality for platform but fall outside payer run-out window",
+      "financial_impact_estimate": 1638.07
+    },
+    {
+      "member_id": "MBR-000162",
+      "type": "platform_only",
+      "reason": "Late-arriving claims establish plurality for platform but fall outside payer run-out window",
+      "financial_impact_estimate": 1846.6
+    },
+    {
+      "member_id": "MBR-000107",
+      "type": "platform_only",
+      "reason": "Late-arriving claims establish plurality for platform but fall outside payer run-out window",
+      "financial_impact_estimate": 1699.24
+    },
+    {
+      "member_id": "MBR-000311",
+      "type": "platform_only",
+      "reason": "Late-arriving claims establish plurality for platform but fall outside payer run-out window",
+      "financial_impact_estimate": 908.18
+    },
+    {
+      "member_id": "MBR-000650",
+      "type": "platform_only",
+      "reason": "Late-arriving claims establish plurality for platform but fall outside payer run-out window",
+      "financial_impact_estimate": 900.56
+    },
+    {
+      "member_id": "MBR-000839",
+      "type": "platform_only",
+      "reason": "Late-arriving claims establish plurality for platform but fall outside payer run-out window",
+      "financial_impact_estimate": 1467.79
+    },
+    {
+      "member_id": "MBR-000161",
+      "type": "payer_only",
+      "reason": "Payer includes post-termination claims from provider; platform excludes them per contract",
+      "terminated_npi": "1427515427",
+      "financial_impact_estimate": 1186.0
+    },
+    {
+      "member_id": "MBR-000437",
+      "type": "payer_only",
+      "reason": "Payer includes post-termination claims from provider; platform excludes them per contract",
+      "terminated_npi": "1427515427",
+      "financial_impact_estimate": 1639.49
+    },
+    {
+      "member_id": "MBR-001000",
+      "type": "payer_only",
+      "reason": "Payer includes post-termination claims from provider; platform excludes them per contract",
+      "terminated_npi": "1427515427",
+      "financial_impact_estimate": 1839.68
+    },
+    {
+      "member_id": "MBR-000849",
+      "type": "payer_only",
+      "reason": "Payer includes post-termination claims from provider; platform excludes them per contract",
+      "terminated_npi": "1427515427",
+      "financial_impact_estimate": 1265.18
+    },
+    {
+      "member_id": "MBR-000564",
+      "type": "payer_only",
+      "reason": "Payer includes post-termination claims from provider; platform excludes them per contract",
+      "terminated_npi": "1168708867",
+      "financial_impact_estimate": 1296.0
+    },
+    {
+      "member_id": "MBR-000648",
+      "type": "payer_only",
+      "reason": "Payer includes post-termination claims from provider; platform excludes them per contract",
+      "terminated_npi": "1168708867",
+      "financial_impact_estimate": 673.86
+    },
+    {
+      "member_id": "MBR-000221",
+      "type": "payer_only",
+      "reason": "Payer includes post-termination claims from provider; platform excludes them per contract",
+      "terminated_npi": "1168708867",
+      "financial_impact_estimate": 1446.16
+    },
+    {
+      "member_id": "MBR-000925",
+      "type": "different_provider",
+      "reason": "Plurality tie broken differently \u2014 platform uses most recent visit, payer uses alphabetical NPI",
+      "platform_attributed_npi": "1248706171",
+      "payer_attributed_npi": "1248706171",
+      "financial_impact_estimate": 410.48
+    },
+    {
+      "member_id": "MBR-000843",
+      "type": "different_provider",
+      "reason": "Plurality tie broken differently \u2014 platform uses most recent visit, payer uses alphabetical NPI",
+      "platform_attributed_npi": "1499072778",
+      "payer_attributed_npi": "1304514849",
+      "financial_impact_estimate": 507.21
+    },
+    {
+      "member_id": "MBR-000681",
+      "type": "different_provider",
+      "reason": "Plurality tie broken differently \u2014 platform uses most recent visit, payer uses alphabetical NPI",
+      "platform_attributed_npi": "1505413597",
+      "payer_attributed_npi": "1505413597",
+      "financial_impact_estimate": 280.98
+    },
+    {
+      "member_id": "MBR-000703",
+      "type": "different_provider",
+      "reason": "Plurality tie broken differently \u2014 platform uses most recent visit, payer uses alphabetical NPI",
+      "platform_attributed_npi": "1590886206",
+      "payer_attributed_npi": "1499072778",
+      "financial_impact_estimate": 596.86
+    }
+  ],
+  "quality_discrepancies": [
+    {
+      "member_id": "MBR-000291",
+      "type": "ehr_only_data",
+      "measure": "hba1c_poor_control",
+      "reason": "Platform uses EHR lab result showing HbA1c control; payer lacks the result value",
+      "ehr_value": 6.8
+    },
+    {
+      "member_id": "MBR-000006",
+      "type": "ehr_only_data",
+      "measure": "hba1c_poor_control",
+      "reason": "Platform uses EHR lab result showing HbA1c control; payer lacks the result value",
+      "ehr_value": 6.3
+    },
+    {
+      "member_id": "MBR-000894",
+      "type": "ehr_only_data",
+      "measure": "hba1c_poor_control",
+      "reason": "Platform uses EHR lab result showing HbA1c control; payer lacks the result value",
+      "ehr_value": 7.7
+    },
+    {
+      "member_id": "MBR-000970",
+      "type": "ehr_only_data",
+      "measure": "hba1c_poor_control",
+      "reason": "Platform uses EHR lab result showing HbA1c control; payer lacks the result value",
+      "ehr_value": 6.5
+    },
+    {
+      "member_id": "MBR-000539",
+      "type": "ehr_only_data",
+      "measure": "hba1c_poor_control",
+      "reason": "Platform uses EHR lab result showing HbA1c control; payer lacks the result value",
+      "ehr_value": 7.2
+    },
+    {
+      "member_id": "MBR-000504",
+      "type": "ehr_only_data",
+      "measure": "hba1c_poor_control",
+      "reason": "Platform uses EHR lab result showing HbA1c control; payer lacks the result value",
+      "ehr_value": 6.0
+    },
+    {
+      "member_id": "MBR-000028",
+      "type": "ehr_only_data",
+      "measure": "hba1c_poor_control",
+      "reason": "Platform uses EHR lab result showing HbA1c control; payer lacks the result value",
+      "ehr_value": 7.1
+    },
+    {
+      "member_id": "MBR-000489",
+      "type": "ehr_only_data",
+      "measure": "hba1c_poor_control",
+      "reason": "Platform uses EHR lab result showing HbA1c control; payer lacks the result value",
+      "ehr_value": 7.3
+    },
+    {
+      "member_id": "MBR-000938",
+      "type": "payer_exclusion",
+      "measure": "breast_cancer_screening",
+      "reason": "Payer applies hospice exclusion based on claim not in platform data feed"
+    },
+    {
+      "member_id": "MBR-000077",
+      "type": "payer_exclusion",
+      "measure": "colorectal_screening",
+      "reason": "Payer applies hospice exclusion based on claim not in platform data feed"
+    },
+    {
+      "member_id": "MBR-000679",
+      "type": "payer_exclusion",
+      "measure": "controlling_bp",
+      "reason": "Payer applies hospice exclusion based on claim not in platform data feed"
+    },
+    {
+      "member_id": "MBR-000490",
+      "type": "payer_exclusion",
+      "measure": "colorectal_screening",
+      "reason": "Payer applies hospice exclusion based on claim not in platform data feed"
+    },
+    {
+      "member_id": "MBR-000045",
+      "type": "screening_conflict",
+      "measure": "colonoscopy",
+      "reason": "EHR has screening record but no corresponding claim exists \u2014 screening may have been billed under a different code or denied",
+      "screening_date": "2025-06-22"
+    },
+    {
+      "member_id": "MBR-000572",
+      "type": "screening_conflict",
+      "measure": "mammogram",
+      "reason": "EHR has screening record but no corresponding claim exists \u2014 screening may have been billed under a different code or denied",
+      "screening_date": "2025-04-28"
+    },
+    {
+      "member_id": "MBR-000748",
+      "type": "screening_conflict",
+      "measure": "colonoscopy",
+      "reason": "EHR has screening record but no corresponding claim exists \u2014 screening may have been billed under a different code or denied",
+      "screening_date": "2025-02-07"
+    }
+  ],
+  "cost_discrepancies": [
+    {
+      "member_id": "MBR-000972",
+      "type": "runout_timing",
+      "reason": "Claim adjudicated after payer settlement cutoff but within platform window",
+      "claim_amount": 6406.28,
+      "service_date": "2025-07-06",
+      "adjudication_date": "2026-01-26"
+    },
+    {
+      "member_id": "MBR-000270",
+      "type": "runout_timing",
+      "reason": "Claim adjudicated after payer settlement cutoff but within platform window",
+      "claim_amount": 5991.1,
+      "service_date": "2025-09-24",
+      "adjudication_date": "2026-01-15"
+    },
+    {
+      "member_id": "MBR-000885",
+      "type": "runout_timing",
+      "reason": "Claim adjudicated after payer settlement cutoff but within platform window",
+      "claim_amount": 8095.37,
+      "service_date": "2025-09-21",
+      "adjudication_date": "2026-01-26"
+    },
+    {
+      "member_id": "MBR-000658",
+      "type": "runout_timing",
+      "reason": "Claim adjudicated after payer settlement cutoff but within platform window",
+      "claim_amount": 8615.29,
+      "service_date": "2025-07-22",
+      "adjudication_date": "2026-01-12"
+    },
+    {
+      "member_id": "MBR-000601",
+      "type": "runout_timing",
+      "reason": "Claim adjudicated after payer settlement cutoff but within platform window",
+      "claim_amount": 6604.34,
+      "service_date": "2025-09-09",
+      "adjudication_date": "2026-01-24"
+    },
+    {
+      "member_id": "MBR-000495",
+      "type": "amount_difference",
+      "reason": "Claim reprocessed/adjusted after platform received data extract \u2014 allowed amount differs",
+      "amount_difference": 4712.77
+    },
+    {
+      "member_id": "MBR-000775",
+      "type": "amount_difference",
+      "reason": "Claim reprocessed/adjusted after platform received data extract \u2014 allowed amount differs",
+      "amount_difference": 3146.29
+    },
+    {
+      "member_id": "MBR-000848",
+      "type": "amount_difference",
+      "reason": "Claim reprocessed/adjusted after platform received data extract \u2014 allowed amount differs",
+      "amount_difference": 4561.76
+    }
+  ],
+  "summary": {
+    "total_attribution_discrepancies": 23,
+    "attribution_platform_only": 12,
+    "attribution_payer_only": 7,
+    "attribution_different_provider": 4,
+    "total_quality_discrepancies": 15,
+    "total_cost_discrepancies": 8,
+    "estimated_total_financial_impact": 77628.76
+  }
+}

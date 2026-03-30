@@ -1,0 +1,91 @@
+import { Outlet, Link, useLocation } from 'react-router-dom';
+import { classNames } from '@/utils/formatters';
+import StepIndicator from './StepIndicator';
+
+const NAV_LINKS = [
+  { label: 'Data', path: '/' },
+  { label: 'Contract', path: '/contract' },
+  { label: 'Dashboard', path: '/dashboard' },
+  { label: 'Reconciliation', path: '/reconciliation' },
+];
+
+export default function AppShell() {
+  const { pathname } = useLocation();
+
+  return (
+    <div className="flex min-h-screen flex-col bg-gray-50">
+      {/* ------------------------------------------------------------------ */}
+      {/* Top navigation bar                                                  */}
+      {/* ------------------------------------------------------------------ */}
+      <header className="sticky top-0 z-30 border-b border-gray-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
+        <div className="mx-auto flex h-14 max-w-screen-2xl items-center justify-between px-4 sm:px-6 lg:px-8">
+          {/* Brand */}
+          <Link to="/" className="flex items-center gap-2.5">
+            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-600 text-white">
+              <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+              </svg>
+            </div>
+            <span className="text-base font-semibold text-gray-900 tracking-tight">
+              VBC Performance Intelligence
+            </span>
+          </Link>
+
+          {/* Primary nav links */}
+          <nav className="hidden md:flex items-center gap-1">
+            {NAV_LINKS.map((link) => {
+              const isActive =
+                link.path === '/'
+                  ? pathname === '/'
+                  : pathname.startsWith(link.path);
+              return (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={classNames(
+                    'rounded-md px-3 py-1.5 text-sm font-medium transition-colors',
+                    isActive
+                      ? 'bg-brand-50 text-brand-700'
+                      : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900',
+                  )}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+          </nav>
+
+          {/* Right side placeholder -- could hold user menu, settings, etc. */}
+          <div className="flex items-center gap-2">
+            <span className="hidden lg:inline badge-info">Demo Mode</span>
+          </div>
+        </div>
+
+        {/* Step indicator bar */}
+        <div className="mx-auto max-w-screen-2xl border-t border-gray-100 px-4 py-2 sm:px-6 lg:px-8">
+          <StepIndicator />
+        </div>
+      </header>
+
+      {/* ------------------------------------------------------------------ */}
+      {/* Main content area                                                   */}
+      {/* ------------------------------------------------------------------ */}
+      <main className="flex-1">
+        <div className="mx-auto max-w-screen-2xl px-4 py-6 sm:px-6 lg:px-8">
+          <Outlet />
+        </div>
+      </main>
+
+      {/* ------------------------------------------------------------------ */}
+      {/* Footer                                                              */}
+      {/* ------------------------------------------------------------------ */}
+      <footer className="border-t border-gray-200 bg-white">
+        <div className="mx-auto max-w-screen-2xl px-4 py-3 sm:px-6 lg:px-8">
+          <p className="text-center text-xs text-gray-400">
+            VBC Transparent Calculation Demo -- All data is synthetic. No real PHI.
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+}
