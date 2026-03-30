@@ -93,6 +93,7 @@ from api.routes_calculate import router as calculate_router
 from api.routes_drilldown import router as drilldown_router
 from api.routes_reconciliation import router as reconciliation_router
 from api.routes_code import router as code_router
+from api.routes_export import router as export_router
 
 app.include_router(data_router)
 app.include_router(contract_router)
@@ -100,6 +101,7 @@ app.include_router(calculate_router)
 app.include_router(drilldown_router)
 app.include_router(reconciliation_router)
 app.include_router(code_router)
+app.include_router(export_router)
 
 
 @app.get("/")
