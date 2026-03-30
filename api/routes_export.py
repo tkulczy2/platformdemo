@@ -2,6 +2,7 @@
 
 import csv
 import io
+import json
 from dataclasses import asdict
 from datetime import datetime
 
@@ -252,8 +253,6 @@ def export_pipeline_json():
     """Export the full PipelineResult as JSON."""
     if state.pipeline_result is None:
         raise HTTPException(status_code=404, detail="No pipeline results available. Run /api/calculate first.")
-
-    import json
 
     data = _fix_values(asdict(state.pipeline_result))
     content = json.dumps(data, indent=2, default=str)
