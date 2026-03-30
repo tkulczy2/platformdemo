@@ -4,6 +4,7 @@ import {
   runCalculation,
   getResultsSummary,
   getReconciliationSummary,
+  exportPipelineJson,
 } from '@/api/client';
 import { formatCurrency, formatPercent, formatNumber } from '@/utils/formatters';
 import type { QualityMeasure } from '@/types';
@@ -177,6 +178,9 @@ export default function ResultsDashboard() {
 
   // -- Error state --------------------------------------------------------
   if (phase === 'error') {
+    const isMissingData = error?.toLowerCase().includes('data');
+    const isMissingContract = error?.toLowerCase().includes('contract');
+
     return (
       <div className="space-y-6">
         <div className="rounded-xl border border-red-200 bg-red-50 p-6">
@@ -187,9 +191,27 @@ export default function ResultsDashboard() {
             <div>
               <h3 className="font-semibold text-red-800">Calculation Failed</h3>
               <p className="mt-1 text-sm text-red-700">{error}</p>
-              <p className="mt-2 text-xs text-red-600">
-                Make sure demo data and contract are loaded before running calculations.
-              </p>
+              {(isMissingData || isMissingContract) && (
+                <div className="mt-3 space-y-2">
+                  <p className="text-xs font-medium text-red-800">Before calculating, you need to:</p>
+                  <ul className="list-inside list-disc text-xs text-red-700 space-y-1">
+                    {isMissingData && (
+                      <li>
+                        <button onClick={() => navigate('/')} className="underline hover:text-red-900">
+                          Load or upload data files
+                        </button>
+                      </li>
+                    )}
+                    {isMissingContract && (
+                      <li>
+                        <button onClick={() => navigate('/contract')} className="underline hover:text-red-900">
+                          Load or configure a contract
+                        </button>
+                      </li>
+                    )}
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -267,12 +289,20 @@ export default function ResultsDashboard() {
             All numbers are clickable -- drill down to see the contract language, data, and code behind each calculation.
           </p>
         </div>
-        <button onClick={calculate} className="btn-secondary">
-          <svg className="mr-2 h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182" />
-          </svg>
-          Recalculate
-        </button>
+        <div className="flex items-center gap-2">
+          <button onClick={exportPipelineJson} className="btn-secondary" title="Export full pipeline result as JSON">
+            <svg className="mr-2 h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+            </svg>
+            Export JSON
+          </button>
+          <button onClick={calculate} className="btn-secondary">
+            <svg className="mr-2 h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182" />
+            </svg>
+            Recalculate
+          </button>
+        </div>
       </div>
 
       {/* ----- Top metric cards ----- */}

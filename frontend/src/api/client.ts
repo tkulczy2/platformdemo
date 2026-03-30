@@ -136,6 +136,22 @@ export async function getSourceCode(moduleName: string, functionName: string) {
 }
 
 // ---------------------------------------------------------------------------
+// Export endpoints
+// ---------------------------------------------------------------------------
+
+export function exportReconciliationPdf() {
+  window.open('/api/export/reconciliation-pdf', '_blank');
+}
+
+export function exportCsv(tableName: string) {
+  window.open(`/api/export/csv/${tableName}`, '_blank');
+}
+
+export function exportPipelineJson() {
+  window.open('/api/export/pipeline-json', '_blank');
+}
+
+// ---------------------------------------------------------------------------
 // Response type aliases (light wrappers -- full types in types/index.ts)
 // ---------------------------------------------------------------------------
 
