@@ -1,0 +1,119 @@
+{
+  "files": {
+    "members.csv": {
+      "file_name": "members.csv",
+      "rows": 1000,
+      "completeness": 1.0,
+      "quality_score": 1.0,
+      "date_range": [
+        "1936-01-19",
+        "2025-10-08"
+      ],
+      "issues": [],
+      "status": "green"
+    },
+    "providers.csv": {
+      "file_name": "providers.csv",
+      "rows": 50,
+      "completeness": 1.0,
+      "quality_score": 1.0,
+      "date_range": [
+        "2022-01-10",
+        "2025-07-09"
+      ],
+      "issues": [],
+      "status": "green"
+    },
+    "eligibility.csv": {
+      "file_name": "eligibility.csv",
+      "rows": 1071,
+      "completeness": 1.0,
+      "quality_score": 1.0,
+      "date_range": [
+        "2025-01-01",
+        "2025-11-01"
+      ],
+      "issues": [],
+      "status": "green"
+    },
+    "claims_professional.csv": {
+      "file_name": "claims_professional.csv",
+      "rows": 50765,
+      "completeness": 1.0,
+      "quality_score": 1.0,
+      "date_range": [
+        "2025-01-01",
+        "2026-02-26"
+      ],
+      "issues": [
+        "1011 claims missing rendering NPI",
+        "501 duplicate claim IDs detected",
+        "5 claims with zero or negative allowed amount",
+        "250 denied claims (will be excluded from cost calculations)"
+      ],
+      "status": "yellow"
+    },
+    "claims_facility.csv": {
+      "file_name": "claims_facility.csv",
+      "rows": 7153,
+      "completeness": 1.0,
+      "quality_score": 1.0,
+      "date_range": [
+        "2025-01-01",
+        "2026-03-11"
+      ],
+      "issues": [],
+      "status": "green"
+    },
+    "claims_pharmacy.csv": {
+      "file_name": "claims_pharmacy.csv",
+      "rows": 19421,
+      "completeness": 1.0,
+      "quality_score": 1.0,
+      "date_range": [
+        "2025-01-01",
+        "2025-12-28"
+      ],
+      "issues": [],
+      "status": "green"
+    },
+    "clinical_labs.csv": {
+      "file_name": "clinical_labs.csv",
+      "rows": 3650,
+      "completeness": 1.0,
+      "quality_score": 1.0,
+      "date_range": [
+        "2025-01-01",
+        "2025-10-28"
+      ],
+      "issues": [],
+      "status": "green"
+    },
+    "clinical_screenings.csv": {
+      "file_name": "clinical_screenings.csv",
+      "rows": 1744,
+      "completeness": 1.0,
+      "quality_score": 1.0,
+      "date_range": [
+        "2025-01-01",
+        "2025-10-28"
+      ],
+      "issues": [],
+      "status": "green"
+    },
+    "clinical_vitals.csv": {
+      "file_name": "clinical_vitals.csv",
+      "rows": 5674,
+      "completeness": 1.0,
+      "quality_score": 1.0,
+      "date_range": [
+        "2025-01-01",
+        "2025-10-28"
+      ],
+      "issues": [],
+      "status": "green"
+    }
+  },
+  "overall_quality": 1.0,
+  "ready": true
+}

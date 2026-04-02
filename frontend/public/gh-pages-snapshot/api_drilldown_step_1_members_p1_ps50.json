@@ -1,0 +1,1411 @@
+{
+  "step_number": 1,
+  "step_name": "eligibility",
+  "total_members": 1000,
+  "total": 1000,
+  "page": 1,
+  "page_size": 50,
+  "total_pages": 20,
+  "members": [
+    {
+      "member_id": "MBR-000001",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 0,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000002",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 1,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000003",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 2,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000004",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 3,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000005",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 4,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000006",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 5,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000007",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 6,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000008",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 7,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000009",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 8,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000010",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 9,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000011",
+      "outcome": "eligible",
+      "reason": "Enrolled 11 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 10,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "2 eligibility record(s), 11 month(s) enrolled"
+        },
+        {
+          "file": "eligibility.csv",
+          "row_index": 11,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "2 eligibility record(s), 11 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 11
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000012",
+      "outcome": "eligible",
+      "reason": "Enrolled 10 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 12,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "2 eligibility record(s), 10 month(s) enrolled"
+        },
+        {
+          "file": "eligibility.csv",
+          "row_index": 13,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "2 eligibility record(s), 10 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 10
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000013",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 14,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000014",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 15,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000015",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 16,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000016",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 17,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000017",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 18,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000018",
+      "outcome": "eligible",
+      "reason": "Enrolled 9 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 19,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "2 eligibility record(s), 9 month(s) enrolled"
+        },
+        {
+          "file": "eligibility.csv",
+          "row_index": 20,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "2 eligibility record(s), 9 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 9
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000019",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 21,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000020",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 22,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000021",
+      "outcome": "eligible",
+      "reason": "Enrolled 9 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 23,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 9 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 9
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000022",
+      "outcome": "eligible",
+      "reason": "Enrolled 9 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 24,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "2 eligibility record(s), 9 month(s) enrolled"
+        },
+        {
+          "file": "eligibility.csv",
+          "row_index": 25,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "2 eligibility record(s), 9 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 9
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000023",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 26,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000024",
+      "outcome": "eligible",
+      "reason": "Enrolled 11 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 27,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "2 eligibility record(s), 11 month(s) enrolled"
+        },
+        {
+          "file": "eligibility.csv",
+          "row_index": 28,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "2 eligibility record(s), 11 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 11
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000025",
+      "outcome": "eligible",
+      "reason": "Enrolled 3 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 29,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 3 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 3
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000026",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 30,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000027",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 31,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000028",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 32,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000029",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 33,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000030",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 34,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000031",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 35,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000032",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 36,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000033",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 37,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000034",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 38,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000035",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 39,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000036",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 40,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000037",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 41,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000038",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 42,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000039",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 43,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000040",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 44,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000041",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 45,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000042",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 46,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000043",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 47,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000044",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 48,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000045",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 49,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000046",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 50,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000047",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 51,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000048",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 52,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000049",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 53,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000050",
+      "outcome": "eligible",
+      "reason": "Enrolled 12 month(s), no exclusions apply",
+      "data_references": [
+        {
+          "file": "eligibility.csv",
+          "row_index": 54,
+          "columns": {
+            "member_id": null,
+            "enrollment_start_date": null,
+            "enrollment_end_date": null
+          },
+          "description": "1 eligibility record(s), 12 month(s) enrolled"
+        }
+      ],
+      "intermediate_values": [
+        {
+          "label": "enrollment_months",
+          "value": 12
+        },
+        {
+          "label": "exclusions_triggered",
+          "value": []
+        }
+      ]
+    }
+  ]
+}

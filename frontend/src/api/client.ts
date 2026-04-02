@@ -1,13 +1,29 @@
 /**
  * API client for the VBC Performance Intelligence backend.
- * All endpoints are relative -- Vite dev server proxies /api to localhost:8000.
+ * Dev: Vite proxies /api to localhost:8000.
+ * Static demo (GitHub Pages): VITE_STATIC_SNAPSHOT=1 reads public/gh-pages-snapshot/*.json.
  */
+
+import { fetchSnapshotJson, isStaticSnapshot } from '@/api/snapshot';
 
 // ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------
 
 async function request<T>(url: string, options?: RequestInit): Promise<T> {
+  if (isStaticSnapshot) {
+    const method = options?.method ?? 'GET';
+    if (method === 'GET') {
+      return fetchSnapshotJson<T>(url);
+    }
+    if (method === 'DELETE') {
+      return {} as T;
+    }
+    if (method === 'POST' || method === 'PUT') {
+      return staticMutation<T>(url, options);
+    }
+  }
+
   const res = await fetch(url, {
     headers: { 'Content-Type': 'application/json', ...options?.headers },
     ...options,
@@ -19,7 +35,46 @@ async function request<T>(url: string, options?: RequestInit): Promise<T> {
   return res.json() as Promise<T>;
 }
 
+/** POST/PUT behavior when no backend — mirror demo state from snapshots. */
+async function staticMutation<T>(url: string, options?: RequestInit): Promise<T> {
+  if (url === '/api/data/load-demo') {
+    return { status: 'success', message: 'Demo data (static snapshot)' } as T;
+  }
+  if (url === '/api/contract/load-demo') {
+    const c = await fetchSnapshotJson<ContractGetResponse>('/api/contract');
+    return {
+      status: 'success',
+      message: 'Sample MSSP contract (static snapshot)',
+      contract: c.contract,
+    } as T;
+  }
+  if (url === '/api/calculate') {
+    const s = await fetchSnapshotJson<Record<string, unknown>>('/api/results/summary');
+    const steps = (s.steps as unknown[]) ?? [];
+    return {
+      status: 'success',
+      execution_time_ms: (s.total_execution_time_ms as number) ?? 0,
+      steps_completed: steps.length,
+    } as T;
+  }
+  if (url === '/api/reconciliation/load-demo') {
+    return { status: 'success', message: 'Demo payer report (static snapshot)' } as T;
+  }
+  if (url === '/api/contract' && options?.method === 'PUT') {
+    const c = await fetchSnapshotJson<ContractGetResponse>('/api/contract');
+    return {
+      status: 'success',
+      message: 'Contract update ignored in static demo',
+      contract: c.contract,
+    } as T;
+  }
+  return { status: 'success' } as T;
+}
+
 async function uploadFile<T>(url: string, files: File | File[], fieldName = 'file'): Promise<T> {
+  if (isStaticSnapshot) {
+    return { status: 'success', message: 'Upload ignored in static demo' } as T;
+  }
   const form = new FormData();
   if (Array.isArray(files)) {
     files.forEach((f) => form.append(fieldName, f));
@@ -32,6 +87,12 @@ async function uploadFile<T>(url: string, files: File | File[], fieldName = 'fil
     throw new Error(`Upload ${res.status}: ${body}`);
   }
   return res.json() as Promise<T>;
+}
+
+function staticExportBlocked(feature: string) {
+  window.alert(
+    `${feature} is not available in the static GitHub Pages demo — run the app locally with the API for full exports.`,
+  );
 }
 
 // ---------------------------------------------------------------------------
@@ -55,18 +116,18 @@ export async function getDataStatus() {
 // ---------------------------------------------------------------------------
 
 export async function getContract() {
-  return request<ContractResponse>('/api/contract');
+  return request<ContractGetResponse>('/api/contract');
 }
 
 export async function updateContract(params: Record<string, unknown>) {
-  return request<ContractResponse>('/api/contract', {
+  return request<ContractMutationResponse>('/api/contract', {
     method: 'PUT',
     body: JSON.stringify(params),
   });
 }
 
 export async function loadDemoContract() {
-  return request<ContractResponse>('/api/contract/load-demo', { method: 'POST' });
+  return request<ContractMutationResponse>('/api/contract/load-demo', { method: 'POST' });
 }
 
 // ---------------------------------------------------------------------------
@@ -115,6 +176,10 @@ export async function uploadPayerReport(file: File) {
   return uploadFile<{ status: string }>('/api/reconciliation/upload', file, 'file');
 }
 
+export async function unloadPayerReport() {
+  return request<{ status: string }>('/api/reconciliation/report', { method: 'DELETE' });
+}
+
 export async function loadDemoPayerReport() {
   return request<{ status: string }>('/api/reconciliation/load-demo', { method: 'POST' });
 }
@@ -140,14 +205,26 @@ export async function getSourceCode(moduleName: string, functionName: string) {
 // ---------------------------------------------------------------------------
 
 export function exportReconciliationPdf() {
+  if (isStaticSnapshot) {
+    staticExportBlocked('PDF export');
+    return;
+  }
   window.open('/api/export/reconciliation-pdf', '_blank');
 }
 
 export function exportCsv(tableName: string) {
+  if (isStaticSnapshot) {
+    staticExportBlocked('CSV export');
+    return;
+  }
   window.open(`/api/export/csv/${tableName}`, '_blank');
 }
 
 export function exportPipelineJson() {
+  if (isStaticSnapshot) {
+    staticExportBlocked('Pipeline JSON export');
+    return;
+  }
   window.open('/api/export/pipeline-json', '_blank');
 }
 
@@ -161,9 +238,20 @@ interface DataStatusResponse {
   ready: boolean;
 }
 
-interface ContractResponse {
-  parameters: Record<string, unknown>;
-  clauses: Array<{ id: string; title: string; text: string }>;
+interface ContractGetResponse {
+  contract_loaded: boolean;
+  contract: ContractData | null;
+}
+
+interface ContractMutationResponse {
+  status?: string;
+  message?: string;
+  contract: ContractData | null;
+}
+
+interface ContractData {
+  clauses: Record<string, { clause_id: string; text: string; parameters: Record<string, unknown> }>;
+  [key: string]: unknown;
 }
 
 interface CalculationResponse {
@@ -179,11 +267,14 @@ interface SummaryResponse {
 
 interface StepResultResponse {
   step: number;
+  step_number: number;
   name: string;
-  contract_clauses: Array<{ id: string; text: string }>;
-  code_references: Array<{ module: string; function: string; lines: string }>;
+  step_name: string;
+  contract_clauses: Array<{ id: string; text: string; section?: string; title?: string }>;
+  code_references: Array<{ module: string; function: string; lines: string; start_line?: number; end_line?: number }>;
   logic_summary: string;
   member_count: number;
+  member_details: Array<Record<string, unknown>>;
   data_quality_flags: string[];
 }
 
@@ -195,21 +286,31 @@ interface MemberDrilldownResponse {
 interface MemberDetailResponse {
   member_id: string;
   step: number;
+  step_number: number;
+  step_name: string;
   detail: Record<string, unknown>;
-  data_references: Array<{ file: string; row: number; columns: Record<string, unknown> }>;
+  data_references: Array<{ file: string; row_index: number; row?: number; columns: Record<string, unknown>; description?: string }>;
+  contract_clauses?: Array<{ id: string; text: string }>;
+  code_references?: Array<{ module: string; function: string; lines: string }>;
 }
 
 interface StepMembersResponse {
   step: number;
+  step_number: number;
   page: number;
   page_size: number;
   total: number;
+  total_members: number;
   members: Array<Record<string, unknown>>;
 }
 
 interface MetricDrilldownResponse {
   metric: string;
+  metric_name: string;
   value: unknown;
+  metric_value: unknown;
+  step_number: number;
+  step_name: string;
   contract_clauses: Array<{ id: string; text: string }>;
   code_references: Array<{ module: string; function: string; lines: string }>;
   logic_summary: string;

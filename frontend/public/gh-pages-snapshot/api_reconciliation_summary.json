@@ -1,0 +1,25 @@
+{
+  "discrepancy_count": 8,
+  "total_financial_impact": 29224251.85,
+  "categories": {
+    "attribution": {
+      "count": 1,
+      "total_impact": 2797155.0
+    },
+    "quality": {
+      "count": 5,
+      "total_impact": 0.0
+    },
+    "cost": {
+      "count": 2,
+      "total_impact": 26427096.85
+    }
+  },
+  "execution_time_ms": 0,
+  "payer_metrics": {
+    "attributed_population": 860,
+    "quality_composite": 65.5,
+    "actual_pmpm": 1147.6,
+    "shared_savings": 169420.0
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "category": "cost",
+  "count": 2,
+  "discrepancies": [
+    {
+      "category": "cost",
+      "metric": "actual_pmpm",
+      "platform_value": 3479.75,
+      "payer_value": 1147.6,
+      "difference": 2332.15,
+      "financial_impact": 26257676.85,
+      "explanation": "PMPM: Platform $3,479.75 vs payer $1,147.60 (\u0394$+2,332.15). Likely due to claims run-out timing differences and maturity adjustments. Total impact: $26,257,676.85.",
+      "resolution_recommendation": "Compare claims included in each calculation. Check for claims adjudicated after payer's cutoff date. Review maturity adjustment methodology.",
+      "subcategory": "timing_difference",
+      "id": "DISC-007",
+      "metric_label": "Actual PMPM Cost",
+      "description": "PMPM: Platform $3,479.75 vs payer $1,147.60 (\u0394$+2,332.15). Likely due to claims run-out timing differences and maturity adjustments. Total impact: $26,257,676.85.",
+      "root_cause": "PMPM: Platform $3,479.75 vs payer $1,147.60 (\u0394$+2,332.15).",
+      "member_id": "",
+      "data_references": [],
+      "relevant_clauses": [
+        {
+          "clause_id": "COST-1.0",
+          "clause_text": "Total cost of care shall be calculated as the sum of all Parts A and B allowed charges for attributed beneficiaries during the performance year, divided by the number of attributed beneficiary-months, expressed as a per-member-per-month (PMPM) amount. Claims with service dates within the performance year that are adjudicated within 3 months of the performance year end shall be included.",
+          "interpretation": "Calculate total cost using allowed amount as the cost basis. Excluding pharmacy claims. Claims run-out window: 3 months after performance year end."
+        }
+      ],
+      "data_sources": [
+        "claims_professional.csv",
+        "claims_facility.csv",
+        "eligibility.csv"
+      ]
+    },
+    {
+      "category": "cost",
+      "metric": "shared_savings_amount",
+      "platform_value": 0.0,
+      "payer_value": 169420.0,
+      "difference": -169420.0,
+      "financial_impact": -169420.0,
+      "explanation": "Shared savings: Platform $0.00 vs payer $169,420.00 (\u0394$-169,420.00). This is a downstream effect of attribution, quality, and cost differences.",
+      "resolution_recommendation": "Resolve upstream discrepancies (attribution, quality, cost) first. The settlement difference is a consequence of those inputs.",
+      "subcategory": "methodology_difference",
+      "id": "DISC-008",
+      "metric_label": "Shared Savings Amount",
+      "description": "Shared savings: Platform $0.00 vs payer $169,420.00 (\u0394$-169,420.00). This is a downstream effect of attribution, quality, and cost differences.",
+      "root_cause": "Shared savings: Platform $0.00 vs payer $169,420.00 (\u0394$-169,420.00).",
+      "member_id": "",
+      "data_references": [],
+      "relevant_clauses": [
+        {
+          "clause_id": "SETTLE-1.0",
+          "clause_text": "The ACO's benchmark shall be $1,187.00 PMPM, as established by CMS based on the ACO's historical cost baseline trended forward. If the ACO's actual PMPM is below the benchmark by more than the minimum savings rate of 2.0%, the ACO shall receive 50% of the gross savings, subject to quality performance gates.",
+          "interpretation": "Benchmark PMPM: $1,187.00. Minimum savings rate: 2.0%. Shared savings rate: 50%."
+        },
+        {
+          "clause_id": "SETTLE-1.1",
+          "clause_text": "The quality performance gate requires a minimum composite quality score of 40% for the ACO to be eligible for any shared savings.",
+          "interpretation": "Quality gate: composite score must exceed 40% for the ACO to be eligible for shared savings."
+        }
+      ],
+      "data_sources": []
+    }
+  ],
+  "total_financial_impact": 26427096.85
+}

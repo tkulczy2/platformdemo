@@ -1,0 +1,97 @@
+{
+  "step_number": 5,
+  "step_name": "settlement",
+  "step": 5,
+  "name": "settlement",
+  "contract_clauses": [
+    {
+      "id": "SETTLE-1.0",
+      "text": "The ACO's benchmark shall be $1,187.00 PMPM, as established by CMS based on the ACO's historical cost baseline trended forward. If the ACO's actual PMPM is below the benchmark by more than the minimum savings rate of 2.0%, the ACO shall receive 50% of the gross savings, subject to quality performance gates.",
+      "section": "Benchmark PMPM: $1,187.00. Minimum savings rate: 2.0%. Shared savings rate: 50%.",
+      "title": "SETTLE-1.0",
+      "parameters": {
+        "benchmark_pmpm": 1187.0,
+        "minimum_savings_rate": 0.02,
+        "shared_savings_rate": 0.5
+      }
+    },
+    {
+      "id": "SETTLE-1.1",
+      "text": "The quality performance gate requires a minimum composite quality score of 40% for the ACO to be eligible for any shared savings.",
+      "section": "Quality gate: composite score must exceed 40% for the ACO to be eligible for shared savings.",
+      "title": "SETTLE-1.1",
+      "parameters": {
+        "quality_gate_threshold": 0.4
+      }
+    }
+  ],
+  "code_references": [
+    {
+      "module": "step_5_settlement",
+      "function": "calculate_settlement",
+      "lines": "19-153",
+      "start_line": 19,
+      "end_line": 153,
+      "logic_summary": "Compare actual PMPM to benchmark. Check minimum savings rate (MSR) and quality gate. If both pass, calculate shared savings = gross savings \u00d7 shared savings rate."
+    }
+  ],
+  "logic_summary": "Compare actual PMPM to benchmark. Check minimum savings rate (MSR) and quality gate. If both pass, calculate shared savings = gross savings \u00d7 shared savings rate.",
+  "summary": {
+    "benchmark_pmpm": 1187.0,
+    "actual_pmpm": 3479.75,
+    "total_benchmark": 13364433.0,
+    "total_actual": 39178505.25,
+    "gross_savings": -25814072.25,
+    "savings_rate": -1.9316,
+    "msr_threshold": 0.02,
+    "msr_passed": false,
+    "quality_composite": 52.29,
+    "quality_gate_threshold": 0.4,
+    "quality_gate_passed": true,
+    "shared_savings_rate": 0.5,
+    "shared_savings_amount": 0.0,
+    "settlement_status": "ineligible",
+    "confidence_range": {
+      "shared_savings_low": 0,
+      "shared_savings_high": 0
+    },
+    "total_member_months": 11259
+  },
+  "member_count": 1,
+  "member_details": [
+    {
+      "member_id": "ACO-LEVEL",
+      "outcome": "ineligible",
+      "reason": "Benchmark: $1,187.00, Actual: $3,479.75, Savings rate: -193.16%. MSR (2.0%): FAILED. Quality gate (40%): PASSED. Shared savings: $0.00",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "benchmark_pmpm",
+          "value": 1187.0
+        },
+        {
+          "label": "actual_pmpm",
+          "value": 3479.75
+        },
+        {
+          "label": "savings_rate",
+          "value": -1.9316
+        },
+        {
+          "label": "msr_passed",
+          "value": false
+        },
+        {
+          "label": "quality_composite",
+          "value": 52.29
+        },
+        {
+          "label": "quality_gate_passed",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "data_quality_flags": [],
+  "execution_time_ms": 0
+}

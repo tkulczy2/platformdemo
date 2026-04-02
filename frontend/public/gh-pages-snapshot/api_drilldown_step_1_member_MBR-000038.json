@@ -1,0 +1,60 @@
+{
+  "member_id": "MBR-000038",
+  "step_number": 1,
+  "step": 1,
+  "step_name": "eligibility",
+  "detail": {
+    "outcome": "eligible",
+    "outcome_value": "Enrolled 12 month(s), no exclusions apply",
+    "logic_trace": [
+      "Enrolled 12 month(s), no exclusions apply"
+    ],
+    "flags": [],
+    "intermediate_values": [
+      {
+        "label": "enrollment_months",
+        "value": 12
+      },
+      {
+        "label": "exclusions_triggered",
+        "value": []
+      }
+    ]
+  },
+  "data_references": [
+    {
+      "file": "eligibility.csv",
+      "row_index": 42,
+      "columns": {
+        "member_id": null,
+        "enrollment_start_date": null,
+        "enrollment_end_date": null
+      },
+      "description": "1 eligibility record(s), 12 month(s) enrolled"
+    }
+  ],
+  "contract_clauses": [
+    {
+      "id": "ELIG-1.0",
+      "text": "Beneficiaries must have at least one month of enrollment during the performance year and must not be enrolled in a Medicare Advantage plan, have end-stage renal disease, or reside outside the ACO's service area to be eligible for attribution.",
+      "section": "Members must have at least 1 month(s) of enrollment during the performance year. ESRD exclusion is applied. Service area residency is required.",
+      "title": "ELIG-1.0",
+      "parameters": {
+        "minimum_enrollment_months": 1,
+        "exclude_esrd": true,
+        "exclude_medicare_advantage": true,
+        "service_area_required": true
+      }
+    }
+  ],
+  "code_references": [
+    {
+      "module": "step_1_eligibility",
+      "function": "determine_eligibility",
+      "lines": "25-185",
+      "start_line": 25,
+      "end_line": 185,
+      "logic_summary": "Load eligibility records for each member. Calculate months of enrollment during the performance year. Apply exclusions: ESRD (dialysis claims with N18.6), out-of-service-area (ZIP code check), deceased before performance year. Members passing all checks are marked eligible for attribution."
+    }
+  ]
+}

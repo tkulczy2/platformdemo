@@ -1,0 +1,1011 @@
+{
+  "step_number": 3,
+  "step_name": "quality",
+  "total_members": 4910,
+  "total": 4910,
+  "page": 1,
+  "page_size": 50,
+  "total_pages": 99,
+  "members": [
+    {
+      "member_id": "MBR-000001",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 73
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000002",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 70
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000003",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 75
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000005",
+      "outcome": "in_numerator",
+      "reason": "HbA1c 12.4% > 9% \u2014 poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 69
+        },
+        {
+          "label": "hba1c_value",
+          "value": 12.4
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000007",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 73
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000008",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 72
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000009",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 72
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000011",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 75
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000012",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 75
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000015",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 74
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000016",
+      "outcome": "in_numerator",
+      "reason": "HbA1c 9.3% > 9% \u2014 poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 70
+        },
+        {
+          "label": "hba1c_value",
+          "value": 9.3
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000017",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 74
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000019",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 75
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000020",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 72
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000021",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 72
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000022",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 71
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000024",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 72
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000026",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 72
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000029",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 74
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000030",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 74
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000033",
+      "outcome": "in_numerator",
+      "reason": "HbA1c 9.4% > 9% \u2014 poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 71
+        },
+        {
+          "label": "hba1c_value",
+          "value": 9.4
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000034",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 71
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000037",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 73
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000038",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 70
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000040",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 75
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000041",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 75
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000042",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 74
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000043",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 71
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000044",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 73
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000045",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 73
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000047",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 75
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000048",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 73
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000052",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 74
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000054",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 72
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000055",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 71
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000056",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 71
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000057",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 72
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000059",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 70
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000062",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 72
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000064",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 74
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000065",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 75
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000066",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 75
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000067",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 72
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000068",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 71
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000070",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 72
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000072",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 70
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000074",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 74
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000076",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 75
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000077",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 71
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    },
+    {
+      "member_id": "MBR-000079",
+      "outcome": "in_numerator",
+      "reason": "No HbA1c test found \u2014 counted as poor control",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "age",
+          "value": 74
+        },
+        {
+          "label": "hba1c_value",
+          "value": null
+        },
+        {
+          "label": "poor_control",
+          "value": true
+        }
+      ]
+    }
+  ]
+}

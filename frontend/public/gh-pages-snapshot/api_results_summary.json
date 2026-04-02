@@ -1,0 +1,114 @@
+{
+  "final_metrics": {
+    "total_members": 1000,
+    "eligible_count": 982,
+    "attributed_population": 982,
+    "attributed_step1": 982,
+    "attributed_step2": 0,
+    "quality_composite": 52.29,
+    "quality_measures": {
+      "hba1c_poor_control": {
+        "measure_id": "NQF-0059",
+        "measure_name": "Diabetes: HbA1c Poor Control",
+        "is_inverse": true,
+        "denominator_count": 813,
+        "exclusion_count": 0,
+        "eligible_count": 813,
+        "numerator_count": 656,
+        "rate": 80.69,
+        "performance_rate": 19.31
+      },
+      "controlling_bp": {
+        "measure_id": "NQF-0018",
+        "measure_name": "Controlling High Blood Pressure",
+        "is_inverse": false,
+        "denominator_count": 972,
+        "exclusion_count": 964,
+        "eligible_count": 8,
+        "numerator_count": 4,
+        "rate": 50.0,
+        "performance_rate": 50.0
+      },
+      "breast_cancer_screening": {
+        "measure_id": "NQF-2372",
+        "measure_name": "Breast Cancer Screening",
+        "is_inverse": false,
+        "denominator_count": 368,
+        "exclusion_count": 0,
+        "eligible_count": 368,
+        "numerator_count": 256,
+        "rate": 69.57,
+        "performance_rate": 69.57
+      },
+      "colorectal_screening": {
+        "measure_id": "NQF-0034",
+        "measure_name": "Colorectal Cancer Screening",
+        "is_inverse": false,
+        "denominator_count": 821,
+        "exclusion_count": 0,
+        "eligible_count": 821,
+        "numerator_count": 516,
+        "rate": 62.85,
+        "performance_rate": 62.85
+      },
+      "depression_screening": {
+        "measure_id": "NQF-0418",
+        "measure_name": "Depression Screening and Follow-Up",
+        "is_inverse": false,
+        "denominator_count": 982,
+        "exclusion_count": 503,
+        "eligible_count": 479,
+        "numerator_count": 286,
+        "rate": 59.71,
+        "performance_rate": 59.71
+      }
+    },
+    "actual_pmpm": 3479.75,
+    "raw_pmpm": 2888.29,
+    "total_member_months": 11259,
+    "benchmark_pmpm": 1187.0,
+    "gross_savings": -25814072.25,
+    "shared_savings_amount": 0.0,
+    "settlement_status": "ineligible",
+    "msr_passed": false,
+    "quality_gate_passed": true
+  },
+  "total_execution_time_ms": 2197,
+  "steps": [
+    {
+      "step_number": 1,
+      "step_name": "eligibility",
+      "execution_time_ms": 224,
+      "member_count": 1000,
+      "data_quality_flags": []
+    },
+    {
+      "step_number": 2,
+      "step_name": "attribution",
+      "execution_time_ms": 998,
+      "member_count": 982,
+      "data_quality_flags": []
+    },
+    {
+      "step_number": 3,
+      "step_name": "quality",
+      "execution_time_ms": 446,
+      "member_count": 4910,
+      "data_quality_flags": []
+    },
+    {
+      "step_number": 4,
+      "step_name": "cost",
+      "execution_time_ms": 523,
+      "member_count": 20,
+      "data_quality_flags": []
+    },
+    {
+      "step_number": 5,
+      "step_name": "settlement",
+      "execution_time_ms": 0,
+      "member_count": 1,
+      "data_quality_flags": []
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "step_number": 5,
+  "step_name": "settlement",
+  "total_members": 1,
+  "total": 1,
+  "page": 1,
+  "page_size": 50,
+  "total_pages": 1,
+  "members": [
+    {
+      "member_id": "ACO-LEVEL",
+      "outcome": "ineligible",
+      "reason": "Benchmark: $1,187.00, Actual: $3,479.75, Savings rate: -193.16%. MSR (2.0%): FAILED. Quality gate (40%): PASSED. Shared savings: $0.00",
+      "data_references": [],
+      "intermediate_values": [
+        {
+          "label": "benchmark_pmpm",
+          "value": 1187.0
+        },
+        {
+          "label": "actual_pmpm",
+          "value": 3479.75
+        },
+        {
+          "label": "savings_rate",
+          "value": -1.9316
+        },
+        {
+          "label": "msr_passed",
+          "value": false
+        },
+        {
+          "label": "quality_composite",
+          "value": 52.29
+        },
+        {
+          "label": "quality_gate_passed",
+          "value": true
+        }
+      ]
+    }
+  ]
+}

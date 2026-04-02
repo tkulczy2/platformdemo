@@ -1,0 +1,64 @@
+{
+  "member_id": "MBR-000017",
+  "step_number": 3,
+  "step": 3,
+  "step_name": "quality",
+  "detail": {
+    "outcome": "in_numerator",
+    "outcome_value": "No HbA1c test found \u2014 counted as poor control",
+    "logic_trace": [
+      "No HbA1c test found \u2014 counted as poor control"
+    ],
+    "flags": [],
+    "intermediate_values": [
+      {
+        "label": "age",
+        "value": 74
+      },
+      {
+        "label": "hba1c_value",
+        "value": null
+      },
+      {
+        "label": "poor_control",
+        "value": true
+      }
+    ]
+  },
+  "data_references": [],
+  "contract_clauses": [
+    {
+      "id": "QUAL-1.0",
+      "text": "The ACO's quality performance shall be evaluated across the following measures, each weighted equally at 20% of the composite score.",
+      "section": "Evaluating 5 quality measures with equal weighting. Data conflict resolution: most recent clinical.",
+      "title": "QUAL-1.0",
+      "parameters": {
+        "measures": [
+          "hba1c_poor_control",
+          "controlling_bp",
+          "breast_cancer_screening",
+          "colorectal_screening",
+          "depression_screening"
+        ],
+        "measure_weights": {
+          "hba1c_poor_control": 0.2,
+          "controlling_bp": 0.2,
+          "breast_cancer_screening": 0.2,
+          "colorectal_screening": 0.2,
+          "depression_screening": 0.2
+        },
+        "conflict_resolution": "most_recent_clinical"
+      }
+    }
+  ],
+  "code_references": [
+    {
+      "module": "step_3_quality",
+      "function": "calculate_quality_measures",
+      "lines": "33-119",
+      "start_line": 33,
+      "end_line": 119,
+      "logic_summary": "Run each enabled quality measure (HEDIS methodology: denominator \u2192 exclusions \u2192 numerator \u2192 rate). Compute weighted composite score across all measures."
+    }
+  ]
+}

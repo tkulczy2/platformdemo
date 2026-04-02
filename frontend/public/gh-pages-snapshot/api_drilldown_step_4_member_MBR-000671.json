@@ -1,0 +1,273 @@
+{
+  "member_id": "MBR-000671",
+  "step_number": 4,
+  "step": 4,
+  "step_name": "cost",
+  "detail": {
+    "outcome": "costed",
+    "outcome_value": "Total cost: $120,419.79, PMPM: $10,034.98 (12 member-months)",
+    "logic_trace": [
+      "Total cost: $120,419.79, PMPM: $10,034.98 (12 member-months)"
+    ],
+    "flags": [],
+    "intermediate_values": [
+      {
+        "label": "total_cost",
+        "value": 120419.79
+      },
+      {
+        "label": "member_months",
+        "value": 12
+      },
+      {
+        "label": "member_pmpm",
+        "value": 10034.98
+      }
+    ]
+  },
+  "data_references": [
+    {
+      "file": "claims_professional.csv",
+      "row_index": 33491,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "allowed_amount": null,
+        "service_date": null
+      },
+      "description": "48 professional claims, $27,531.38"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 33492,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "allowed_amount": null,
+        "service_date": null
+      },
+      "description": "48 professional claims, $27,531.38"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 33493,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "allowed_amount": null,
+        "service_date": null
+      },
+      "description": "48 professional claims, $27,531.38"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 33494,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "allowed_amount": null,
+        "service_date": null
+      },
+      "description": "48 professional claims, $27,531.38"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 33495,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "allowed_amount": null,
+        "service_date": null
+      },
+      "description": "48 professional claims, $27,531.38"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 33496,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "allowed_amount": null,
+        "service_date": null
+      },
+      "description": "48 professional claims, $27,531.38"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 33497,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "allowed_amount": null,
+        "service_date": null
+      },
+      "description": "48 professional claims, $27,531.38"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 33498,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "allowed_amount": null,
+        "service_date": null
+      },
+      "description": "48 professional claims, $27,531.38"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 33499,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "allowed_amount": null,
+        "service_date": null
+      },
+      "description": "48 professional claims, $27,531.38"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 33500,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "allowed_amount": null,
+        "service_date": null
+      },
+      "description": "48 professional claims, $27,531.38"
+    },
+    {
+      "file": "claims_facility.csv",
+      "row_index": 4794,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "allowed_amount": null,
+        "service_date": null
+      },
+      "description": "11 facility claims, $92,888.41"
+    },
+    {
+      "file": "claims_facility.csv",
+      "row_index": 4795,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "allowed_amount": null,
+        "service_date": null
+      },
+      "description": "11 facility claims, $92,888.41"
+    },
+    {
+      "file": "claims_facility.csv",
+      "row_index": 4796,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "allowed_amount": null,
+        "service_date": null
+      },
+      "description": "11 facility claims, $92,888.41"
+    },
+    {
+      "file": "claims_facility.csv",
+      "row_index": 4797,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "allowed_amount": null,
+        "service_date": null
+      },
+      "description": "11 facility claims, $92,888.41"
+    },
+    {
+      "file": "claims_facility.csv",
+      "row_index": 4798,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "allowed_amount": null,
+        "service_date": null
+      },
+      "description": "11 facility claims, $92,888.41"
+    },
+    {
+      "file": "claims_facility.csv",
+      "row_index": 4799,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "allowed_amount": null,
+        "service_date": null
+      },
+      "description": "11 facility claims, $92,888.41"
+    },
+    {
+      "file": "claims_facility.csv",
+      "row_index": 4800,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "allowed_amount": null,
+        "service_date": null
+      },
+      "description": "11 facility claims, $92,888.41"
+    },
+    {
+      "file": "claims_facility.csv",
+      "row_index": 4801,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "allowed_amount": null,
+        "service_date": null
+      },
+      "description": "11 facility claims, $92,888.41"
+    },
+    {
+      "file": "claims_facility.csv",
+      "row_index": 4802,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "allowed_amount": null,
+        "service_date": null
+      },
+      "description": "11 facility claims, $92,888.41"
+    },
+    {
+      "file": "claims_facility.csv",
+      "row_index": 4803,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "allowed_amount": null,
+        "service_date": null
+      },
+      "description": "11 facility claims, $92,888.41"
+    }
+  ],
+  "contract_clauses": [
+    {
+      "id": "COST-1.0",
+      "text": "Total cost of care shall be calculated as the sum of all Parts A and B allowed charges for attributed beneficiaries during the performance year, divided by the number of attributed beneficiary-months, expressed as a per-member-per-month (PMPM) amount. Claims with service dates within the performance year that are adjudicated within 3 months of the performance year end shall be included.",
+      "section": "Calculate total cost using allowed amount as the cost basis. Excluding pharmacy claims. Claims run-out window: 3 months after performance year end.",
+      "title": "COST-1.0",
+      "parameters": {
+        "cost_basis": "allowed_amount",
+        "include_pharmacy": false,
+        "runout_months": 3
+      }
+    }
+  ],
+  "code_references": [
+    {
+      "module": "step_4_cost",
+      "function": "calculate_cost",
+      "lines": "51-240",
+      "start_line": 51,
+      "end_line": 240,
+      "logic_summary": "Sum allowed amounts for attributed members' paid claims during the performance year. Calculate member-months from eligibility. Apply claims maturity adjustment for incomplete months. Compute raw and adjusted PMPM with confidence bands."
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+{
+  "member_id": "MBR-000003",
+  "steps": {
+    "eligibility": {
+      "step_number": 1,
+      "step_name": "eligibility",
+      "details": [
+        {
+          "member_id": "MBR-000003",
+          "outcome": "eligible",
+          "reason": "Enrolled 12 month(s), no exclusions apply",
+          "data_references": [
+            {
+              "file": "eligibility.csv",
+              "row_index": 2,
+              "columns": {
+                "member_id": null,
+                "enrollment_start_date": null,
+                "enrollment_end_date": null
+              },
+              "description": "1 eligibility record(s), 12 month(s) enrolled"
+            }
+          ],
+          "intermediate_values": [
+            {
+              "label": "enrollment_months",
+              "value": 12
+            },
+            {
+              "label": "exclusions_triggered",
+              "value": []
+            }
+          ]
+        }
+      ],
+      "contract_clauses": [
+        {
+          "id": "ELIG-1.0",
+          "text": "Beneficiaries must have at least one month of enrollment during the performance year and must not be enrolled in a Medicare Advantage plan, have end-stage renal disease, or reside outside the ACO's service area to be eligible for attribution.",
+          "section": "Members must have at least 1 month(s) of enrollment during the performance year. ESRD exclusion is applied. Service area residency is required.",
+          "title": "ELIG-1.0",
+          "parameters": {
+            "minimum_enrollment_months": 1,
+            "exclude_esrd": true,
+            "exclude_medicare_advantage": true,
+            "service_area_required": true
+          }
+        }
+      ],
+      "code_references": [
+        {
+          "module": "step_1_eligibility",
+          "function": "determine_eligibility",
+          "lines": "25-185",
+          "start_line": 25,
+          "end_line": 185,
+          "logic_summary": "Load eligibility records for each member. Calculate months of enrollment during the performance year. Apply exclusions: ESRD (dialysis claims with N18.6), out-of-service-area (ZIP code check), deceased before performance year. Members passing all checks are marked eligible for attribution."
+        }
+      ]
+    },
+    "attribution": {
+      "step_number": 2,
+      "step_name": "attribution",
+      "details": [
+        {
+          "member_id": "MBR-000003",
+          "outcome": "attributed",
+          "reason": "Attributed to Munoz, Lindsay R (NPI: 1844868053) via step1 \u2014 32 qualifying visit(s)",
+          "data_references": [
+            {
+              "file": "claims_professional.csv",
+              "row_index": 191,
+              "columns": {
+                "claim_id": null,
+                "member_id": null,
+                "rendering_npi": null,
+                "procedure_code": null,
+                "service_date": null
+              },
+              "description": "34 qualifying claims across 3 provider(s)"
+            },
+            {
+              "file": "claims_professional.csv",
+              "row_index": 192,
+              "columns": {
+                "claim_id": null,
+                "member_id": null,
+                "rendering_npi": null,
+                "procedure_code": null,
+                "service_date": null
+              },
+              "description": "34 qualifying claims across 3 provider(s)"
+            },
+            {
+              "file": "claims_professional.csv",
+              "row_index": 193,
+              "columns": {
+                "claim_id": null,
+                "member_id": null,
+                "rendering_npi": null,
+                "procedure_code": null,
+                "service_date": null
+              },
+              "description": "34 qualifying claims across 3 provider(s)"
+            },
+            {
+              "file": "claims_professional.csv",
+              "row_index": 195,
+              "columns": {
+                "claim_id": null,
+                "member_id": null,
+                "rendering_npi": null,
+                "procedure_code": null,
+                "service_date": null
+              },
+              "description": "34 qualifying claims across 3 provider(s)"
+            },
+            {
+              "file": "claims_professional.csv",
+              "row_index": 196,
+              "columns": {
+                "claim_id": null,
+                "member_id": null,
+                "rendering_npi": null,
+                "procedure_code": null,
+                "service_date": null
+              },
+              "description": "34 qualifying claims across 3 provider(s)"
+            },
+            {
+              "file": "claims_professional.csv",
+              "row_index": 197,
+              "columns": {
+                "claim_id": null,
+                "member_id": null,
+                "rendering_npi": null,
+                "procedure_code": null,
+                "service_date": null
+              },
+              "description": "34 qualifying claims across 3 provider(s)"
+            },
+            {
+              "file": "claims_professional.csv",
+              "row_index": 198,
+              "columns": {
+                "claim_id": null,
+                "member_id": null,
+                "rendering_npi": null,
+                "procedure_code": null,
+                "service_date": null
+              },
+              "description": "34 qualifying claims across 3 provider(s)"
+            },
+            {
+              "file": "claims_professional.csv",
+              "row_index": 200,
+              "columns": {
+                "claim_id": null,
+                "member_id": null,
+                "rendering_npi": null,
+                "procedure_code": null,
+                "service_date": null
+              },
+              "description": "34 qualifying claims across 3 provider(s)"
+            },
+            {
+              "file": "claims_professional.csv",
+              "row_index": 201,
+              "columns": {
+                "claim_id": null,
+                "member_id": null,
+                "rendering_npi": null,
+                "procedure_code": null,
+                "service_date": null
+              },
+              "description": "34 qualifying claims across 3 provider(s)"
+            },
+            {
+              "file": "claims_professional.csv",
+              "row_index": 202,
+              "columns": {
+                "claim_id": null,
+                "member_id": null,
+                "rendering_npi": null,
+                "procedure_code": null,
+                "service_date": null
+              },
+              "description": "34 qualifying claims across 3 provider(s)"
+            },
+            {
+              "file": "claims_professional.csv",
+              "row_index": 203,
+              "columns": {
+                "claim_id": null,
+                "member_id": null,
+                "rendering_npi": null,
+                "procedure_code": null,
+                "service_date": null
+              },
+              "description": "34 qualifying claims across 3 provider(s)"
+            },
+            {
+              "file": "claims_professional.csv",
+              "row_index": 204,
+              "columns": {
+                "claim_id": null,
+                "member_id": null,
+                "rendering_npi": null,
+                "procedure_code": null,
+                "service_date": null
+              },
+              "description": "34 qualifying claims across 3 provider(s)"
+            },
+            {
+              "file": "claims_professional.csv",
+              "row_index": 207,
+              "columns": {
+                "claim_id": null,
+                "member_id": null,
+                "rendering_npi": null,
+                "procedure_code": null,
+                "service_date": null
+              },
+              "description": "34 qualifying claims across 3 provider(s)"
+            },
+            {
+              "file": "claims_professional.csv",
+              "row_index": 208,
+              "columns": {
+                "claim_id": null,
+                "member_id": null,
+                "rendering_npi": null,
+                "procedure_code": null,
+                "service_date": null
+              },
+              "description": "34 qualifying claims across 3 provider(s)"
+            },
+            {
+              "file": "claims_professional.csv",
+              "row_index": 209,
+              "columns": {
+                "claim_id": null,
+                "member_id": null,
+                "rendering_npi": null,
+                "procedure_code": null,
+                "service_date": null
+              },
+              "description": "34 qualifying claims across 3 provider(s)"
+            },
+            {
+              "file": "claims_professional.csv",
+              "row_index": 210,
+              "columns": {
+                "claim_id": null,
+                "member_id": null,
+                "rendering_npi": null,
+                "procedure_code": null,
+                "service_date": null
+              },
+              "description": "34 qualifying claims across 3 provider(s)"
+            },
+            {
+              "file": "claims_professional.csv",
+              "row_index": 212,
+              "columns": {
+                "claim_id": null,
+                "member_id": null,
+                "rendering_npi": null,
+                "procedure_code": null,
+                "service_date": null
+              },
+              "description": "34 qualifying claims across 3 provider(s)"
+            },
+            {
+              "file": "claims_professional.csv",
+              "row_index": 213,
+              "columns": {
+                "claim_id": null,
+                "member_id": null,
+                "rendering_npi": null,
+                "procedure_code": null,
+                "service_date": null
+              },
+              "description": "34 qualifying claims across 3 provider(s)"
+            },
+            {
+              "file": "claims_professional.csv",
+              "row_index": 215,
+              "columns": {
+                "claim_id": null,
+                "member_id": null,
+                "rendering_npi": null,
+                "procedure_code": null,
+                "service_date": null
+              },
+              "description": "34 qualifying claims across 3 provider(s)"
+            },
+            {
+              "file": "claims_professional.csv",
+              "row_index": 217,
+              "columns": {
+                "claim_id": null,
+                "member_id": null,
+                "rendering_npi": null,
+                "procedure_code": null,
+                "service_date": null
+              },
+              "description": "34 qualifying claims across 3 provider(s)"
+            }
+          ],
+          "intermediate_values": [
+            {
+              "label": "visit_counts_by_provider",
+              "value": {
+                "1608049903": {
+                  "count": 1,
+                  "most_recent": "2025-01-07"
+                },
+                "1769038315": {
+                  "count": 1,
+                  "most_recent": "2025-08-24"
+                },
+                "1844868053": {
+                  "count": 32,
+                  "most_recent": "2025-12-16"
+                }
+              }
+            },
+            {
+              "label": "attributed_npi",
+              "value": "1844868053"
+            },
+            {
+              "label": "attribution_step",
+              "value": "step1"
+            }
+          ]
+        }
+      ],
+      "contract_clauses": [
+        {
+          "id": "ATTR-1.1",
+          "text": "Step 1: Assign each eligible beneficiary to the ACO participant (TIN/NPI) that provided the plurality of primary care services, as defined by CPT codes 99201-99215, 99381-99397, and G0438-G0439, during the most recent 12-month period.",
+          "section": "Filter professional claims to qualifying CPT codes (26 codes). In Step 1, consider only PCP providers. Assign member to provider with most qualifying visits (plurality).",
+          "title": "ATTR-1.1",
+          "parameters": {
+            "attribution_method": "plurality",
+            "qualifying_cpt_codes": [
+              "99201",
+              "99202",
+              "99203",
+              "99204",
+              "99205",
+              "99211",
+              "99212",
+              "99213",
+              "99214",
+              "99215",
+              "99381",
+              "99382",
+              "99383",
+              "99384",
+              "99385",
+              "99386",
+              "99387",
+              "99391",
+              "99392",
+              "99393",
+              "99394",
+              "99395",
+              "99396",
+              "99397",
+              "G0438",
+              "G0439"
+            ],
+            "provider_filter_step1": "pcp_only",
+            "lookback_months": 12
+          }
+        },
+        {
+          "id": "ATTR-1.2",
+          "text": "Step 2: For beneficiaries not assigned in Step 1, assign based on the plurality of primary care services provided by any ACO participant, including specialists who rendered qualifying primary care codes.",
+          "section": "For members not attributed in Step 1, expand the provider pool to all ACO participants including specialists.",
+          "title": "ATTR-1.2",
+          "parameters": {
+            "provider_filter_step2": "all_aco_participants"
+          }
+        },
+        {
+          "id": "ATTR-1.3",
+          "text": "In the event of a tie in service counts, the beneficiary shall be assigned to the provider whose most recent qualifying service was most recent in time.",
+          "section": "Tiebreaker method: most recent visit. When two providers have equal qualifying visit counts, the tie is broken by the most recent qualifying service date.",
+          "title": "ATTR-1.3",
+          "parameters": {
+            "tiebreaker": "most_recent_visit"
+          }
+        }
+      ],
+      "code_references": [
+        {
+          "module": "step_2_attribution",
+          "function": "assign_attribution",
+          "lines": "28-248",
+          "start_line": 28,
+          "end_line": 248,
+          "logic_summary": "Filter claims to qualifying E&M/wellness CPT codes. Step 1: Count qualifying visits per PCP provider, assign to plurality winner. Step 2: For unassigned members, expand to all ACO providers. Tiebreaker: most recent qualifying visit date."
+        }
+      ]
+    },
+    "quality": {
+      "step_number": 3,
+      "step_name": "quality",
+      "details": [
+        {
+          "member_id": "MBR-000003",
+          "outcome": "in_numerator",
+          "reason": "No HbA1c test found \u2014 counted as poor control",
+          "data_references": [],
+          "intermediate_values": [
+            {
+              "label": "age",
+              "value": 75
+            },
+            {
+              "label": "hba1c_value",
+              "value": null
+            },
+            {
+              "label": "poor_control",
+              "value": true
+            }
+          ]
+        },
+        {
+          "member_id": "MBR-000003",
+          "outcome": "excluded",
+          "reason": "Excluded: ESRD, pregnancy, hospice, or dialysis",
+          "data_references": [],
+          "intermediate_values": [
+            {
+              "label": "age",
+              "value": 75
+            }
+          ]
+        },
+        {
+          "member_id": "MBR-000003",
+          "outcome": "not_in_denominator",
+          "reason": "Does not meet denominator criteria for Breast Cancer Screening",
+          "data_references": [],
+          "intermediate_values": []
+        },
+        {
+          "member_id": "MBR-000003",
+          "outcome": "in_numerator",
+          "reason": "Colorectal screening completed",
+          "data_references": [
+            {
+              "file": "members.csv",
+              "row_index": 2,
+              "columns": {
+                "member_id": null,
+                "date_of_birth": null
+              },
+              "description": "Age 75"
+            }
+          ],
+          "intermediate_values": [
+            {
+              "label": "age",
+              "value": 75
+            },
+            {
+              "label": "screening_found",
+              "value": true
+            }
+          ]
+        },
+        {
+          "member_id": "MBR-000003",
+          "outcome": "not_in_numerator",
+          "reason": "No depression screening found during performance year",
+          "data_references": [
+            {
+              "file": "members.csv",
+              "row_index": 2,
+              "columns": {
+                "member_id": null,
+                "date_of_birth": null
+              },
+              "description": "Age 75"
+            }
+          ],
+          "intermediate_values": [
+            {
+              "label": "age",
+              "value": 75
+            },
+            {
+              "label": "screening_found",
+              "value": false
+            }
+          ]
+        }
+      ],
+      "contract_clauses": [
+        {
+          "id": "QUAL-1.0",
+          "text": "The ACO's quality performance shall be evaluated across the following measures, each weighted equally at 20% of the composite score.",
+          "section": "Evaluating 5 quality measures with equal weighting. Data conflict resolution: most recent clinical.",
+          "title": "QUAL-1.0",
+          "parameters": {
+            "measures": [
+              "hba1c_poor_control",
+              "controlling_bp",
+              "breast_cancer_screening",
+              "colorectal_screening",
+              "depression_screening"
+            ],
+            "measure_weights": {
+              "hba1c_poor_control": 0.2,
+              "controlling_bp": 0.2,
+              "breast_cancer_screening": 0.2,
+              "colorectal_screening": 0.2,
+              "depression_screening": 0.2
+            },
+            "conflict_resolution": "most_recent_clinical"
+          }
+        }
+      ],
+      "code_references": [
+        {
+          "module": "step_3_quality",
+          "function": "calculate_quality_measures",
+          "lines": "33-119",
+          "start_line": 33,
+          "end_line": 119,
+          "logic_summary": "Run each enabled quality measure (HEDIS methodology: denominator \u2192 exclusions \u2192 numerator \u2192 rate). Compute weighted composite score across all measures."
+        }
+      ]
+    }
+  }
+}

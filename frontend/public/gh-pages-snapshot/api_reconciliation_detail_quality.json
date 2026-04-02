@@ -1,0 +1,182 @@
+{
+  "category": "quality",
+  "count": 5,
+  "discrepancies": [
+    {
+      "category": "quality",
+      "metric": "quality_hba1c_poor_control",
+      "platform_value": 80.69,
+      "payer_value": 23.9,
+      "difference": 56.79,
+      "financial_impact": 0.0,
+      "explanation": "hba1c_poor_control: Platform rate 80.7% vs payer 23.9% (\u0394+56.8pp). Denominator difference: platform has 813, payer has 176. May be due to different exclusion criteria.",
+      "resolution_recommendation": "Compare member-level measure results. Identify members where platform and payer disagree on numerator/denominator status. Check for EHR-only data and claims-only exclusions.",
+      "detail": {
+        "platform_numerator": 656,
+        "payer_numerator": 42,
+        "platform_denominator": 813,
+        "payer_denominator": 176
+      },
+      "subcategory": "methodology_difference",
+      "id": "DISC-002",
+      "metric_label": "HbA1c Poor Control Rate",
+      "description": "hba1c_poor_control: Platform rate 80.7% vs payer 23.9% (\u0394+56.8pp). Denominator difference: platform has 813, payer has 176. May be due to different exclusion criteria.",
+      "root_cause": "hba1c_poor_control: Platform rate 80.7% vs payer 23.9% (\u0394+56.8pp).",
+      "member_id": "",
+      "data_references": [],
+      "relevant_clauses": [
+        {
+          "clause_id": "QUAL-1.0",
+          "clause_text": "The ACO's quality performance shall be evaluated across the following measures, each weighted equally at 20% of the composite score.",
+          "interpretation": "Evaluating 5 quality measures with equal weighting. Data conflict resolution: most recent clinical."
+        }
+      ],
+      "data_sources": [
+        "clinical_labs.csv",
+        "claims_professional.csv",
+        "members.csv"
+      ]
+    },
+    {
+      "category": "quality",
+      "metric": "quality_controlling_bp",
+      "platform_value": 50.0,
+      "payer_value": 64.4,
+      "difference": -14.4,
+      "financial_impact": 0.0,
+      "explanation": "controlling_bp: Platform rate 50.0% vs payer 64.4% (\u0394-14.4pp). Denominator difference: platform has 8, payer has 382. May be due to different exclusion criteria.",
+      "resolution_recommendation": "Compare member-level measure results. Identify members where platform and payer disagree on numerator/denominator status. Check for EHR-only data and claims-only exclusions.",
+      "detail": {
+        "platform_numerator": 4,
+        "payer_numerator": 246,
+        "platform_denominator": 8,
+        "payer_denominator": 382
+      },
+      "subcategory": "methodology_difference",
+      "id": "DISC-003",
+      "metric_label": "Blood Pressure Control Rate",
+      "description": "controlling_bp: Platform rate 50.0% vs payer 64.4% (\u0394-14.4pp). Denominator difference: platform has 8, payer has 382. May be due to different exclusion criteria.",
+      "root_cause": "controlling_bp: Platform rate 50.0% vs payer 64.4% (\u0394-14.4pp).",
+      "member_id": "",
+      "data_references": [],
+      "relevant_clauses": [
+        {
+          "clause_id": "QUAL-1.0",
+          "clause_text": "The ACO's quality performance shall be evaluated across the following measures, each weighted equally at 20% of the composite score.",
+          "interpretation": "Evaluating 5 quality measures with equal weighting. Data conflict resolution: most recent clinical."
+        }
+      ],
+      "data_sources": [
+        "clinical_vitals.csv",
+        "claims_professional.csv",
+        "members.csv"
+      ]
+    },
+    {
+      "category": "quality",
+      "metric": "quality_breast_cancer_screening",
+      "platform_value": 69.57,
+      "payer_value": 72.0,
+      "difference": -2.43,
+      "financial_impact": 0.0,
+      "explanation": "breast_cancer_screening: Platform rate 69.6% vs payer 72.0% (\u0394-2.4pp). Denominator difference: platform has 368, payer has 193. May be due to different exclusion criteria.",
+      "resolution_recommendation": "Compare member-level measure results. Identify members where platform and payer disagree on numerator/denominator status. Check for EHR-only data and claims-only exclusions.",
+      "detail": {
+        "platform_numerator": 256,
+        "payer_numerator": 139,
+        "platform_denominator": 368,
+        "payer_denominator": 193
+      },
+      "subcategory": "methodology_difference",
+      "id": "DISC-004",
+      "metric_label": "Breast Cancer Screening Rate",
+      "description": "breast_cancer_screening: Platform rate 69.6% vs payer 72.0% (\u0394-2.4pp). Denominator difference: platform has 368, payer has 193. May be due to different exclusion criteria.",
+      "root_cause": "breast_cancer_screening: Platform rate 69.6% vs payer 72.0% (\u0394-2.4pp).",
+      "member_id": "",
+      "data_references": [],
+      "relevant_clauses": [
+        {
+          "clause_id": "QUAL-1.0",
+          "clause_text": "The ACO's quality performance shall be evaluated across the following measures, each weighted equally at 20% of the composite score.",
+          "interpretation": "Evaluating 5 quality measures with equal weighting. Data conflict resolution: most recent clinical."
+        }
+      ],
+      "data_sources": [
+        "clinical_screenings.csv",
+        "claims_professional.csv",
+        "members.csv"
+      ]
+    },
+    {
+      "category": "quality",
+      "metric": "quality_colorectal_screening",
+      "platform_value": 62.85,
+      "payer_value": 61.7,
+      "difference": 1.15,
+      "financial_impact": 0.0,
+      "explanation": "colorectal_screening: Platform rate 62.9% vs payer 61.7% (\u0394+1.1pp). Denominator difference: platform has 821, payer has 303. May be due to different exclusion criteria.",
+      "resolution_recommendation": "Compare member-level measure results. Identify members where platform and payer disagree on numerator/denominator status. Check for EHR-only data and claims-only exclusions.",
+      "detail": {
+        "platform_numerator": 516,
+        "payer_numerator": 187,
+        "platform_denominator": 821,
+        "payer_denominator": 303
+      },
+      "subcategory": "methodology_difference",
+      "id": "DISC-005",
+      "metric_label": "Colorectal Screening Rate",
+      "description": "colorectal_screening: Platform rate 62.9% vs payer 61.7% (\u0394+1.1pp). Denominator difference: platform has 821, payer has 303. May be due to different exclusion criteria.",
+      "root_cause": "colorectal_screening: Platform rate 62.9% vs payer 61.7% (\u0394+1.1pp).",
+      "member_id": "",
+      "data_references": [],
+      "relevant_clauses": [
+        {
+          "clause_id": "QUAL-1.0",
+          "clause_text": "The ACO's quality performance shall be evaluated across the following measures, each weighted equally at 20% of the composite score.",
+          "interpretation": "Evaluating 5 quality measures with equal weighting. Data conflict resolution: most recent clinical."
+        }
+      ],
+      "data_sources": [
+        "clinical_screenings.csv",
+        "claims_professional.csv",
+        "members.csv"
+      ]
+    },
+    {
+      "category": "quality",
+      "metric": "quality_depression_screening",
+      "platform_value": 59.71,
+      "payer_value": 53.1,
+      "difference": 6.61,
+      "financial_impact": 0.0,
+      "explanation": "depression_screening: Platform rate 59.7% vs payer 53.1% (\u0394+6.6pp). Denominator difference: platform has 479, payer has 799. May be due to different exclusion criteria.",
+      "resolution_recommendation": "Compare member-level measure results. Identify members where platform and payer disagree on numerator/denominator status. Check for EHR-only data and claims-only exclusions.",
+      "detail": {
+        "platform_numerator": 286,
+        "payer_numerator": 424,
+        "platform_denominator": 479,
+        "payer_denominator": 799
+      },
+      "subcategory": "methodology_difference",
+      "id": "DISC-006",
+      "metric_label": "Depression Screening Rate",
+      "description": "depression_screening: Platform rate 59.7% vs payer 53.1% (\u0394+6.6pp). Denominator difference: platform has 479, payer has 799. May be due to different exclusion criteria.",
+      "root_cause": "depression_screening: Platform rate 59.7% vs payer 53.1% (\u0394+6.6pp).",
+      "member_id": "",
+      "data_references": [],
+      "relevant_clauses": [
+        {
+          "clause_id": "QUAL-1.0",
+          "clause_text": "The ACO's quality performance shall be evaluated across the following measures, each weighted equally at 20% of the composite score.",
+          "interpretation": "Evaluating 5 quality measures with equal weighting. Data conflict resolution: most recent clinical."
+        }
+      ],
+      "data_sources": [
+        "clinical_screenings.csv",
+        "claims_professional.csv",
+        "members.csv"
+      ]
+    }
+  ],
+  "total_financial_impact": 0.0
+}
