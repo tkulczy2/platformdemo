@@ -55,6 +55,53 @@ export default function ResultsDashboard() {
   const [recon, setRecon] = useState<ReconciliationInfo | null>(null);
 
   // -----------------------------------------------------------------------
+  // Fetch existing results (no pipeline run)
+  // -----------------------------------------------------------------------
+
+  const fetchResults = useCallback(async () => {
+    setPhase('loading');
+    const summary = await getResultsSummary() as unknown as Record<string, unknown>;
+    const finalMetrics = (summary.final_metrics ?? summary.metrics ?? summary) as unknown as Metrics;
+    setMetrics(finalMetrics);
+    setExecutionTime((summary.total_execution_time_ms as number) ?? null);
+
+    // Extract quality measures from the metrics for the scorecard
+    try {
+      const qm = finalMetrics.quality_measures as Record<string, Record<string, unknown>> | undefined;
+      if (qm) {
+        const mapped: QualityMeasure[] = Object.entries(qm).map(([key, m]) => ({
+          measure_id: key,
+          measure_name: (m.measure_name ?? key) as string,
+          denominator: (m.denominator_count ?? m.denominator ?? 0) as number,
+          exclusions: (m.exclusion_count ?? m.exclusions ?? 0) as number,
+          eligible: (m.eligible_count ?? m.eligible ?? 0) as number,
+          numerator: (m.numerator_count ?? m.numerator ?? 0) as number,
+          rate: (m.rate ?? 0) as number,
+          benchmark_rate: (m.benchmark_rate ?? 0) as number,
+          star_rating: (m.star_rating ?? 0) as number,
+          weight: (m.weight ?? 0.2) as number,
+        }));
+        setQualityMeasures(mapped);
+      }
+    } catch {
+      // Quality measures not available -- non-fatal
+    }
+
+    // Fetch reconciliation summary (may not exist)
+    try {
+      const reconData = await getReconciliationSummary() as unknown as Record<string, unknown>;
+      setRecon({
+        total_discrepancies: (reconData.discrepancy_count ?? reconData.total_discrepancies ?? 0) as number,
+        financial_impact: (reconData.total_financial_impact ?? reconData.financial_impact ?? 0) as number,
+      });
+    } catch {
+      // No reconciliation data available
+    }
+
+    setPhase('ready');
+  }, []);
+
+  // -----------------------------------------------------------------------
   // Run pipeline + fetch results
   // -----------------------------------------------------------------------
 
@@ -63,60 +110,30 @@ export default function ResultsDashboard() {
       setPhase('calculating');
       setError(null);
 
-      // 1. Run the pipeline
       const calcResult = await runCalculation() as unknown as Record<string, unknown>;
       setExecutionTime((calcResult.total_execution_time_ms ?? calcResult.execution_time_ms ?? 0) as number);
 
-      // 2. Fetch summary
-      setPhase('loading');
-      const summary = await getResultsSummary() as unknown as Record<string, unknown>;
-      const finalMetrics = (summary.final_metrics ?? summary.metrics ?? summary) as unknown as Metrics;
-      setMetrics(finalMetrics);
-
-      // 3. Extract quality measures from the metrics for the scorecard
-      try {
-        const qm = finalMetrics.quality_measures as Record<string, Record<string, unknown>> | undefined;
-        if (qm) {
-          const mapped: QualityMeasure[] = Object.entries(qm).map(([key, m]) => ({
-            measure_id: key,
-            measure_name: (m.measure_name ?? key) as string,
-            denominator: (m.denominator_count ?? m.denominator ?? 0) as number,
-            exclusions: (m.exclusion_count ?? m.exclusions ?? 0) as number,
-            eligible: (m.eligible_count ?? m.eligible ?? 0) as number,
-            numerator: (m.numerator_count ?? m.numerator ?? 0) as number,
-            rate: (m.rate ?? 0) as number,
-            benchmark_rate: (m.benchmark_rate ?? 0) as number,
-            star_rating: (m.star_rating ?? 0) as number,
-            weight: (m.weight ?? 0.2) as number,
-          }));
-          setQualityMeasures(mapped);
-        }
-      } catch {
-        // Quality measures not available -- non-fatal
-      }
-
-      // 4. Fetch reconciliation summary (may not exist)
-      try {
-        const reconData = await getReconciliationSummary() as unknown as Record<string, unknown>;
-        setRecon({
-          total_discrepancies: (reconData.discrepancy_count ?? reconData.total_discrepancies ?? 0) as number,
-          financial_impact: (reconData.total_financial_impact ?? reconData.financial_impact ?? 0) as number,
-        });
-      } catch {
-        // No reconciliation data available
-      }
-
-      setPhase('ready');
+      await fetchResults();
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Calculation failed');
       setPhase('error');
     }
-  }, []);
+  }, [fetchResults]);
 
-  // Auto-run on mount
+  // On mount: try to load existing results first, only run pipeline if none exist
   useEffect(() => {
-    calculate();
-  }, [calculate]);
+    let cancelled = false;
+    async function init() {
+      try {
+        await fetchResults();
+      } catch {
+        // No existing results -- run the pipeline
+        if (!cancelled) await calculate();
+      }
+    }
+    init();
+    return () => { cancelled = true; };
+  }, [fetchResults, calculate]);
 
   // -----------------------------------------------------------------------
   // Navigation helpers

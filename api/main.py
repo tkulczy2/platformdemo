@@ -61,9 +61,85 @@ def serialize_quality_score(qs: FileQualityScore) -> dict:
     }
 
 
+def serialize_contract_clause(clause) -> dict:
+    """Serialize a ContractClause for the frontend (uses id/text field names)."""
+    return {
+        "id": clause.clause_id,
+        "text": clause.clause_text,
+        "section": clause.interpretation,
+        "title": clause.clause_id,
+        "parameters": _fix_values(clause.parameters_extracted),
+    }
+
+
+def serialize_code_reference(ref) -> dict:
+    """Serialize a CodeReference for the frontend."""
+    start, end = ref.line_range if isinstance(ref.line_range, (tuple, list)) else (0, 0)
+    return {
+        "module": ref.module,
+        "function": ref.function,
+        "lines": f"{start}-{end}",
+        "start_line": start,
+        "end_line": end,
+        "logic_summary": ref.logic_summary,
+    }
+
+
+def serialize_data_reference(ref) -> dict:
+    """Serialize a DataReference for the frontend (flattens row_indices)."""
+    return {
+        "file": ref.source_file,
+        "row_indices": ref.row_indices,
+        "columns_used": ref.columns_used,
+        "description": ref.description,
+    }
+
+
+def serialize_member_detail(detail) -> dict:
+    """Serialize a MemberDetail for the frontend."""
+    # Build per-row data references with column values as placeholder keys
+    data_refs = []
+    for dr in detail.data_references:
+        for row_idx in dr.row_indices:
+            cols = {c: None for c in dr.columns_used}
+            data_refs.append({
+                "file": dr.source_file,
+                "row_index": row_idx,
+                "columns": cols,
+                "description": dr.description,
+            })
+
+    # Convert intermediate_values dict to list of {label, value}
+    iv_list = [
+        {"label": k, "value": _fix_values(v)}
+        for k, v in (detail.intermediate_values or {}).items()
+    ]
+
+    return {
+        "member_id": detail.member_id,
+        "outcome": detail.outcome,
+        "reason": detail.reason,
+        "data_references": data_refs,
+        "intermediate_values": iv_list,
+    }
+
+
 def serialize_step_result(step) -> dict:
-    """Serialize a StepResult to a JSON-friendly dict."""
-    return _fix_values(asdict(step))
+    """Serialize a StepResult for the frontend with consistent field names."""
+    return {
+        "step_number": step.step_number,
+        "step_name": step.step_name,
+        "step": step.step_number,
+        "name": step.step_name,
+        "contract_clauses": [serialize_contract_clause(c) for c in step.contract_clauses],
+        "code_references": [serialize_code_reference(r) for r in step.code_references],
+        "logic_summary": step.code_references[0].logic_summary if step.code_references else "",
+        "summary": _fix_values(step.summary),
+        "member_count": len(step.member_details),
+        "member_details": [serialize_member_detail(m) for m in step.member_details],
+        "data_quality_flags": _fix_values(step.data_quality_flags),
+        "execution_time_ms": step.execution_time_ms,
+    }
 
 
 def serialize_pipeline_result(result: PipelineResult) -> dict:

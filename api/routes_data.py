@@ -50,15 +50,47 @@ async def upload_data(files: list[UploadFile] = File(...)):
 
 @router.get("/status")
 def data_status():
-    """Return current data quality scores."""
+    """Return current data quality scores.
+
+    Returns the shape the frontend expects:
+      { files: Record<filename, ...>, overall_quality: float, ready: bool }
+    """
     if state.data is None:
         return {
-            "data_loaded": False,
-            "quality_scores": [],
+            "files": {},
+            "overall_quality": 0,
+            "ready": False,
         }
+
+    files: dict = {}
+    for qs in state.quality_scores:
+        # Serialize issues as human-readable strings for the frontend
+        issue_strings = [
+            issue["description"] if isinstance(issue, dict) else str(issue)
+            for issue in qs.issues
+        ]
+        files[qs.file_name] = {
+            "file_name": qs.file_name,
+            "rows": qs.row_count,
+            "completeness": qs.completeness_score,
+            "quality_score": qs.completeness_score,
+            "date_range": list(qs.date_range) if qs.date_range else None,
+            "issues": issue_strings,
+            "status": qs.status,
+        }
+
+    scores = [qs.completeness_score for qs in state.quality_scores]
+    overall = sum(scores) / len(scores) if scores else 0
+    # Ready when all 9 files are loaded and none are red
+    ready = (
+        len(state.quality_scores) >= 9
+        and all(qs.status != "red" for qs in state.quality_scores)
+    )
+
     return {
-        "data_loaded": True,
-        "quality_scores": [serialize_quality_score(qs) for qs in state.quality_scores],
+        "files": files,
+        "overall_quality": round(overall, 4),
+        "ready": ready,
     }
 
 

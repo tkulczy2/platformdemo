@@ -5,6 +5,7 @@ import {
   getReconciliationSummary,
   getReconciliationDetail,
   uploadPayerReport,
+  unloadPayerReport,
   loadDemoPayerReport,
   runCalculation,
   getResultsSummary,
@@ -34,6 +35,7 @@ export default function ReconciliationView() {
   const [summary, setSummary] = useState<ReconSummary | null>(null);
   const [discrepancies, setDiscrepancies] = useState<Discrepancy[]>([]);
   const [platformMetrics, setPlatformMetrics] = useState<Record<string, unknown> | null>(null);
+  const [payerMetrics, setPayerMetrics] = useState<Record<string, unknown> | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [uploading, setUploading] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -73,6 +75,9 @@ export default function ReconciliationView() {
           // If detail fetch fails, continue with what we have
         }
       }
+
+      // Extract payer metrics from reconciliation summary
+      setPayerMetrics((raw.payer_metrics ?? null) as Record<string, unknown> | null);
 
       // Also load platform metrics for comparison cards
       try {
@@ -119,6 +124,23 @@ export default function ReconciliationView() {
 
   const handleDragOver = (e: React.DragEvent) => {
     e.preventDefault();
+  };
+
+  const handleUnload = async () => {
+    try {
+      setUploading(true);
+      setError(null);
+      await unloadPayerReport();
+      setSummary(null);
+      setDiscrepancies([]);
+      setPlatformMetrics(null);
+      setPayerMetrics(null);
+      setViewState('no-report');
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to unload report');
+    } finally {
+      setUploading(false);
+    }
   };
 
   // ---------------------------------------------------------------------------
@@ -264,42 +286,47 @@ export default function ReconciliationView() {
   const totalImpact = summary.financial_impact;
   const impactIsPositive = totalImpact >= 0;
 
-  // Extract comparison values from platform metrics (if available)
+  // Extract comparison values from platform and payer metrics
   const pm = platformMetrics as Record<string, number> | null;
+  const pym = payerMetrics as Record<string, number> | null;
+  const diff = (a: number | undefined, b: number | undefined) =>
+    a != null && b != null ? a - b : 0;
+
   const comparisons = [
     {
       label: 'Attributed Population',
       platformValue: pm?.attributed_population,
-      payerValue: pm?.attributed_population != null
-        ? (pm.attributed_population - (summary.categories.find((c) => c.category === 'attribution')?.count ?? 0))
-        : undefined,
+      payerValue: pym?.attributed_population,
       format: (v: number) => formatNumber(v),
-      delta: summary.categories.find((c) => c.category === 'attribution')?.count ?? 0,
-      deltaLabel: 'members differ',
+      delta: diff(pm?.attributed_population, pym?.attributed_population),
+      deltaLabel: 'member difference',
+      deltaFormat: (v: number) => formatNumber(v),
     },
     {
       label: 'Quality Composite',
       platformValue: pm?.quality_composite,
-      payerValue: pm?.quality_composite != null ? pm.quality_composite - 0.02 : undefined,
+      payerValue: pym?.quality_composite,
       format: (v: number) => formatPercent(v),
-      delta: summary.categories.find((c) => c.category === 'quality')?.count ?? 0,
-      deltaLabel: 'measure discrepancies',
+      delta: diff(pm?.quality_composite, pym?.quality_composite),
+      deltaLabel: 'difference',
+      deltaFormat: (v: number) => `${v > 0 ? '+' : ''}${v.toFixed(1)}pp`,
     },
     {
       label: 'Actual PMPM',
       platformValue: pm?.actual_pmpm,
-      payerValue: pm?.actual_pmpm != null ? pm.actual_pmpm + 15.32 : undefined,
+      payerValue: pym?.actual_pmpm,
       format: (v: number) => formatCurrency(v),
-      delta: summary.categories.find((c) => c.category === 'cost')?.count ?? 0,
-      deltaLabel: 'cost discrepancies',
+      delta: diff(pm?.actual_pmpm, pym?.actual_pmpm),
+      deltaLabel: 'difference',
+      deltaFormat: (v: number) => formatCurrency(v),
     },
     {
       label: 'Shared Savings',
       platformValue: pm?.shared_savings,
-      payerValue: pm?.shared_savings != null ? pm.shared_savings - Math.abs(totalImpact) : undefined,
+      payerValue: pym?.shared_savings,
       format: (v: number) => formatCurrency(v),
-      delta: totalImpact,
-      deltaLabel: 'net difference',
+      delta: diff(pm?.shared_savings, pym?.shared_savings),
+      deltaLabel: 'difference',
       deltaFormat: (v: number) => formatCurrency(v),
     },
   ];
@@ -315,6 +342,17 @@ export default function ReconciliationView() {
           </p>
         </div>
         <div className="flex items-center gap-2">
+          <button
+            onClick={handleUnload}
+            disabled={uploading}
+            className="btn-secondary text-xs"
+            title="Unload settlement report"
+          >
+            <svg className="mr-1.5 h-4 w-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+            {uploading ? 'Unloading...' : 'Unload Report'}
+          </button>
           <button
             onClick={() => exportCsv('discrepancies')}
             className="btn-secondary text-xs"

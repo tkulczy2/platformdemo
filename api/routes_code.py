@@ -69,4 +69,8 @@ def get_source_code(module: str, function: str):
         "source_file": source_file,
         "line_range": [start_line, end_line],
         "source_code": source,
+        # Frontend-expected field names
+        "source": source,
+        "start_line": start_line,
+        "end_line": end_line,
     }

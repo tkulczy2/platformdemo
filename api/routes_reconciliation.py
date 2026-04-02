@@ -51,6 +51,22 @@ async def upload_payer_report(file: UploadFile = File(...)):
     }
 
 
+@router.delete("/report")
+def unload_payer_report():
+    """Unload the current payer settlement report."""
+    if state.payer_report is None:
+        raise HTTPException(status_code=404, detail="No payer report is currently loaded.")
+
+    state.payer_report = None
+    # Clear pipeline result so reconciliation data is removed
+    state.pipeline_result = None
+
+    return {
+        "status": "success",
+        "message": "Payer settlement report unloaded",
+    }
+
+
 @router.get("/summary")
 def reconciliation_summary():
     """Return reconciliation summary from pipeline result."""
@@ -64,11 +80,23 @@ def reconciliation_summary():
             detail="No reconciliation data. Upload a payer settlement report and re-run the pipeline.",
         )
 
+    # Include payer report metrics so the frontend can show real values
+    payer_metrics = {}
+    if state.payer_report and isinstance(state.payer_report, dict):
+        pr = state.payer_report
+        payer_metrics = {
+            "attributed_population": pr.get("attribution", {}).get("total_attributed"),
+            "quality_composite": pr.get("quality", {}).get("composite_score"),
+            "actual_pmpm": pr.get("cost", {}).get("actual_pmpm"),
+            "shared_savings": pr.get("cost", {}).get("shared_savings_amount"),
+        }
+
     return _fix_values({
         "discrepancy_count": recon.get("discrepancy_count", 0),
         "total_financial_impact": recon.get("total_financial_impact", 0),
         "categories": recon.get("categories", {}),
         "execution_time_ms": recon.get("execution_time_ms", 0),
+        "payer_metrics": payer_metrics,
     })
 
 

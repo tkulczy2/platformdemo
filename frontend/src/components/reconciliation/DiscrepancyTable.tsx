@@ -217,12 +217,12 @@ export default function DiscrepancyTable({ discrepancies }: DiscrepancyTableProp
                       <div className="px-4 py-3">
                         <span className="text-xs font-mono text-gray-700">{d.member_id}</span>
                       </div>
-                      <div className="px-4 py-3">
+                      <div className="px-4 py-3" title={d.metric_label ? `Platform: ${d.metric_label}` : undefined}>
                         <span className="text-sm text-gray-900">
                           {d.platform_value != null ? String(d.platform_value) : '--'}
                         </span>
                       </div>
-                      <div className="px-4 py-3">
+                      <div className="px-4 py-3" title={d.metric_label ? `Payer: ${d.metric_label}` : undefined}>
                         <span className="text-sm text-gray-900">
                           {d.payer_value != null ? String(d.payer_value) : '--'}
                         </span>

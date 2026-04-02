@@ -14,9 +14,9 @@ const FILE_LABELS: Record<string, string> = {
   'claims_professional.csv': 'Professional Claims',
   'claims_facility.csv': 'Facility Claims',
   'claims_pharmacy.csv': 'Pharmacy Claims',
-  'lab_results.csv': 'Lab Results',
-  'screenings.csv': 'Screenings',
-  'vitals.csv': 'Vitals',
+  'clinical_labs.csv': 'Lab Results',
+  'clinical_screenings.csv': 'Screenings',
+  'clinical_vitals.csv': 'Vitals',
 };
 
 function statusColor(score: number): 'green' | 'yellow' | 'red' {

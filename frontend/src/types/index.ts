@@ -143,17 +143,35 @@ export interface QualityMeasure {
 // Reconciliation
 // ---------------------------------------------------------------------------
 
+export interface RelevantClause {
+  clause_id: string;
+  clause_text: string;
+  interpretation: string;
+}
+
 export interface Discrepancy {
   id: string;
   category: 'attribution' | 'quality' | 'cost';
   subcategory: string;
+  metric: string;
+  metric_label: string;
   member_id: string;
   description: string;
   platform_value: string | number | null;
   payer_value: string | number | null;
+  difference: number;
   financial_impact: number;
   root_cause: string;
+  resolution_recommendation: string;
+  relevant_clauses: RelevantClause[];
+  data_sources: string[];
   data_references: DataReference[];
+  detail?: {
+    platform_numerator: number;
+    payer_numerator: number;
+    platform_denominator: number;
+    payer_denominator: number;
+  };
 }
 
 export interface ReconciliationSummary {

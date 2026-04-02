@@ -13,9 +13,9 @@ const EXPECTED_FILES = [
   { key: 'claims_professional.csv', label: 'Professional Claims' },
   { key: 'claims_facility.csv', label: 'Facility Claims' },
   { key: 'claims_pharmacy.csv', label: 'Pharmacy Claims' },
-  { key: 'lab_results.csv', label: 'Lab Results' },
-  { key: 'screenings.csv', label: 'Screenings' },
-  { key: 'vitals.csv', label: 'Vitals' },
+  { key: 'clinical_labs.csv', label: 'Lab Results' },
+  { key: 'clinical_screenings.csv', label: 'Screenings' },
+  { key: 'clinical_vitals.csv', label: 'Vitals' },
 ] as const;
 
 export default function DataUpload() {

@@ -17,6 +17,98 @@ from engine.provenance import (
 )
 
 
+# ---------------------------------------------------------------------------
+# Metadata mappings — descriptive labels, contract clauses, and data sources
+# ---------------------------------------------------------------------------
+
+METRIC_LABELS: dict[str, str] = {
+    "attribution_count": "Attributed Members",
+    "quality_hba1c_poor_control": "HbA1c Poor Control Rate",
+    "quality_controlling_bp": "Blood Pressure Control Rate",
+    "quality_breast_cancer_screening": "Breast Cancer Screening Rate",
+    "quality_colorectal_screening": "Colorectal Screening Rate",
+    "quality_depression_screening": "Depression Screening Rate",
+    "actual_pmpm": "Actual PMPM Cost",
+    "shared_savings_amount": "Shared Savings Amount",
+}
+
+METRIC_CLAUSE_IDS: dict[str, list[str]] = {
+    "attribution_count": ["ELIG-1.0", "ATTR-1.1", "ATTR-1.2", "ATTR-1.3"],
+    "quality_hba1c_poor_control": ["QUAL-1.0"],
+    "quality_controlling_bp": ["QUAL-1.0"],
+    "quality_breast_cancer_screening": ["QUAL-1.0"],
+    "quality_colorectal_screening": ["QUAL-1.0"],
+    "quality_depression_screening": ["QUAL-1.0"],
+    "actual_pmpm": ["COST-1.0"],
+    "shared_savings_amount": ["SETTLE-1.0", "SETTLE-1.1"],
+}
+
+METRIC_DATA_SOURCES: dict[str, list[str]] = {
+    "attribution_count": ["members.csv", "eligibility.csv", "claims_professional.csv", "providers.csv"],
+    "quality_hba1c_poor_control": ["clinical_labs.csv", "claims_professional.csv", "members.csv"],
+    "quality_controlling_bp": ["clinical_vitals.csv", "claims_professional.csv", "members.csv"],
+    "quality_breast_cancer_screening": ["clinical_screenings.csv", "claims_professional.csv", "members.csv"],
+    "quality_colorectal_screening": ["clinical_screenings.csv", "claims_professional.csv", "members.csv"],
+    "quality_depression_screening": ["clinical_screenings.csv", "claims_professional.csv", "members.csv"],
+    "actual_pmpm": ["claims_professional.csv", "claims_facility.csv", "eligibility.csv"],
+    "shared_savings_amount": [],  # derived from other metrics
+}
+
+METRIC_DOMAIN: dict[str, str] = {
+    "attribution_count": "attribution",
+    "actual_pmpm": "cost",
+    "shared_savings_amount": "cost",
+    # quality_* metrics fall through to prefix-based detection
+}
+
+
+def _get_domain(metric: str) -> str:
+    """Return the high-level domain for a metric key."""
+    if metric in METRIC_DOMAIN:
+        return METRIC_DOMAIN[metric]
+    if metric.startswith("quality_"):
+        return "quality"
+    return "other"
+
+
+def _extract_clause_lookup(steps: list[StepResult]) -> dict[str, dict]:
+    """Build clause_id → {clause_id, clause_text, interpretation} from pipeline steps."""
+    lookup: dict[str, dict] = {}
+    for step in steps:
+        for clause in step.contract_clauses:
+            lookup[clause.clause_id] = {
+                "clause_id": clause.clause_id,
+                "clause_text": clause.clause_text,
+                "interpretation": clause.interpretation,
+            }
+    return lookup
+
+
+def _enrich_discrepancy(d: dict, index: int, clause_lookup: dict[str, dict]) -> dict:
+    """Add descriptive metadata to a raw discrepancy dict."""
+    metric = d.get("metric", "")
+
+    # Remap category → subcategory, set category to domain
+    d["subcategory"] = d.get("category", "")
+    d["category"] = _get_domain(metric)
+
+    d["id"] = f"DISC-{index + 1:03d}"
+    d["metric_label"] = METRIC_LABELS.get(metric, metric.replace("_", " ").title())
+    d["description"] = d.get("explanation", "")
+    d["root_cause"] = d.get("explanation", "").split(". ")[0] + "." if d.get("explanation") else ""
+    d["member_id"] = ""
+    d["data_references"] = []
+
+    # Resolve contract clauses
+    clause_ids = METRIC_CLAUSE_IDS.get(metric, [])
+    d["relevant_clauses"] = [clause_lookup[cid] for cid in clause_ids if cid in clause_lookup]
+
+    # Attach data source file names
+    d["data_sources"] = METRIC_DATA_SOURCES.get(metric, [])
+
+    return d
+
+
 def reconcile(
     steps: list[StepResult],
     payer_report: dict,
@@ -180,6 +272,11 @@ def reconcile(
                 "The settlement difference is a consequence of those inputs."
             ),
         })
+
+    # Enrich each discrepancy with descriptive metadata
+    clause_lookup = _extract_clause_lookup(steps)
+    for i, d in enumerate(discrepancies):
+        _enrich_discrepancy(d, i, clause_lookup)
 
     total_financial_impact = sum(abs(d.get("financial_impact", 0)) for d in discrepancies)
 

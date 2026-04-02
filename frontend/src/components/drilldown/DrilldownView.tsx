@@ -58,7 +58,10 @@ interface MemberListItem {
 
 interface MetricData {
   metric: string;
+  metric_name: string;
   value: unknown;
+  step_number: number;
+  step_name: string;
   contract_clauses: Array<{ id: string; text: string; section?: string; title?: string }>;
   code_references: Array<{ module: string; function: string; lines: string }>;
   logic_summary: string;
@@ -100,7 +103,8 @@ export default function DrilldownView() {
   const [selectedMemberId, setSelectedMemberId] = useState<string | null>(memberId ?? null);
 
   const parsedStep = stepNum ? parseInt(stepNum, 10) : null;
-  const currentStepName = parsedStep ? STEP_NAMES[parsedStep] || `Step ${parsedStep}` : '';
+  const resolvedStepNum = parsedStep ?? metricData?.step_number ?? null;
+  const currentStepName = resolvedStepNum ? STEP_NAMES[resolvedStepNum] || `Step ${resolvedStepNum}` : '';
 
   // -----------------------------------------------------------------------
   // Data fetching
@@ -199,13 +203,17 @@ export default function DrilldownView() {
     };
   }, [parsedStep, memberId, metricName, loadStepData, loadMemberList, loadMemberDetail]);
 
+  // Resolve the effective step number (from URL param or from metric response)
+  const effectiveStep = parsedStep ?? metricData?.step_number ?? null;
+
   // When a member is selected from the list
   async function handleSelectMember(mId: string) {
     setSelectedMemberId(mId);
-    if (parsedStep) {
-      await loadMemberDetail(parsedStep, mId);
+    const step = effectiveStep;
+    if (step) {
+      await loadMemberDetail(step, mId);
       // Update the URL without full reload
-      navigate(`/drilldown/${parsedStep}/${mId}`, { replace: true });
+      navigate(`/drilldown/${step}/${mId}`, { replace: true });
     }
   }
 
@@ -222,8 +230,9 @@ export default function DrilldownView() {
 
   // Pagination for member list
   async function handlePageChange(page: number) {
-    if (parsedStep) {
-      await loadMemberList(parsedStep, page);
+    const step = effectiveStep;
+    if (step) {
+      await loadMemberList(step, page);
     }
   }
 

@@ -319,23 +319,27 @@ export default function ContractEditor() {
     setError(null);
     try {
       const data = await getContract();
-      // The API returns { parameters, clauses } where clauses is an array or object
-      const clauseMap =
-        Array.isArray(data.clauses)
-          ? Object.fromEntries(
-              data.clauses.map((c: { id: string; title: string; text: string }) => [
-                c.id,
-                { clause_id: c.id, text: c.text, parameters: {} },
-              ]),
-            )
-          : (data.clauses as Record<
-              string,
-              { clause_id: string; text: string; parameters: Record<string, unknown> }
-            >);
+      if (!data.contract_loaded || !data.contract) {
+        // No contract loaded yet -- leave state at defaults
+        setClauses({});
+        setParams({});
+        setOriginalParams({});
+        return;
+      }
+      const contract = data.contract;
+      const clauseMap = contract.clauses ?? {};
+
+      // Flatten all clause-level parameters into a single params object
+      const flatParams: Record<string, unknown> = {};
+      for (const clause of Object.values(clauseMap)) {
+        if (clause.parameters) {
+          Object.assign(flatParams, clause.parameters);
+        }
+      }
 
       setClauses(clauseMap);
-      setParams(data.parameters);
-      setOriginalParams(data.parameters);
+      setParams(flatParams);
+      setOriginalParams(flatParams);
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Failed to load contract');
     } finally {
@@ -353,22 +357,23 @@ export default function ContractEditor() {
     setError(null);
     try {
       const data = await loadDemoContract();
-      const clauseMap =
-        Array.isArray(data.clauses)
-          ? Object.fromEntries(
-              data.clauses.map((c: { id: string; title: string; text: string }) => [
-                c.id,
-                { clause_id: c.id, text: c.text, parameters: {} },
-              ]),
-            )
-          : (data.clauses as Record<
-              string,
-              { clause_id: string; text: string; parameters: Record<string, unknown> }
-            >);
+      const contract = data.contract;
+      if (!contract) {
+        setError('Demo contract not found on server');
+        return;
+      }
+      const clauseMap = contract.clauses ?? {};
+
+      const flatParams: Record<string, unknown> = {};
+      for (const clause of Object.values(clauseMap)) {
+        if (clause.parameters) {
+          Object.assign(flatParams, clause.parameters);
+        }
+      }
 
       setClauses(clauseMap);
-      setParams(data.parameters);
-      setOriginalParams(data.parameters);
+      setParams(flatParams);
+      setOriginalParams(flatParams);
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Failed to load demo contract');
     } finally {
@@ -386,9 +391,8 @@ export default function ContractEditor() {
     setSaving(true);
     setError(null);
     try {
-      const data = await updateContract(params);
-      setParams(data.parameters);
-      setOriginalParams(data.parameters);
+      await updateContract(params);
+      setOriginalParams(params);
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Failed to save contract');
     } finally {
