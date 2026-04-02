@@ -1,0 +1,155 @@
+{
+  "description": "Simplified HCC mapping for demo purposes. Top 30 HCC categories with ICD-10 mappings and approximate RAF coefficients. Values are illustrative, not for clinical use.",
+  "hcc_categories": {
+    "HCC 18": {
+      "condition_name": "Diabetes with Chronic Complications",
+      "raf_coefficient": 0.302,
+      "icd10_codes": ["E11.21", "E11.22", "E11.29", "E11.31", "E11.39", "E11.40", "E11.41", "E11.42", "E11.43", "E11.49", "E11.51", "E11.52", "E11.59", "E11.65"]
+    },
+    "HCC 19": {
+      "condition_name": "Diabetes without Complication",
+      "raf_coefficient": 0.105,
+      "icd10_codes": ["E11.9", "E11.8", "E11.00", "E11.01"]
+    },
+    "HCC 85": {
+      "condition_name": "Congestive Heart Failure",
+      "raf_coefficient": 0.323,
+      "icd10_codes": ["I50.1", "I50.20", "I50.21", "I50.22", "I50.23", "I50.30", "I50.31", "I50.32", "I50.33", "I50.40", "I50.41", "I50.42", "I50.43", "I50.9"]
+    },
+    "HCC 86": {
+      "condition_name": "Acute Myocardial Infarction",
+      "raf_coefficient": 0.231,
+      "icd10_codes": ["I21.01", "I21.02", "I21.09", "I21.11", "I21.19", "I21.21", "I21.29", "I21.3", "I21.4", "I21.9"]
+    },
+    "HCC 96": {
+      "condition_name": "Specified Heart Arrhythmias",
+      "raf_coefficient": 0.259,
+      "icd10_codes": ["I48.0", "I48.1", "I48.2", "I48.91"]
+    },
+    "HCC 108": {
+      "condition_name": "COPD",
+      "raf_coefficient": 0.335,
+      "icd10_codes": ["J44.0", "J44.1", "J44.9"]
+    },
+    "HCC 111": {
+      "condition_name": "Chronic Kidney Disease, Stage 4",
+      "raf_coefficient": 0.289,
+      "icd10_codes": ["N18.4"]
+    },
+    "HCC 112": {
+      "condition_name": "Chronic Kidney Disease, Stage 5",
+      "raf_coefficient": 0.289,
+      "icd10_codes": ["N18.5", "N18.6"]
+    },
+    "HCC 22": {
+      "condition_name": "Morbid Obesity",
+      "raf_coefficient": 0.250,
+      "icd10_codes": ["E66.01"]
+    },
+    "HCC 12": {
+      "condition_name": "Breast / Prostate / Colorectal Cancer",
+      "raf_coefficient": 0.146,
+      "icd10_codes": ["C50.011", "C50.012", "C50.019", "C61", "C18.0", "C18.9", "C19", "C20"]
+    },
+    "HCC 55": {
+      "condition_name": "Major Depression",
+      "raf_coefficient": 0.309,
+      "icd10_codes": ["F32.0", "F32.1", "F32.2", "F32.3", "F32.9", "F33.0", "F33.1", "F33.2", "F33.3", "F33.9"]
+    },
+    "HCC 40": {
+      "condition_name": "Rheumatoid Arthritis",
+      "raf_coefficient": 0.312,
+      "icd10_codes": ["M05.70", "M05.79", "M06.00", "M06.09", "M06.9"]
+    },
+    "HCC 48": {
+      "condition_name": "Coagulation Defects",
+      "raf_coefficient": 0.192,
+      "icd10_codes": ["D68.0", "D68.1", "D68.2", "D68.9"]
+    },
+    "HCC 59": {
+      "condition_name": "Major Depressive and Bipolar Disorders",
+      "raf_coefficient": 0.309,
+      "icd10_codes": ["F31.0", "F31.1", "F31.2", "F31.30", "F31.31", "F31.32", "F31.9"]
+    },
+    "HCC 87": {
+      "condition_name": "Unstable Angina",
+      "raf_coefficient": 0.231,
+      "icd10_codes": ["I20.0"]
+    },
+    "HCC 88": {
+      "condition_name": "Angina Pectoris",
+      "raf_coefficient": 0.140,
+      "icd10_codes": ["I20.1", "I20.8", "I20.9", "I25.110", "I25.111", "I25.119"]
+    },
+    "HCC 99": {
+      "condition_name": "Cerebral Atherosclerosis / Cerebrovascular Disease",
+      "raf_coefficient": 0.230,
+      "icd10_codes": ["I67.2", "I67.89", "I67.9"]
+    },
+    "HCC 100": {
+      "condition_name": "Hemiplegia / Hemiparesis",
+      "raf_coefficient": 0.481,
+      "icd10_codes": ["G81.00", "G81.01", "G81.02", "G81.03", "G81.04", "G81.10", "G81.90"]
+    },
+    "HCC 103": {
+      "condition_name": "Stroke",
+      "raf_coefficient": 0.230,
+      "icd10_codes": ["I63.00", "I63.10", "I63.20", "I63.30", "I63.40", "I63.50", "I63.9"]
+    },
+    "HCC 106": {
+      "condition_name": "Atherosclerosis of Arteries of Extremities",
+      "raf_coefficient": 0.299,
+      "icd10_codes": ["I70.201", "I70.202", "I70.209", "I70.211", "I70.212", "I70.219"]
+    },
+    "HCC 114": {
+      "condition_name": "Aspiration / Specified Bacterial Pneumonias",
+      "raf_coefficient": 0.167,
+      "icd10_codes": ["J69.0", "J15.0", "J15.1", "J15.20", "J15.211", "J15.212"]
+    },
+    "HCC 134": {
+      "condition_name": "Dialysis Status",
+      "raf_coefficient": 0.453,
+      "icd10_codes": ["Z99.2"]
+    },
+    "HCC 135": {
+      "condition_name": "Acute Renal Failure",
+      "raf_coefficient": 0.453,
+      "icd10_codes": ["N17.0", "N17.1", "N17.2", "N17.8", "N17.9"]
+    },
+    "HCC 136": {
+      "condition_name": "Chronic Kidney Disease, Stage 3",
+      "raf_coefficient": 0.069,
+      "icd10_codes": ["N18.3"]
+    },
+    "HCC 161": {
+      "condition_name": "Traumatic Amputation",
+      "raf_coefficient": 0.588,
+      "icd10_codes": ["S48.011A", "S48.012A", "S48.019A", "S48.111A", "S48.112A"]
+    },
+    "HCC 176": {
+      "condition_name": "Artificial Openings for Feeding or Elimination",
+      "raf_coefficient": 0.524,
+      "icd10_codes": ["Z93.0", "Z93.1", "Z93.2", "Z93.3", "Z93.4"]
+    },
+    "HCC 21": {
+      "condition_name": "Protein-Calorie Malnutrition",
+      "raf_coefficient": 0.455,
+      "icd10_codes": ["E43", "E44.0", "E44.1", "E46"]
+    },
+    "HCC 23": {
+      "condition_name": "Other Significant Endocrine and Metabolic Disorders",
+      "raf_coefficient": 0.250,
+      "icd10_codes": ["E03.9", "E05.00", "E05.90", "E21.0", "E21.3", "E22.0"]
+    },
+    "HCC 47": {
+      "condition_name": "Iron Deficiency and Other Anemias",
+      "raf_coefficient": 0.192,
+      "icd10_codes": ["D50.0", "D50.1", "D50.8", "D50.9", "D64.9"]
+    },
+    "HCC 138": {
+      "condition_name": "Chronic Ulcer of Skin Except Pressure",
+      "raf_coefficient": 0.535,
+      "icd10_codes": ["L97.101", "L97.109", "L97.201", "L97.209", "L97.301", "L97.309"]
+    }
+  }
+}

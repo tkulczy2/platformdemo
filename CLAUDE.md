@@ -78,7 +78,8 @@ vbc-demo/
 │
 ├── data/
 │   ├── synthetic/                     # Generated demo data (9 CSVs + 2 JSONs)
-│   ├── contracts/                     # Contract language templates
+│   ├── contracts/                     # Contract language templates + HCC mapping
+│   │   └── hcc_mapping.json          # HCC category → ICD-10 → RAF coefficients
 │   └── uploads/                       # User-uploaded data lands here
 │
 ├── generator/                         # Phase 1: Synthetic data generation
@@ -90,7 +91,8 @@ vbc-demo/
 │   ├── claims.py                      # Professional, facility, pharmacy claims
 │   ├── clinical.py                    # Labs, screenings, vitals from EHR
 │   ├── settlement.py                  # Fake payer settlement report
-│   └── discrepancies.py              # Plants intentional discrepancies
+│   ├── discrepancies.py              # Plants intentional discrepancies
+│   └── clinical_schedule.py          # Phase 5: Weekly patient schedule generation
 │
 ├── engine/                            # Phase 2: Calculation engine
 │   ├── pipeline.py                    # Orchestrates steps 1-6
@@ -103,6 +105,7 @@ vbc-demo/
 │   ├── step_4_cost.py
 │   ├── step_5_settlement.py
 │   ├── step_6_reconciliation.py
+│   ├── brief_engine.py                # Phase 5: Clinical pre-visit brief generation
 │   └── measures/                      # Quality measure implementations
 │       ├── base.py                    # BaseMeasure abstract class
 │       ├── hba1c_control.py
@@ -117,7 +120,8 @@ vbc-demo/
 │   ├── routes_contract.py             # Contract configuration
 │   ├── routes_calculate.py            # Run pipeline
 │   ├── routes_drilldown.py            # Provenance drill-down
-│   └── routes_reconciliation.py       # Reconciliation endpoints
+│   ├── routes_reconciliation.py       # Reconciliation endpoints
+│   └── routes_clinical.py            # Clinical view endpoints (Phase 5)
 │
 ├── frontend/                          # Phase 3: React UI
 │   └── src/
@@ -126,7 +130,14 @@ vbc-demo/
 │       │   ├── contract/              # Screen 2: Contract configuration
 │       │   ├── dashboard/             # Screen 3: Results dashboard
 │       │   ├── drilldown/             # Screen 4: Three-panel provenance view
-│       │   └── reconciliation/        # Screen 5: Payer comparison
+│       │   ├── reconciliation/        # Screen 5: Payer comparison
+│       │   └── clinical/             # Screen 6: Clinical panel intelligence view
+│       │       ├── ClinicalView.tsx   # Tab container with sub-routing
+│       │       ├── WeeklySchedule.tsx # 5-column Mon-Fri schedule grid
+│       │       ├── PatientBrief.tsx   # Pre-visit brief with actions/gaps/cost
+│       │       ├── BriefDrilldown.tsx # Three-panel provenance drill-down
+│       │       ├── WeekInReview.tsx   # Aggregate weekly statistics
+│       │       └── FeedbackModal.tsx  # Provider feedback interaction
 │       ├── hooks/
 │       ├── types/
 │       └── utils/
@@ -188,6 +199,29 @@ Build order within phase:
 ### Phase 4: Polish
 
 Guided demo mode, PDF export, edge case handling.
+
+### Phase 5: Panel Intelligence — Clinical View
+
+Adds a Clinical View tab demonstrating how the same calculation engine powers provider-facing pre-visit briefs. Reads pipeline output (never modifies it) and translates analytics into clinical language.
+
+Build order within phase:
+1. `data/contracts/hcc_mapping.json` — HCC category definitions with ICD-10 codes and RAF coefficients
+2. `generator/clinical_schedule.py` — Generate one-week patient schedule from pipeline output (classifies members into demo roles)
+3. `engine/brief_engine.py` — BriefEngine: read-only transformation layer that converts PipelineResult into PatientBrief dataclasses
+4. `api/routes_clinical.py` — 6 endpoints: schedule, day schedule, brief, drilldown, week summary, feedback
+5. Frontend: `ClinicalView.tsx` → `WeeklySchedule.tsx` → `PatientBrief.tsx` → `BriefDrilldown.tsx` → `WeekInReview.tsx` → `FeedbackModal.tsx`
+
+**Key design rules:**
+- BriefEngine is **read-only** — it reads StepResult objects but never modifies pipeline data
+- All clinical text uses **provider-friendly language** (no HEDIS, PMPM, numerator/denominator)
+- One **crossover patient** appears in both Clinical View and Reconciliation View, demonstrating "one engine, two audiences"
+- One **feedback patient** enables the provider feedback interaction demo
+- Priority actions use a weighted scoring model: financial impact (0.4), urgency (0.3), closability (0.2), time pressure (0.1)
+
+**Validation:** After generating schedule data:
+- `data/synthetic/weekly_schedule.json` contains 5 days (Mon-Fri) with 45-55 total appointments
+- All appointment member_ids exist in the pipeline's attributed population
+- Exactly 1 crossover_patient and 1 feedback_patient in the schedule
 
 ---
 
@@ -316,6 +350,13 @@ GET    /api/reconciliation/summary   Discrepancy summary
 GET    /api/reconciliation/detail/{category}     Discrepancy detail by category
 
 GET    /api/code/{module}/{function}  Return source code of a calculation function
+
+GET    /api/clinical/schedule           Full weekly patient schedule
+GET    /api/clinical/schedule/{date}    Single day's schedule
+GET    /api/clinical/brief/{id}         Full PatientBrief for one appointment
+GET    /api/clinical/brief/{id}/drilldown/{type}/{item}  Provenance detail for a brief item
+GET    /api/clinical/week-summary       Aggregate weekly statistics
+POST   /api/clinical/feedback/{id}      Record provider feedback on a recommendation
 ```
 
 ---

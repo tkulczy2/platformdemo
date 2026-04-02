@@ -196,3 +196,141 @@ export interface SourceCode {
   start_line: number;
   end_line: number;
 }
+
+// ---------------------------------------------------------------------------
+// Clinical View (Panel Intelligence)
+// ---------------------------------------------------------------------------
+
+export interface ScheduleWeek {
+  start_date: string;
+  end_date: string;
+  practice_name: string;
+  providers: ScheduleProvider[];
+}
+
+export interface ScheduleProvider {
+  npi: string;
+  name: string;
+  specialty: string;
+  panel_size: number;
+}
+
+export interface ScheduleDay {
+  date: string;
+  day_name: string;
+  narrative_theme: string;
+  appointments: Appointment[];
+}
+
+export interface Appointment {
+  appointment_id: string;
+  time: string;
+  member_id: string;
+  provider_npi: string;
+  appointment_type: string;
+  duration_minutes: number;
+  demo_role: string;
+  demo_notes: string;
+}
+
+export interface WeeklySchedule {
+  schedule_week: ScheduleWeek;
+  days: ScheduleDay[];
+}
+
+export interface AttributionRiskInfo {
+  status: 'stable' | 'moderate_risk' | 'high_risk' | 'new_attribution';
+  stability_score: number;
+  risk_factors: string[];
+  recommended_action: string | null;
+  competing_provider: { npi: string; visit_count: number } | null;
+  days_since_last_visit: number;
+  visits_this_year: number;
+}
+
+export interface PriorityActionInfo {
+  rank: number;
+  action_text: string;
+  reason_text: string;
+  category: string;
+  measure_id: string | null;
+  financial_impact: number | null;
+  closable_this_visit: boolean;
+}
+
+export interface QualityGapInfo {
+  measure_id: string;
+  measure_name: string;
+  action_needed: string;
+  closable_this_visit: boolean;
+  days_remaining: number;
+  financial_weight: number;
+  priority_score: number;
+}
+
+export interface HccOpportunityInfo {
+  condition_name: string;
+  icd10_code: string;
+  hcc_category: string;
+  estimated_raf_impact: number;
+  evidence_source: string;
+  last_captured_date: string;
+}
+
+export interface UtilizationEventInfo {
+  event_date: string;
+  event_type: string;
+  setting: string;
+  primary_diagnosis: string;
+  cost: number;
+  avoidable_flag: boolean;
+}
+
+export interface CostContextInfo {
+  ytd_cost: number;
+  expected_cost: number;
+  cost_status: 'below_expected' | 'at_expected' | 'above_expected';
+  cost_ratio: number;
+  top_cost_driver: string | null;
+  pmpm: number;
+  benchmark_pmpm: number;
+}
+
+export interface PatientBriefResponse {
+  appointment_id: string;
+  member_id: string;
+  member_demographics: Record<string, unknown>;
+  appointment_date: string;
+  appointment_time: string;
+  provider_name: string;
+  provider_npi: string;
+  contract_name: string;
+  performance_period_end: string;
+  days_remaining_in_period: number;
+  attribution_risk: AttributionRiskInfo;
+  priority_actions: PriorityActionInfo[];
+  quality_gaps: QualityGapInfo[];
+  total_gap_count: number;
+  closable_this_visit_count: number;
+  hcc_opportunities: HccOpportunityInfo[];
+  recent_utilization: UtilizationEventInfo[];
+  cost_context: CostContextInfo;
+  demo_role: string;
+  is_crossover_patient: boolean;
+  crossover_discrepancy: Record<string, unknown> | null;
+  is_feedback_patient: boolean;
+  feedback?: Record<string, string>;
+}
+
+export interface WeekSummary {
+  total_encounters: number;
+  attributed_encounters: number;
+  total_gaps_addressable: number;
+  closable_this_week: number;
+  patients_with_gaps: number;
+  at_risk_patients: number;
+  measure_gaps: Record<string, { measure_name: string; gap_count: number; closable_count: number }>;
+  cost_summary: { average_ytd_cost: number; high_cost_patients: number; benchmark_pmpm: number };
+  crossover: { exists: boolean; member_id: string | null; discrepancy: Record<string, unknown> | null };
+  feedback: Array<Record<string, string>>;
+}

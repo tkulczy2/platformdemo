@@ -229,6 +229,46 @@ export function exportPipelineJson() {
 }
 
 // ---------------------------------------------------------------------------
+// Clinical View endpoints
+// ---------------------------------------------------------------------------
+
+export async function getClinicalSchedule() {
+  return request<WeeklyScheduleResponse>('/api/clinical/schedule');
+}
+
+export async function getClinicalDaySchedule(date: string) {
+  return request<DayScheduleResponse>(`/api/clinical/schedule/${date}`);
+}
+
+export async function getClinicalBrief(appointmentId: string) {
+  return request<PatientBriefApiResponse>(`/api/clinical/brief/${appointmentId}`);
+}
+
+export async function getClinicalBriefDrilldown(
+  appointmentId: string,
+  itemType: string,
+  itemId: string,
+) {
+  return request<BriefDrilldownResponse>(
+    `/api/clinical/brief/${appointmentId}/drilldown/${itemType}/${itemId}`,
+  );
+}
+
+export async function getClinicalWeekSummary() {
+  return request<WeekSummaryResponse>('/api/clinical/week-summary');
+}
+
+export async function submitClinicalFeedback(
+  appointmentId: string,
+  feedback: { item_type: string; item_id: string; feedback: string; note?: string },
+) {
+  return request<{ status: string }>(`/api/clinical/feedback/${appointmentId}`, {
+    method: 'POST',
+    body: JSON.stringify(feedback),
+  });
+}
+
+// ---------------------------------------------------------------------------
 // Response type aliases (light wrappers -- full types in types/index.ts)
 // ---------------------------------------------------------------------------
 
@@ -334,4 +374,33 @@ interface SourceCodeResponse {
   source: string;
   start_line: number;
   end_line: number;
+}
+
+interface WeeklyScheduleResponse {
+  schedule_week: { start_date: string; end_date: string; practice_name: string; providers: Array<Record<string, unknown>> };
+  days: Array<Record<string, unknown>>;
+}
+
+interface DayScheduleResponse {
+  date: string;
+  day_name: string;
+  narrative_theme: string;
+  appointments: Array<Record<string, unknown>>;
+}
+
+interface PatientBriefApiResponse extends Record<string, unknown> {
+  appointment_id: string;
+  member_id: string;
+}
+
+interface BriefDrilldownResponse {
+  item_type: string;
+  item_id: string;
+  detail: Record<string, unknown>;
+  provenance: Record<string, unknown>;
+  clinical_question: string;
+}
+
+interface WeekSummaryResponse extends Record<string, unknown> {
+  total_encounters: number;
 }

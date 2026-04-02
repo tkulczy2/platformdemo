@@ -5,6 +5,7 @@ import ContractEditor from '@/components/contract/ContractEditor';
 import ResultsDashboard from '@/components/dashboard/ResultsDashboard';
 import DrilldownView from '@/components/drilldown/DrilldownView';
 import ReconciliationView from '@/components/reconciliation/ReconciliationView';
+import ClinicalView from '@/components/clinical/ClinicalView';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/drilldown/:stepNum/:memberId" element={<DrilldownView />} />
         <Route path="/drilldown/metric/:metricName" element={<DrilldownView />} />
         <Route path="/reconciliation" element={<ReconciliationView />} />
+        <Route path="/clinical/*" element={<ClinicalView />} />
       </Route>
     </Routes>
   );

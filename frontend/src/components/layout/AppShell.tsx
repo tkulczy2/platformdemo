@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { label: 'Contract', path: '/contract' },
   { label: 'Dashboard', path: '/dashboard' },
   { label: 'Reconciliation', path: '/reconciliation' },
+  { label: 'Clinical View', path: '/clinical' },
 ];
 
 export default function AppShell() {
