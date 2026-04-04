@@ -1,0 +1,117 @@
+{
+  "date": "2025-10-20",
+  "day_name": "Monday",
+  "narrative_theme": "Baseline Day",
+  "appointments": [
+    {
+      "appointment_id": "APT-001",
+      "time": "08:30",
+      "member_id": "MBR-000021",
+      "provider_npi": "1679478607",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "routine_low_gap",
+      "demo_notes": "Routine visit, 0-1 open gaps. Establishes baseline brief experience.",
+      "_date": "2025-10-20"
+    },
+    {
+      "appointment_id": "APT-002",
+      "time": "08:50",
+      "member_id": "MBR-000451",
+      "provider_npi": "1462172927",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "routine_low_gap",
+      "demo_notes": "Routine visit, 0-1 open gaps. Establishes baseline brief experience.",
+      "_date": "2025-10-20"
+    },
+    {
+      "appointment_id": "APT-003",
+      "time": "09:20",
+      "member_id": "MBR-000295",
+      "provider_npi": "1590886206",
+      "appointment_type": "Annual Wellness",
+      "duration_minutes": 20,
+      "demo_role": "routine_low_gap",
+      "demo_notes": "Routine visit, 0-1 open gaps. Establishes baseline brief experience.",
+      "_date": "2025-10-20"
+    },
+    {
+      "appointment_id": "APT-004",
+      "time": "09:50",
+      "member_id": "MBR-000936",
+      "provider_npi": "1679478607",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "routine_low_gap",
+      "demo_notes": "Routine visit, 0-1 open gaps. Establishes baseline brief experience.",
+      "_date": "2025-10-20"
+    },
+    {
+      "appointment_id": "APT-005",
+      "time": "10:10",
+      "member_id": "MBR-000438",
+      "provider_npi": "1462172927",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "routine_low_gap",
+      "demo_notes": "Routine visit, 0-1 open gaps. Establishes baseline brief experience.",
+      "_date": "2025-10-20"
+    },
+    {
+      "appointment_id": "APT-006",
+      "time": "10:30",
+      "member_id": "MBR-000630",
+      "provider_npi": "1590886206",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 30,
+      "demo_role": "routine_low_gap",
+      "demo_notes": "Routine visit, 0-1 open gaps. Establishes baseline brief experience.",
+      "_date": "2025-10-20"
+    },
+    {
+      "appointment_id": "APT-007",
+      "time": "10:50",
+      "member_id": "MBR-000322",
+      "provider_npi": "1679478607",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "moderate_gap",
+      "demo_notes": "2-3 open quality gaps. Shows prioritization within the brief.",
+      "_date": "2025-10-20"
+    },
+    {
+      "appointment_id": "APT-008",
+      "time": "11:20",
+      "member_id": "MBR-000599",
+      "provider_npi": "1462172927",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "moderate_gap",
+      "demo_notes": "2-3 open quality gaps. Shows prioritization within the brief.",
+      "_date": "2025-10-20"
+    },
+    {
+      "appointment_id": "APT-009",
+      "time": "11:40",
+      "member_id": "MBR-000087",
+      "provider_npi": "1590886206",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 30,
+      "demo_role": "moderate_gap",
+      "demo_notes": "2-3 open quality gaps. Shows prioritization within the brief.",
+      "_date": "2025-10-20"
+    },
+    {
+      "appointment_id": "APT-010",
+      "time": "13:00",
+      "member_id": "MBR-000146",
+      "provider_npi": "1679478607",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "hcc_opportunity",
+      "demo_notes": "No open quality gaps but HCC recapture opportunity.",
+      "_date": "2025-10-20"
+    }
+  ]
+}

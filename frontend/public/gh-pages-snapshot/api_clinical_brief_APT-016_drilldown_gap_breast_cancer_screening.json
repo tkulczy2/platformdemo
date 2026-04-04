@@ -1,0 +1,26 @@
+{
+  "item_type": "gap",
+  "item_id": "breast_cancer_screening",
+  "detail": {
+    "measure_id": "breast_cancer_screening",
+    "measure_name": "Breast Cancer Screening (Mammogram)",
+    "action_needed": "Order screening mammogram",
+    "closable_this_visit": false,
+    "days_remaining": 71,
+    "financial_weight": 0.2,
+    "priority_score": 0.502,
+    "provenance": {
+      "step": "quality",
+      "step_number": 3,
+      "member_id": "MBR-000903",
+      "measure_id": "breast_cancer_screening"
+    }
+  },
+  "provenance": {
+    "step": "quality",
+    "step_number": 3,
+    "member_id": "MBR-000903",
+    "measure_id": "breast_cancer_screening"
+  },
+  "clinical_question": "Why is Breast Cancer Screening (Mammogram) showing as due for this patient?"
+}

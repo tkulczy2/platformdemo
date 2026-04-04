@@ -1,0 +1,1030 @@
+{
+  "provider": {
+    "provider_npi": "1501118737",
+    "provider_name": "Miles, Frances C",
+    "specialty": "Family Medicine",
+    "current_panel_size": 90,
+    "jan_panel_size": 90,
+    "net_change": 0,
+    "net_change_pct": 0.0,
+    "churn_rate_annualized": 0.0222,
+    "members_at_risk": 14,
+    "financial_exposure": 5580.13,
+    "quality_impact": {},
+    "monthly_trend": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      89,
+      90,
+      91,
+      92,
+      91,
+      91,
+      90
+    ],
+    "cascade_flag": false
+  },
+  "change_events": [
+    {
+      "event_id": "CHG-00045",
+      "member_id": "MBR-000131",
+      "event_month": "2025-06",
+      "event_type": "lost_attribution",
+      "change_classification": "enrollment_gap",
+      "prior_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "new_provider": null,
+      "reason": "Patient disenrolled from Medicare FFS \u2014 possible transition to Medicare Advantage",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 394.25,
+        "lost_quality_bonus_contribution": 89.51,
+        "total_impact": 483.76
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "intervention": {
+        "window_remaining_months": 6,
+        "recommended_action": "Contact member to verify enrollment status and schedule follow-up",
+        "estimated_intervention_cost": 150.0,
+        "estimated_recovery_probability": 0.6,
+        "roi_if_recovered": 290.26
+      },
+      "member_risk_score": 2.13,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000131"
+      }
+    },
+    {
+      "event_id": "CHG-00054",
+      "member_id": "MBR-000723",
+      "event_month": "2025-07",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 371.17,
+        "lost_quality_bonus_contribution": 84.26,
+        "total_impact": 455.43
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 2.01,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000723"
+      }
+    },
+    {
+      "event_id": "CHG-00065",
+      "member_id": "MBR-000760",
+      "event_month": "2025-08",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 206.98,
+        "lost_quality_bonus_contribution": 46.99,
+        "total_impact": 253.97
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.12,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000760"
+      }
+    },
+    {
+      "event_id": "CHG-00072",
+      "member_id": "MBR-000688",
+      "event_month": "2025-09",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 181.06,
+        "lost_quality_bonus_contribution": 41.11,
+        "total_impact": 222.16
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.98,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000688"
+      }
+    },
+    {
+      "event_id": "CHG-00075",
+      "member_id": "MBR-000400",
+      "event_month": "2025-10",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "new_provider": {
+        "npi": "9362950628",
+        "name": "Dr. Jennifer Patterson"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 3 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 122.77,
+        "lost_quality_bonus_contribution": 27.87,
+        "total_impact": 150.64
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "intervention": {
+        "window_remaining_months": 2,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.45,
+        "roi_if_recovered": 67.79
+      },
+      "member_risk_score": 0.66,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000400"
+      }
+    },
+    {
+      "event_id": "CHG-00099",
+      "member_id": "MBR-000720",
+      "event_month": "2025-12",
+      "event_type": "reassignment",
+      "change_classification": "reassignment_within_aco",
+      "prior_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "new_provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      },
+      "reason": "Patient's visit pattern shifted plurality to a different ACO provider",
+      "financial_impact": {
+        "lost_tcoc_contribution": 0,
+        "lost_shared_savings_contribution": 0,
+        "lost_quality_bonus_contribution": 0,
+        "total_impact": 0
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.2,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000720"
+      }
+    }
+  ],
+  "at_risk_members": [
+    {
+      "rank": 14,
+      "member_id": "MBR-000686",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1238860542"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1238860542"
+      ],
+      "competing_provider": {
+        "npi": "1238860542",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 7,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 28,
+      "member_id": "MBR-000580",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1238860542"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1238860542"
+      ],
+      "competing_provider": {
+        "npi": "1238860542",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 24,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "breast_cancer_screening",
+          "measure_name": "Breast Cancer Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 30,
+      "member_id": "MBR-000008",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1429978390"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1429978390"
+      ],
+      "competing_provider": {
+        "npi": "1429978390",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 34,
+      "financial_impact_if_lost": {
+        "tcoc": 117806.51,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "breast_cancer_screening",
+          "measure_name": "Breast Cancer Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 36,
+      "member_id": "MBR-000530",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1608049903"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1608049903"
+      ],
+      "competing_provider": {
+        "npi": "1608049903",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 9,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 38,
+      "member_id": "MBR-000880",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1522600229"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1522600229"
+      ],
+      "competing_provider": {
+        "npi": "1522600229",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 22,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 39,
+      "member_id": "MBR-000426",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1304218413"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1304218413"
+      ],
+      "competing_provider": {
+        "npi": "1304218413",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 60,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "breast_cancer_screening",
+          "measure_name": "Breast Cancer Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 48,
+      "member_id": "MBR-000392",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1304218413"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1304218413"
+      ],
+      "competing_provider": {
+        "npi": "1304218413",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 34,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 54,
+      "member_id": "MBR-000262",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1429978390"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1429978390"
+      ],
+      "competing_provider": {
+        "npi": "1429978390",
+        "visit_count": 2
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 22,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 61,
+      "member_id": "MBR-000945",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1783909496"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1783909496"
+      ],
+      "competing_provider": {
+        "npi": "1783909496",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 22,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 66,
+      "member_id": "MBR-000644",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "attribution_risk": {
+        "status": "high_risk",
+        "stability_score": 0.3,
+        "risk_factors": [
+          "Competing visits with provider 1275174836"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1275174836"
+      ],
+      "competing_provider": {
+        "npi": "1275174836",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 21,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "critical",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 95,
+      "member_id": "MBR-000358",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1548012387"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1548012387"
+      ],
+      "competing_provider": {
+        "npi": "1548012387",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 21,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 100,
+      "member_id": "MBR-000702",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1304218413"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1304218413"
+      ],
+      "competing_provider": {
+        "npi": "1304218413",
+        "visit_count": 2
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 35,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "breast_cancer_screening",
+          "measure_name": "Breast Cancer Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 109,
+      "member_id": "MBR-000219",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "attribution_risk": {
+        "status": "high_risk",
+        "stability_score": 0.3,
+        "risk_factors": [
+          "Competing visits with provider 1216929354"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1216929354"
+      ],
+      "competing_provider": {
+        "npi": "1216929354",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 15,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "breast_cancer_screening",
+          "measure_name": "Breast Cancer Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "critical",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 111,
+      "member_id": "MBR-000939",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1393242821"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1393242821"
+      ],
+      "competing_provider": {
+        "npi": "1393242821",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 14,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    }
+  ]
+}

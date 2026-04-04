@@ -1,0 +1,29 @@
+{
+  "item_type": "attribution",
+  "item_id": "attribution_risk",
+  "detail": {
+    "status": "moderate_risk",
+    "stability_score": 0.6,
+    "risk_factors": [
+      "Significant visits with providers outside your practice"
+    ],
+    "recommended_action": "Schedule a follow-up visit within 30 days to strengthen the care relationship",
+    "competing_provider": {
+      "npi": "1157435530",
+      "visit_count": 1
+    },
+    "days_since_last_visit": 0,
+    "visits_this_year": 8,
+    "provenance": {
+      "step": "attribution",
+      "step_number": 2,
+      "member_id": "MBR-000464"
+    }
+  },
+  "provenance": {
+    "step": "attribution",
+    "step_number": 2,
+    "member_id": "MBR-000464"
+  },
+  "clinical_question": "What is this patient's panel assignment status?"
+}

@@ -1,0 +1,49 @@
+{
+  "total_encounters": 52,
+  "attributed_encounters": 52,
+  "total_gaps_addressable": 53,
+  "closable_this_week": 21,
+  "patients_with_gaps": 32,
+  "at_risk_patients": 5,
+  "measure_gaps": {
+    "depression_screening": {
+      "measure_name": "Depression Screening (PHQ-9)",
+      "gap_count": 13,
+      "closable_count": 13
+    },
+    "hba1c_poor_control": {
+      "measure_name": "Diabetes Blood Sugar Control (HbA1c)",
+      "gap_count": 8,
+      "closable_count": 8
+    },
+    "breast_cancer_screening": {
+      "measure_name": "Breast Cancer Screening (Mammogram)",
+      "gap_count": 10,
+      "closable_count": 0
+    },
+    "colorectal_screening": {
+      "measure_name": "Colorectal Cancer Screening",
+      "gap_count": 22,
+      "closable_count": 0
+    }
+  },
+  "cost_summary": {
+    "average_ytd_cost": 147853.91,
+    "high_cost_patients": 2,
+    "benchmark_pmpm": 1187.0
+  },
+  "crossover": {
+    "exists": true,
+    "member_id": "MBR-000473",
+    "discrepancy": {
+      "discrepancy_id": "DISC-002",
+      "category": "quality",
+      "metric": "quality_hba1c_poor_control",
+      "metric_label": "HbA1c Poor Control Rate",
+      "platform_value": 80.69,
+      "payer_value": 23.9,
+      "description": "Your organization's calculation includes this patient in the HbA1c Poor Control Rate measure. The payer's settlement report disagrees. This discrepancy is documented in the Settlement Reconciliation view."
+    }
+  },
+  "feedback": []
+}

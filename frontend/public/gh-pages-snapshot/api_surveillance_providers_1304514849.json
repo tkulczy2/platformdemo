@@ -1,0 +1,516 @@
+{
+  "provider": {
+    "provider_npi": "1304514849",
+    "provider_name": "Hoffman, Jennifer W",
+    "specialty": "Family Medicine",
+    "current_panel_size": 31,
+    "jan_panel_size": 27,
+    "net_change": 4,
+    "net_change_pct": 0.1481,
+    "churn_rate_annualized": 0.0345,
+    "members_at_risk": 5,
+    "financial_exposure": 1240.0,
+    "quality_impact": {},
+    "monthly_trend": [
+      27,
+      27,
+      29,
+      29,
+      29,
+      30,
+      30,
+      30,
+      30,
+      29,
+      29,
+      31
+    ],
+    "cascade_flag": false
+  },
+  "change_events": [
+    {
+      "event_id": "CHG-00017",
+      "member_id": "MBR-000623",
+      "event_month": "2025-03",
+      "event_type": "reassignment",
+      "change_classification": "reassignment_within_aco",
+      "prior_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "new_provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      },
+      "reason": "Patient's visit pattern shifted plurality to a different ACO provider",
+      "financial_impact": {
+        "lost_tcoc_contribution": 0,
+        "lost_shared_savings_contribution": 0,
+        "lost_quality_bonus_contribution": 0,
+        "total_impact": 0
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 9,
+        "recommended_action": "Coordinate care transition between ACO providers",
+        "estimated_intervention_cost": 100.0,
+        "estimated_recovery_probability": 0.85,
+        "roi_if_recovered": 0.0
+      },
+      "member_risk_score": 1.31,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000623"
+      }
+    },
+    {
+      "event_id": "CHG-00019",
+      "member_id": "MBR-000971",
+      "event_month": "2025-03",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 182.17,
+        "lost_quality_bonus_contribution": 41.36,
+        "total_impact": 223.53
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.98,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000971"
+      }
+    },
+    {
+      "event_id": "CHG-00046",
+      "member_id": "MBR-000601",
+      "event_month": "2025-06",
+      "event_type": "reassignment",
+      "change_classification": "reassignment_within_aco",
+      "prior_provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      },
+      "new_provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      },
+      "reason": "Patient's visit pattern shifted plurality to a different ACO provider",
+      "financial_impact": {
+        "lost_tcoc_contribution": 0,
+        "lost_shared_savings_contribution": 0,
+        "lost_quality_bonus_contribution": 0,
+        "total_impact": 0
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 6,
+        "recommended_action": "Coordinate care transition between ACO providers",
+        "estimated_intervention_cost": 100.0,
+        "estimated_recovery_probability": 0.85,
+        "roi_if_recovered": 0.0
+      },
+      "member_risk_score": 1.35,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000601"
+      }
+    },
+    {
+      "event_id": "CHG-00077",
+      "member_id": "MBR-000190",
+      "event_month": "2025-10",
+      "event_type": "lost_attribution",
+      "change_classification": "enrollment_gap",
+      "prior_provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      },
+      "new_provider": null,
+      "reason": "Patient disenrolled from Medicare FFS \u2014 possible transition to Medicare Advantage",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 216.39,
+        "lost_quality_bonus_contribution": 49.13,
+        "total_impact": 265.52
+      },
+      "quality_measures_affected": [
+        "Does not meet denominator criteria for Diabetes: HbA1c Poor Control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Does not meet denominator criteria for Colorectal Cancer Screening",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 2,
+        "recommended_action": "Contact member to verify enrollment status and schedule follow-up",
+        "estimated_intervention_cost": 150.0,
+        "estimated_recovery_probability": 0.6,
+        "roi_if_recovered": 159.31
+      },
+      "member_risk_score": 1.17,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000190"
+      }
+    },
+    {
+      "event_id": "CHG-00099",
+      "member_id": "MBR-000720",
+      "event_month": "2025-12",
+      "event_type": "reassignment",
+      "change_classification": "reassignment_within_aco",
+      "prior_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "new_provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      },
+      "reason": "Patient's visit pattern shifted plurality to a different ACO provider",
+      "financial_impact": {
+        "lost_tcoc_contribution": 0,
+        "lost_shared_savings_contribution": 0,
+        "lost_quality_bonus_contribution": 0,
+        "total_impact": 0
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.2,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000720"
+      }
+    },
+    {
+      "event_id": "CHG-00100",
+      "member_id": "MBR-000181",
+      "event_month": "2025-12",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 264.61,
+        "lost_quality_bonus_contribution": 60.07,
+        "total_impact": 324.68
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.43,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000181"
+      }
+    }
+  ],
+  "at_risk_members": [
+    {
+      "rank": 2,
+      "member_id": "MBR-000971",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      },
+      "attribution_risk": {
+        "status": "high_risk",
+        "stability_score": 0.3,
+        "risk_factors": [
+          "Fewer than 2 visits with attributed provider this year"
+        ]
+      },
+      "risk_factors": [
+        "Fewer than 2 visits with attributed provider this year"
+      ],
+      "competing_provider": null,
+      "days_since_last_visit": 0,
+      "visits_this_year": 0,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [],
+      "recommended_action": "Phone outreach to schedule follow-up appointment",
+      "intervention_cost_estimate": 150.0,
+      "recovery_probability": 0.8,
+      "roi_estimate": 1.21,
+      "days_remaining_in_period": 73,
+      "urgency": "critical",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 19,
+      "member_id": "MBR-000488",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1216929354"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1216929354"
+      ],
+      "competing_provider": {
+        "npi": "1216929354",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 65,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "breast_cancer_screening",
+          "measure_name": "Breast Cancer Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 104,
+      "member_id": "MBR-000341",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1816111976"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1816111976"
+      ],
+      "competing_provider": {
+        "npi": "1816111976",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 35,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 110,
+      "member_id": "MBR-000265",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1238860542"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1238860542"
+      ],
+      "competing_provider": {
+        "npi": "1238860542",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 13,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 116,
+      "member_id": "MBR-000870",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": []
+      },
+      "risk_factors": [],
+      "competing_provider": null,
+      "days_since_last_visit": 0,
+      "visits_this_year": 25,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule care coordination visit",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.65,
+      "roi_estimate": 0.59,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    }
+  ]
+}

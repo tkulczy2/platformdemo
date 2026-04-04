@@ -1,0 +1,42 @@
+{
+  "hba1c_poor_control": {
+    "measure_name": "Diabetes: HbA1c Poor Control",
+    "current_rate": 80.69,
+    "rate_if_at_risk_lost": 82.72,
+    "rate_change": 2.03,
+    "members_at_stake": 91,
+    "eligible_count": 813
+  },
+  "controlling_bp": {
+    "measure_name": "Controlling High Blood Pressure",
+    "current_rate": 50.0,
+    "rate_if_at_risk_lost": 100.0,
+    "rate_change": 50.0,
+    "members_at_stake": 1,
+    "eligible_count": 8
+  },
+  "breast_cancer_screening": {
+    "measure_name": "Breast Cancer Screening",
+    "current_rate": 69.57,
+    "rate_if_at_risk_lost": 93.28,
+    "rate_change": 23.71,
+    "members_at_stake": 34,
+    "eligible_count": 368
+  },
+  "colorectal_screening": {
+    "measure_name": "Colorectal Cancer Screening",
+    "current_rate": 62.85,
+    "rate_if_at_risk_lost": 64.69,
+    "rate_change": 1.84,
+    "members_at_stake": 69,
+    "eligible_count": 821
+  },
+  "depression_screening": {
+    "measure_name": "Depression Screening and Follow-Up",
+    "current_rate": 59.71,
+    "rate_if_at_risk_lost": 68.77,
+    "rate_change": 9.06,
+    "members_at_stake": 46,
+    "eligible_count": 479
+  }
+}

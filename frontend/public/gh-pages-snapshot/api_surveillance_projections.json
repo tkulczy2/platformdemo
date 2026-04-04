@@ -1,0 +1,45 @@
+[
+  {
+    "scenario_name": "current_trajectory",
+    "projected_attributed_count": 981,
+    "projected_churn_rate": 0.048,
+    "projected_shared_savings": 512082.0,
+    "projected_quality_composite": 52.29,
+    "projected_quality_bonus": 51208.2,
+    "projected_total_settlement": 563290.2,
+    "key_assumptions": [
+      "Churn continues at trailing 3-month rate (0.4%/month)",
+      "No additional retention interventions",
+      "Quality composite holds at 5229.0%"
+    ]
+  },
+  {
+    "scenario_name": "with_intervention",
+    "projected_attributed_count": 1012,
+    "projected_churn_rate": 0.0336,
+    "projected_shared_savings": 528264.0,
+    "projected_quality_composite": 1.0,
+    "projected_quality_bonus": 52826.4,
+    "projected_total_settlement": 581090.4,
+    "key_assumptions": [
+      "Execute retention actions for 32 critical/high urgency members",
+      "Total intervention cost: $7,800.00",
+      "Expected recoveries: 31 members based on probability-weighted estimates",
+      "Churn rate reduced by 30% through targeted outreach"
+    ]
+  },
+  {
+    "scenario_name": "worst_case",
+    "projected_attributed_count": 860,
+    "projected_churn_rate": 0.1331,
+    "projected_shared_savings": 448920.0,
+    "projected_quality_composite": 52.24,
+    "projected_quality_bonus": 44892.0,
+    "projected_total_settlement": 493812.0,
+    "key_assumptions": [
+      "All 132 at-risk members are lost",
+      "No recoveries",
+      "Quality composite drops by ~5 points due to numerator losses"
+    ]
+  }
+]

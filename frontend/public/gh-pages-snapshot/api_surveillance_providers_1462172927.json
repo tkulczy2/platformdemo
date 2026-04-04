@@ -1,0 +1,360 @@
+{
+  "provider": {
+    "provider_npi": "1462172927",
+    "provider_name": "Sanchez, Donald D",
+    "specialty": "Family Medicine",
+    "current_panel_size": 14,
+    "jan_panel_size": 15,
+    "net_change": -1,
+    "net_change_pct": -0.0667,
+    "churn_rate_annualized": 0.1379,
+    "members_at_risk": 4,
+    "financial_exposure": 992.0,
+    "quality_impact": {},
+    "monthly_trend": [
+      15,
+      14,
+      13,
+      13,
+      13,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14
+    ],
+    "cascade_flag": false
+  },
+  "change_events": [
+    {
+      "event_id": "CHG-00001",
+      "member_id": "MBR-000483",
+      "event_month": "2025-02",
+      "event_type": "lost_attribution",
+      "change_classification": "data_lag",
+      "prior_provider": {
+        "npi": "1462172927",
+        "name": "Sanchez, Donald D"
+      },
+      "new_provider": null,
+      "reason": "Attribution change due to late-arriving claims data",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 226.18,
+        "lost_quality_bonus_contribution": 51.35,
+        "total_impact": 277.53
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "No qualifying colorectal screening found",
+        "Depression screening completed during performance year"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Mammogram completed within 27 months",
+        "Depression screening completed during performance year"
+      ],
+      "intervention": null,
+      "member_risk_score": 1.22,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000483"
+      }
+    },
+    {
+      "event_id": "CHG-00013",
+      "member_id": "MBR-000927",
+      "event_month": "2025-03",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1462172927",
+        "name": "Sanchez, Donald D"
+      },
+      "new_provider": {
+        "npi": "9896233790",
+        "name": "Dr. Patricia Blackwell"
+      },
+      "reason": "Patient visited Dr. Patricia Blackwell (Blackwell Medical Group) 3 times in Q4 2024/Q1 2025, exceeding ACO PCP visit count",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 205.81,
+        "lost_quality_bonus_contribution": 46.73,
+        "total_impact": 252.54
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "BP 167.0/93.0 \u2265 140/90 \u2014 uncontrolled",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "No qualifying colorectal screening found",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control"
+      ],
+      "intervention": {
+        "window_remaining_months": 9,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.65,
+        "roi_if_recovered": 164.15
+      },
+      "member_risk_score": 1.11,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000927"
+      }
+    },
+    {
+      "event_id": "CHG-00042",
+      "member_id": "MBR-000927",
+      "event_month": "2025-06",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1462172927",
+        "name": "Sanchez, Donald D"
+      },
+      "reason": "Retention visit in May re-established plurality with ACO PCP. Intervention cost: $250. Attribution recovered.",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 205.81,
+        "lost_quality_bonus_contribution": 46.73,
+        "total_impact": 252.54
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "BP 167.0/93.0 \u2265 140/90 \u2014 uncontrolled",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "No qualifying colorectal screening found",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control"
+      ],
+      "intervention": null,
+      "member_risk_score": 1.11,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000927"
+      }
+    }
+  ],
+  "at_risk_members": [
+    {
+      "rank": 6,
+      "member_id": "MBR-000414",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1462172927",
+        "name": "Sanchez, Donald D"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1168708867"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1168708867"
+      ],
+      "competing_provider": {
+        "npi": "1168708867",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 54,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 79,
+      "member_id": "MBR-000393",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1462172927",
+        "name": "Sanchez, Donald D"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1770285939"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1770285939"
+      ],
+      "competing_provider": {
+        "npi": "1770285939",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 14,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 124,
+      "member_id": "MBR-000093",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1462172927",
+        "name": "Sanchez, Donald D"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": []
+      },
+      "risk_factors": [],
+      "competing_provider": null,
+      "days_since_last_visit": 0,
+      "visits_this_year": 19,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule care coordination visit",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.65,
+      "roi_estimate": 0.59,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 127,
+      "member_id": "MBR-000927",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1462172927",
+        "name": "Sanchez, Donald D"
+      },
+      "attribution_risk": {
+        "status": "high_risk",
+        "stability_score": 0.3,
+        "risk_factors": []
+      },
+      "risk_factors": [],
+      "competing_provider": null,
+      "days_since_last_visit": 0,
+      "visits_this_year": 3,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule care coordination visit",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.65,
+      "roi_estimate": 0.59,
+      "days_remaining_in_period": 73,
+      "urgency": "critical",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    }
+  ]
+}

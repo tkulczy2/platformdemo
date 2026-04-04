@@ -6,6 +6,7 @@ import ResultsDashboard from '@/components/dashboard/ResultsDashboard';
 import DrilldownView from '@/components/drilldown/DrilldownView';
 import ReconciliationView from '@/components/reconciliation/ReconciliationView';
 import ClinicalView from '@/components/clinical/ClinicalView';
+import SurveillanceView from '@/components/surveillance/SurveillanceView';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/drilldown/metric/:metricName" element={<DrilldownView />} />
         <Route path="/reconciliation" element={<ReconciliationView />} />
         <Route path="/clinical/*" element={<ClinicalView />} />
+        <Route path="/surveillance/*" element={<SurveillanceView />} />
       </Route>
     </Routes>
   );

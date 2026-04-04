@@ -1,0 +1,26 @@
+{
+  "item_type": "priority_action",
+  "item_id": "1",
+  "detail": {
+    "rank": 1,
+    "action_text": "Complete colorectal cancer screening (FIT kit or colonoscopy referral)",
+    "reason_text": "Closes 1 of 1 remaining care actions",
+    "category": "gap_closure",
+    "measure_id": "colorectal_screening",
+    "financial_impact": null,
+    "closable_this_visit": false,
+    "provenance": {
+      "step": "quality",
+      "step_number": 3,
+      "member_id": "MBR-000423",
+      "measure_id": "colorectal_screening"
+    }
+  },
+  "provenance": {
+    "step": "quality",
+    "step_number": 3,
+    "member_id": "MBR-000423",
+    "measure_id": "colorectal_screening"
+  },
+  "clinical_question": "Why is 'Complete colorectal cancer screening (FIT kit or colonoscopy referral)' the #1 priority?"
+}

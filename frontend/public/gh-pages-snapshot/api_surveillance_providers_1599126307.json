@@ -1,0 +1,163 @@
+{
+  "provider": {
+    "provider_npi": "1599126307",
+    "provider_name": "Pacheco, Adam F",
+    "specialty": "Family Medicine",
+    "current_panel_size": 32,
+    "jan_panel_size": 31,
+    "net_change": 1,
+    "net_change_pct": 0.0323,
+    "churn_rate_annualized": 0.0,
+    "members_at_risk": 2,
+    "financial_exposure": 496.0,
+    "quality_impact": {},
+    "monthly_trend": [
+      31,
+      31,
+      31,
+      31,
+      31,
+      31,
+      31,
+      32,
+      32,
+      32,
+      32,
+      32
+    ],
+    "cascade_flag": false
+  },
+  "change_events": [
+    {
+      "event_id": "CHG-00064",
+      "member_id": "MBR-000146",
+      "event_month": "2025-08",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1599126307",
+        "name": "Pacheco, Adam F"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 119.75,
+        "lost_quality_bonus_contribution": 27.19,
+        "total_impact": 146.94
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.65,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000146"
+      }
+    }
+  ],
+  "at_risk_members": [
+    {
+      "rank": 51,
+      "member_id": "MBR-000065",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1599126307",
+        "name": "Pacheco, Adam F"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1275174836"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1275174836"
+      ],
+      "competing_provider": {
+        "npi": "1275174836",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 26,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": true,
+      "next_appointment_date": "2025-10-23"
+    },
+    {
+      "rank": 83,
+      "member_id": "MBR-000850",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1599126307",
+        "name": "Pacheco, Adam F"
+      },
+      "attribution_risk": {
+        "status": "high_risk",
+        "stability_score": 0.3,
+        "risk_factors": [
+          "Competing visits with provider 1702832594"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1702832594"
+      ],
+      "competing_provider": {
+        "npi": "1702832594",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 27,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "critical",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    }
+  ]
+}

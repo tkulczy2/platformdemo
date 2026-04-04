@@ -1,0 +1,236 @@
+{
+  "member": {
+    "rank": 131,
+    "member_id": "MBR-000542",
+    "member_demographics": {
+      "age": 0,
+      "sex": ""
+    },
+    "attributed_provider": {
+      "npi": "1590886206",
+      "name": "Rhodes, Patricia C"
+    },
+    "attribution_risk": {
+      "status": "moderate_risk",
+      "stability_score": 0.5,
+      "risk_factors": [
+        "Competing visits with provider 1248706171",
+        "Fewer than 2 visits with attributed provider this year"
+      ]
+    },
+    "risk_factors": [
+      "Competing visits with provider 1248706171",
+      "Fewer than 2 visits with attributed provider this year"
+    ],
+    "competing_provider": {
+      "npi": "1248706171",
+      "visit_count": 14
+    },
+    "days_since_last_visit": 0,
+    "visits_this_year": 0,
+    "financial_impact_if_lost": {
+      "tcoc": 12400,
+      "shared_savings": 185.0,
+      "quality_bonus": 42.0,
+      "total": 227.0
+    },
+    "quality_measures_at_stake": [
+      {
+        "measure_id": "hba1c_poor_control",
+        "measure_name": "Hba1C Poor Control",
+        "currently_met": true,
+        "rate_impact": -0.001
+      },
+      {
+        "measure_id": "breast_cancer_screening",
+        "measure_name": "Breast Cancer Screening",
+        "currently_met": true,
+        "rate_impact": -0.001
+      },
+      {
+        "measure_id": "colorectal_screening",
+        "measure_name": "Colorectal Screening",
+        "currently_met": true,
+        "rate_impact": -0.001
+      }
+    ],
+    "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+    "intervention_cost_estimate": 250.0,
+    "recovery_probability": 0.45,
+    "roi_estimate": 0.41,
+    "days_remaining_in_period": 73,
+    "urgency": "moderate",
+    "has_upcoming_appointment": false,
+    "next_appointment_date": null
+  },
+  "attribution_history": [
+    {
+      "month": "2025-01",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-02",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-03",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-04",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-05",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-06",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-07",
+      "status": "not_attributed",
+      "provider": null
+    },
+    {
+      "month": "2025-08",
+      "status": "not_attributed",
+      "provider": null
+    },
+    {
+      "month": "2025-09",
+      "status": "attributed",
+      "provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      }
+    },
+    {
+      "month": "2025-10",
+      "status": "attributed",
+      "provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      }
+    },
+    {
+      "month": "2025-11",
+      "status": "attributed",
+      "provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      }
+    },
+    {
+      "month": "2025-12",
+      "status": "attributed",
+      "provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      }
+    }
+  ],
+  "change_events": [
+    {
+      "event_id": "CHG-00050",
+      "member_id": "MBR-000542",
+      "event_month": "2025-07",
+      "event_type": "lost_attribution",
+      "change_classification": "enrollment_gap",
+      "prior_provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      },
+      "new_provider": null,
+      "reason": "Patient disenrolled from Medicare FFS \u2014 possible transition to Medicare Advantage",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 173.72,
+        "lost_quality_bonus_contribution": 39.44,
+        "total_impact": 213.15
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed"
+      ],
+      "intervention": {
+        "window_remaining_months": 5,
+        "recommended_action": "Contact member to verify enrollment status and schedule follow-up",
+        "estimated_intervention_cost": 150.0,
+        "estimated_recovery_probability": 0.6,
+        "roi_if_recovered": 127.89
+      },
+      "member_risk_score": 0.94,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000542"
+      }
+    },
+    {
+      "event_id": "CHG-00073",
+      "member_id": "MBR-000542",
+      "event_month": "2025-09",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 173.72,
+        "lost_quality_bonus_contribution": 39.44,
+        "total_impact": 213.15
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.94,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000542"
+      }
+    }
+  ],
+  "clinical_brief_link": null,
+  "reconciliation_link": null
+}

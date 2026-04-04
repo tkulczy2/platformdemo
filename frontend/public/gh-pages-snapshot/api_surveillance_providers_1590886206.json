@@ -1,0 +1,397 @@
+{
+  "provider": {
+    "provider_npi": "1590886206",
+    "provider_name": "Rhodes, Patricia C",
+    "specialty": "Family Medicine",
+    "current_panel_size": 8,
+    "jan_panel_size": 2,
+    "net_change": 6,
+    "net_change_pct": 3.0,
+    "churn_rate_annualized": 0.2,
+    "members_at_risk": 2,
+    "financial_exposure": 496.0,
+    "quality_impact": {},
+    "monthly_trend": [
+      2,
+      1,
+      3,
+      3,
+      4,
+      5,
+      6,
+      6,
+      8,
+      8,
+      8,
+      8
+    ],
+    "cascade_flag": false
+  },
+  "change_events": [
+    {
+      "event_id": "CHG-00002",
+      "member_id": "MBR-000979",
+      "event_month": "2025-02",
+      "event_type": "lost_attribution",
+      "change_classification": "data_lag",
+      "prior_provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      },
+      "new_provider": null,
+      "reason": "Attribution change due to late-arriving claims data",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 285.07,
+        "lost_quality_bonus_contribution": 64.72,
+        "total_impact": 349.78
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Colorectal screening completed",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Colorectal screening completed"
+      ],
+      "intervention": null,
+      "member_risk_score": 1.54,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000979"
+      }
+    },
+    {
+      "event_id": "CHG-00022",
+      "member_id": "MBR-000999",
+      "event_month": "2025-03",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 458.13,
+        "lost_quality_bonus_contribution": 104.01,
+        "total_impact": 562.14
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 2.48,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000999"
+      }
+    },
+    {
+      "event_id": "CHG-00023",
+      "member_id": "MBR-000640",
+      "event_month": "2025-03",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 211.79,
+        "lost_quality_bonus_contribution": 48.08,
+        "total_impact": 259.87
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.14,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000640"
+      }
+    },
+    {
+      "event_id": "CHG-00039",
+      "member_id": "MBR-000906",
+      "event_month": "2025-05",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 182.08,
+        "lost_quality_bonus_contribution": 41.34,
+        "total_impact": 223.41
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.98,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000906"
+      }
+    },
+    {
+      "event_id": "CHG-00048",
+      "member_id": "MBR-000300",
+      "event_month": "2025-06",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 153.27,
+        "lost_quality_bonus_contribution": 34.8,
+        "total_impact": 188.07
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.83,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000300"
+      }
+    },
+    {
+      "event_id": "CHG-00056",
+      "member_id": "MBR-000734",
+      "event_month": "2025-07",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 389.74,
+        "lost_quality_bonus_contribution": 88.48,
+        "total_impact": 478.22
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 2.11,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000734"
+      }
+    },
+    {
+      "event_id": "CHG-00073",
+      "member_id": "MBR-000542",
+      "event_month": "2025-09",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 173.72,
+        "lost_quality_bonus_contribution": 39.44,
+        "total_impact": 213.15
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.94,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000542"
+      }
+    },
+    {
+      "event_id": "CHG-00074",
+      "member_id": "MBR-000452",
+      "event_month": "2025-09",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 186.54,
+        "lost_quality_bonus_contribution": 42.35,
+        "total_impact": 228.88
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.01,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000452"
+      }
+    }
+  ],
+  "at_risk_members": [
+    {
+      "rank": 112,
+      "member_id": "MBR-000452",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      },
+      "attribution_risk": {
+        "status": "high_risk",
+        "stability_score": 0.3,
+        "risk_factors": [
+          "Competing visits with provider 1304218413",
+          "Fewer than 2 visits with attributed provider this year"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1304218413",
+        "Fewer than 2 visits with attributed provider this year"
+      ],
+      "competing_provider": {
+        "npi": "1304218413",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 0,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "breast_cancer_screening",
+          "measure_name": "Breast Cancer Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "critical",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 131,
+      "member_id": "MBR-000542",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1248706171",
+          "Fewer than 2 visits with attributed provider this year"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1248706171",
+        "Fewer than 2 visits with attributed provider this year"
+      ],
+      "competing_provider": {
+        "npi": "1248706171",
+        "visit_count": 14
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 0,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "breast_cancer_screening",
+          "measure_name": "Breast Cancer Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.45,
+      "roi_estimate": 0.41,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    }
+  ]
+}

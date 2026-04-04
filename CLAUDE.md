@@ -223,6 +223,19 @@ Build order within phase:
 - All appointment member_ids exist in the pipeline's attributed population
 - Exactly 1 crossover_patient and 1 feedback_patient in the schedule
 
+## Attribution Surveillance Tab
+
+Added after the Clinical View. See `Attribution_Surveillance_Dashboard_Implementation_Plan.md` for full specification.
+
+### Key Architectural Rules
+- The surveillance engine is a READ-ONLY analysis layer. It never modifies PipelineResult or attribution_history.json.
+- Import and reuse AttributionRisk from engine/brief_engine.py — do NOT duplicate risk scoring logic.
+- Financial impact for each change event must use the member's ACTUAL cost data from step_4, not average estimates.
+- The attribution history is a SIMULATION, not a re-run of the attribution engine. This is by design and should be transparent in the UI.
+- Cross-tab links must use real member_ids and navigate to actual items in the Settlement and Clinical views.
+- All monetary values are formatted with $ signs, comma separators, and 2 decimal places.
+- The retention worklist is sorted by ROI descending. This is the most important sort order — it ensures the highest-value retention actions surface first.
+
 ---
 
 ## Critical Rules

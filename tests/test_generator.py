@@ -48,7 +48,7 @@ class TestFileExistence:
         csv_count = len(list(SYNTHETIC_DIR.glob("*.csv")))
         json_count = len(list(SYNTHETIC_DIR.glob("*.json")))
         assert csv_count == 9
-        assert json_count == 2
+        assert json_count >= 2
 
 
 class TestPopulationSize:

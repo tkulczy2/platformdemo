@@ -1,0 +1,541 @@
+{
+  "provider": {
+    "provider_npi": "1505413597",
+    "provider_name": "Robinson, William A",
+    "specialty": "Family Medicine",
+    "current_panel_size": 38,
+    "jan_panel_size": 39,
+    "net_change": -1,
+    "net_change_pct": -0.0256,
+    "churn_rate_annualized": 0.0779,
+    "members_at_risk": 5,
+    "financial_exposure": 1240.0,
+    "quality_impact": {},
+    "monthly_trend": [
+      39,
+      39,
+      39,
+      41,
+      41,
+      41,
+      41,
+      41,
+      40,
+      39,
+      39,
+      38
+    ],
+    "cascade_flag": false
+  },
+  "change_events": [
+    {
+      "event_id": "CHG-00028",
+      "member_id": "MBR-000078",
+      "event_month": "2025-04",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 227.11,
+        "lost_quality_bonus_contribution": 51.56,
+        "total_impact": 278.67
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.23,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000078"
+      }
+    },
+    {
+      "event_id": "CHG-00029",
+      "member_id": "MBR-000120",
+      "event_month": "2025-04",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 162.23,
+        "lost_quality_bonus_contribution": 36.83,
+        "total_impact": 199.06
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.88,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000120"
+      }
+    },
+    {
+      "event_id": "CHG-00068",
+      "member_id": "MBR-000688",
+      "event_month": "2025-09",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      },
+      "new_provider": {
+        "npi": "9395310485",
+        "name": "Dr. Robert Chambers"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 5 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 181.06,
+        "lost_quality_bonus_contribution": 41.11,
+        "total_impact": 222.16
+      },
+      "quality_measures_affected": [
+        "Does not meet denominator criteria for Diabetes: HbA1c Poor Control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Does not meet denominator criteria for Colorectal Cancer Screening",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 3,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.65,
+        "roi_if_recovered": 144.4
+      },
+      "member_risk_score": 0.98,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000688"
+      }
+    },
+    {
+      "event_id": "CHG-00069",
+      "member_id": "MBR-000784",
+      "event_month": "2025-09",
+      "event_type": "reassignment",
+      "change_classification": "reassignment_within_aco",
+      "prior_provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      },
+      "new_provider": {
+        "npi": "1419073370",
+        "name": "Wyatt, Michelle N"
+      },
+      "reason": "Patient's visit pattern shifted plurality to a different ACO provider",
+      "financial_impact": {
+        "lost_tcoc_contribution": 0,
+        "lost_shared_savings_contribution": 0,
+        "lost_quality_bonus_contribution": 0,
+        "total_impact": 0
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 3,
+        "recommended_action": "Coordinate care transition between ACO providers",
+        "estimated_intervention_cost": 100.0,
+        "estimated_recovery_probability": 0.85,
+        "roi_if_recovered": 0.0
+      },
+      "member_risk_score": 1.31,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000784"
+      }
+    },
+    {
+      "event_id": "CHG-00070",
+      "member_id": "MBR-000404",
+      "event_month": "2025-09",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 201.58,
+        "lost_quality_bonus_contribution": 45.76,
+        "total_impact": 247.34
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.09,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000404"
+      }
+    },
+    {
+      "event_id": "CHG-00076",
+      "member_id": "MBR-000305",
+      "event_month": "2025-10",
+      "event_type": "lost_attribution",
+      "change_classification": "data_lag",
+      "prior_provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      },
+      "new_provider": null,
+      "reason": "Attribution change due to late-arriving claims data",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 595.35,
+        "lost_quality_bonus_contribution": 135.16,
+        "total_impact": 730.51
+      },
+      "quality_measures_affected": [
+        "HbA1c 7.7% \u2264 9% \u2014 adequate control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "No qualifying colorectal screening found",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 3.22,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000305"
+      }
+    },
+    {
+      "event_id": "CHG-00098",
+      "member_id": "MBR-000370",
+      "event_month": "2025-12",
+      "event_type": "lost_attribution",
+      "change_classification": "enrollment_termination",
+      "prior_provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      },
+      "new_provider": null,
+      "reason": "Patient deceased or permanently left Medicare FFS",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 148.7,
+        "lost_quality_bonus_contribution": 33.76,
+        "total_impact": 182.46
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Colorectal screening completed",
+        "No depression screening found during performance year"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Colorectal screening completed"
+      ],
+      "intervention": null,
+      "member_risk_score": 0.8,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000370"
+      }
+    }
+  ],
+  "at_risk_members": [
+    {
+      "rank": 1,
+      "member_id": "MBR-000091",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      },
+      "attribution_risk": {
+        "status": "high_risk",
+        "stability_score": 0.3,
+        "risk_factors": [
+          "Fewer than 2 visits with attributed provider this year"
+        ]
+      },
+      "risk_factors": [
+        "Fewer than 2 visits with attributed provider this year"
+      ],
+      "competing_provider": null,
+      "days_since_last_visit": 0,
+      "visits_this_year": 0,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [],
+      "recommended_action": "Phone outreach to schedule follow-up appointment",
+      "intervention_cost_estimate": 150.0,
+      "recovery_probability": 0.8,
+      "roi_estimate": 1.21,
+      "days_remaining_in_period": 73,
+      "urgency": "critical",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 85,
+      "member_id": "MBR-000243",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1429978390"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1429978390"
+      ],
+      "competing_provider": {
+        "npi": "1429978390",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 20,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 88,
+      "member_id": "MBR-000748",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      },
+      "attribution_risk": {
+        "status": "high_risk",
+        "stability_score": 0.3,
+        "risk_factors": [
+          "Competing visits with provider 1397176699"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1397176699"
+      ],
+      "competing_provider": {
+        "npi": "1397176699",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 14,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "critical",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 96,
+      "member_id": "MBR-000023",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1528134432"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1528134432"
+      ],
+      "competing_provider": {
+        "npi": "1528134432",
+        "visit_count": 2
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 29,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 130,
+      "member_id": "MBR-000404",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1248706171",
+          "Fewer than 2 visits with attributed provider this year"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1248706171",
+        "Fewer than 2 visits with attributed provider this year"
+      ],
+      "competing_provider": {
+        "npi": "1248706171",
+        "visit_count": 20
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 0,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.45,
+      "roi_estimate": 0.41,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    }
+  ]
+}

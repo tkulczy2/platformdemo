@@ -1,0 +1,26 @@
+{
+  "item_type": "gap",
+  "item_id": "hba1c_poor_control",
+  "detail": {
+    "measure_id": "hba1c_poor_control",
+    "measure_name": "Diabetes Blood Sugar Control (HbA1c)",
+    "action_needed": "Review HbA1c results and adjust diabetes management plan",
+    "closable_this_visit": true,
+    "days_remaining": 71,
+    "financial_weight": 0.2,
+    "priority_score": 0.602,
+    "provenance": {
+      "step": "quality",
+      "step_number": 3,
+      "member_id": "MBR-000903",
+      "measure_id": "hba1c_poor_control"
+    }
+  },
+  "provenance": {
+    "step": "quality",
+    "step_number": 3,
+    "member_id": "MBR-000903",
+    "measure_id": "hba1c_poor_control"
+  },
+  "clinical_question": "Why is Diabetes Blood Sugar Control (HbA1c) showing as due for this patient?"
+}

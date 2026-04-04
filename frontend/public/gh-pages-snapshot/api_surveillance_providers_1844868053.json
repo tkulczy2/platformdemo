@@ -1,0 +1,891 @@
+{
+  "provider": {
+    "provider_npi": "1844868053",
+    "provider_name": "Munoz, Lindsay R",
+    "specialty": "Family Medicine",
+    "current_panel_size": 81,
+    "jan_panel_size": 82,
+    "net_change": -1,
+    "net_change_pct": -0.0122,
+    "churn_rate_annualized": 0.0368,
+    "members_at_risk": 12,
+    "financial_exposure": 2976.0,
+    "quality_impact": {},
+    "monthly_trend": [
+      82,
+      82,
+      82,
+      82,
+      82,
+      82,
+      82,
+      82,
+      82,
+      82,
+      82,
+      81
+    ],
+    "cascade_flag": false
+  },
+  "change_events": [
+    {
+      "event_id": "CHG-00003",
+      "member_id": "MBR-000452",
+      "event_month": "2025-02",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "new_provider": {
+        "npi": "9362950628",
+        "name": "Dr. Jennifer Patterson"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 5 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 186.54,
+        "lost_quality_bonus_contribution": 42.35,
+        "total_impact": 228.88
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "No qualifying colorectal screening found",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Mammogram completed within 27 months"
+      ],
+      "intervention": {
+        "window_remaining_months": 10,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.45,
+        "roi_if_recovered": 103.0
+      },
+      "member_risk_score": 1.01,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000452"
+      }
+    },
+    {
+      "event_id": "CHG-00007",
+      "member_id": "MBR-000166",
+      "event_month": "2025-02",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 422.63,
+        "lost_quality_bonus_contribution": 95.95,
+        "total_impact": 518.58
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 2.28,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000166"
+      }
+    },
+    {
+      "event_id": "CHG-00086",
+      "member_id": "MBR-000239",
+      "event_month": "2025-11",
+      "event_type": "lost_attribution",
+      "change_classification": "data_lag",
+      "prior_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "new_provider": null,
+      "reason": "Attribution change due to late-arriving claims data",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 297.63,
+        "lost_quality_bonus_contribution": 67.57,
+        "total_impact": 365.2
+      },
+      "quality_measures_affected": [
+        "HbA1c 12.4% > 9% \u2014 poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "HbA1c 12.4% > 9% \u2014 poor control",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed"
+      ],
+      "intervention": null,
+      "member_risk_score": 1.61,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000239"
+      }
+    },
+    {
+      "event_id": "CHG-00093",
+      "member_id": "MBR-000524",
+      "event_month": "2025-11",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 344.29,
+        "lost_quality_bonus_contribution": 78.16,
+        "total_impact": 422.45
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.86,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000524"
+      }
+    },
+    {
+      "event_id": "CHG-00095",
+      "member_id": "MBR-000181",
+      "event_month": "2025-12",
+      "event_type": "lost_attribution",
+      "change_classification": "enrollment_gap",
+      "prior_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "new_provider": null,
+      "reason": "Patient disenrolled from Medicare FFS \u2014 possible transition to Medicare Advantage",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 264.61,
+        "lost_quality_bonus_contribution": 60.07,
+        "total_impact": 324.68
+      },
+      "quality_measures_affected": [
+        "Does not meet denominator criteria for Diabetes: HbA1c Poor Control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Does not meet denominator criteria for Colorectal Cancer Screening",
+        "Depression screening completed during performance year"
+      ],
+      "quality_numerator_losses": [
+        "Depression screening completed during performance year"
+      ],
+      "intervention": null,
+      "member_risk_score": 1.43,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000181"
+      }
+    }
+  ],
+  "at_risk_members": [
+    {
+      "rank": 18,
+      "member_id": "MBR-000042",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "attribution_risk": {
+        "status": "high_risk",
+        "stability_score": 0.3,
+        "risk_factors": [
+          "Competing visits with provider 1397176699"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1397176699"
+      ],
+      "competing_provider": {
+        "npi": "1397176699",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 23,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "critical",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 22,
+      "member_id": "MBR-000343",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "attribution_risk": {
+        "status": "high_risk",
+        "stability_score": 0.3,
+        "risk_factors": [
+          "Competing visits with provider 1770285939"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1770285939"
+      ],
+      "competing_provider": {
+        "npi": "1770285939",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 37,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "breast_cancer_screening",
+          "measure_name": "Breast Cancer Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "critical",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 25,
+      "member_id": "MBR-000273",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "attribution_risk": {
+        "status": "high_risk",
+        "stability_score": 0.3,
+        "risk_factors": [
+          "Competing visits with provider 1270524222"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1270524222"
+      ],
+      "competing_provider": {
+        "npi": "1270524222",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 19,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "breast_cancer_screening",
+          "measure_name": "Breast Cancer Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "critical",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 34,
+      "member_id": "MBR-000150",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1270524222"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1270524222"
+      ],
+      "competing_provider": {
+        "npi": "1270524222",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 22,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 73,
+      "member_id": "MBR-000315",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1270524222"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1270524222"
+      ],
+      "competing_provider": {
+        "npi": "1270524222",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 21,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 75,
+      "member_id": "MBR-000439",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1520048902"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1520048902"
+      ],
+      "competing_provider": {
+        "npi": "1520048902",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 32,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "breast_cancer_screening",
+          "measure_name": "Breast Cancer Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 90,
+      "member_id": "MBR-000612",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1710127109"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1710127109"
+      ],
+      "competing_provider": {
+        "npi": "1710127109",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 13,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 101,
+      "member_id": "MBR-000552",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1608049903"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1608049903"
+      ],
+      "competing_provider": {
+        "npi": "1608049903",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 16,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 103,
+      "member_id": "MBR-000649",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1270524222"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1270524222"
+      ],
+      "competing_provider": {
+        "npi": "1270524222",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 13,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 114,
+      "member_id": "MBR-000737",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": []
+      },
+      "risk_factors": [],
+      "competing_provider": null,
+      "days_since_last_visit": 0,
+      "visits_this_year": 27,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule care coordination visit",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.65,
+      "roi_estimate": 0.59,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 126,
+      "member_id": "MBR-000333",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": []
+      },
+      "risk_factors": [],
+      "competing_provider": null,
+      "days_since_last_visit": 0,
+      "visits_this_year": 11,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule care coordination visit",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.65,
+      "roi_estimate": 0.59,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 128,
+      "member_id": "MBR-000564",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "attribution_risk": {
+        "status": "high_risk",
+        "stability_score": 0.3,
+        "risk_factors": [
+          "Competing visits with provider 1168708867"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1168708867"
+      ],
+      "competing_provider": {
+        "npi": "1168708867",
+        "visit_count": 3
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 24,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "breast_cancer_screening",
+          "measure_name": "Breast Cancer Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.45,
+      "roi_estimate": 0.41,
+      "days_remaining_in_period": 73,
+      "urgency": "critical",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    }
+  ]
+}

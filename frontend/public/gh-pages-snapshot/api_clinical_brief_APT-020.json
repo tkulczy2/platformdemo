@@ -1,0 +1,82 @@
+{
+  "appointment_id": "APT-020",
+  "member_id": "MBR-000520",
+  "member_demographics": {
+    "member_id": "MBR-000520"
+  },
+  "appointment_date": "2025-10-21",
+  "appointment_time": "13:20",
+  "provider_name": "Fowler, Angel J",
+  "provider_npi": "1679478607",
+  "contract_name": "Medicare Shared Savings Program \u2014 ACO Agreement 2025",
+  "performance_period_end": "2025-12-31",
+  "days_remaining_in_period": 71,
+  "attribution_risk": {
+    "status": "stable",
+    "stability_score": 1.0,
+    "risk_factors": [],
+    "recommended_action": null,
+    "competing_provider": {
+      "npi": "1520048902",
+      "visit_count": 1
+    },
+    "days_since_last_visit": 0,
+    "visits_this_year": 46,
+    "provenance": {
+      "step": "attribution",
+      "step_number": 2,
+      "member_id": "MBR-000520"
+    }
+  },
+  "priority_actions": [],
+  "quality_gaps": [],
+  "total_gap_count": 0,
+  "closable_this_visit_count": 0,
+  "hcc_opportunities": [],
+  "recent_utilization": [
+    {
+      "event_date": "2025-10-01",
+      "event_type": "Office Visit",
+      "setting": "Outpatient",
+      "primary_diagnosis": "Follow-up care",
+      "cost": 28802.56,
+      "avoidable_flag": false,
+      "provenance": {
+        "step": "cost",
+        "step_number": 4,
+        "member_id": "MBR-000520"
+      }
+    },
+    {
+      "event_date": "2025-09-15",
+      "event_type": "Facility Visit",
+      "setting": "Acute Inpatient",
+      "primary_diagnosis": "Acute condition management",
+      "cost": 57605.12,
+      "avoidable_flag": false,
+      "provenance": {
+        "step": "cost",
+        "step_number": 4,
+        "member_id": "MBR-000520"
+      }
+    }
+  ],
+  "cost_context": {
+    "ytd_cost": 144012.81,
+    "expected_cost": 14244.0,
+    "cost_status": "above_expected",
+    "cost_ratio": 10.11,
+    "top_cost_driver": "Inpatient admissions",
+    "pmpm": 12001.07,
+    "benchmark_pmpm": 1187.0,
+    "provenance": {
+      "step": "cost",
+      "step_number": 4,
+      "member_id": "MBR-000520"
+    }
+  },
+  "demo_role": "high_cost",
+  "is_crossover_patient": false,
+  "crossover_discrepancy": null,
+  "is_feedback_patient": false
+}

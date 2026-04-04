@@ -1,0 +1,16 @@
+{
+  "item_type": "cost",
+  "item_id": "cost_context",
+  "detail": {
+    "ytd_cost": 0.0,
+    "expected_cost": 0.0,
+    "cost_status": "at_expected",
+    "cost_ratio": 1.0,
+    "top_cost_driver": null,
+    "pmpm": 0.0,
+    "benchmark_pmpm": 1187.0,
+    "provenance": {}
+  },
+  "provenance": {},
+  "clinical_question": "What does this patient's cost trajectory look like?"
+}

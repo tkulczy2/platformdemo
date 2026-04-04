@@ -1,0 +1,146 @@
+{
+  "member": {
+    "rank": 106,
+    "member_id": "MBR-000371",
+    "member_demographics": {
+      "age": 0,
+      "sex": ""
+    },
+    "attributed_provider": {
+      "npi": "1349083724",
+      "name": "Herrera, Teresa N"
+    },
+    "attribution_risk": {
+      "status": "high_risk",
+      "stability_score": 0.3,
+      "risk_factors": [
+        "Competing visits with provider 1528134432"
+      ]
+    },
+    "risk_factors": [
+      "Competing visits with provider 1528134432"
+    ],
+    "competing_provider": {
+      "npi": "1528134432",
+      "visit_count": 1
+    },
+    "days_since_last_visit": 0,
+    "visits_this_year": 9,
+    "financial_impact_if_lost": {
+      "tcoc": 106662.53,
+      "shared_savings": 185.0,
+      "quality_bonus": 42.0,
+      "total": 227.0
+    },
+    "quality_measures_at_stake": [],
+    "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+    "intervention_cost_estimate": 250.0,
+    "recovery_probability": 0.7,
+    "roi_estimate": 0.64,
+    "days_remaining_in_period": 73,
+    "urgency": "critical",
+    "has_upcoming_appointment": false,
+    "next_appointment_date": null
+  },
+  "attribution_history": [
+    {
+      "month": "2025-01",
+      "status": "attributed",
+      "provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      }
+    },
+    {
+      "month": "2025-02",
+      "status": "attributed",
+      "provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      }
+    },
+    {
+      "month": "2025-03",
+      "status": "attributed",
+      "provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      }
+    },
+    {
+      "month": "2025-04",
+      "status": "attributed",
+      "provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      }
+    },
+    {
+      "month": "2025-05",
+      "status": "attributed",
+      "provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      }
+    },
+    {
+      "month": "2025-06",
+      "status": "attributed",
+      "provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      }
+    },
+    {
+      "month": "2025-07",
+      "status": "attributed",
+      "provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      }
+    },
+    {
+      "month": "2025-08",
+      "status": "attributed",
+      "provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      }
+    },
+    {
+      "month": "2025-09",
+      "status": "attributed",
+      "provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      }
+    },
+    {
+      "month": "2025-10",
+      "status": "attributed",
+      "provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      }
+    },
+    {
+      "month": "2025-11",
+      "status": "attributed",
+      "provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      }
+    },
+    {
+      "month": "2025-12",
+      "status": "attributed",
+      "provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      }
+    }
+  ],
+  "change_events": [],
+  "clinical_brief_link": null,
+  "reconciliation_link": null
+}

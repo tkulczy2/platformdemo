@@ -1,0 +1,83 @@
+{
+  "appointment_id": "APT-039",
+  "member_id": "MBR-000210",
+  "member_demographics": {
+    "member_id": "MBR-000210"
+  },
+  "appointment_date": "2025-10-23",
+  "appointment_time": "11:10",
+  "provider_name": "Sanchez, Donald D",
+  "provider_npi": "1462172927",
+  "contract_name": "Medicare Shared Savings Program \u2014 ACO Agreement 2025",
+  "performance_period_end": "2025-12-31",
+  "days_remaining_in_period": 69,
+  "attribution_risk": {
+    "status": "stable",
+    "stability_score": 1.0,
+    "risk_factors": [],
+    "recommended_action": null,
+    "competing_provider": {
+      "npi": "1168708867",
+      "visit_count": 1
+    },
+    "days_since_last_visit": 0,
+    "visits_this_year": 31,
+    "provenance": {
+      "step": "attribution",
+      "step_number": 2,
+      "member_id": "MBR-000210"
+    }
+  },
+  "priority_actions": [
+    {
+      "rank": 1,
+      "action_text": "Complete colorectal cancer screening (FIT kit or colonoscopy referral)",
+      "reason_text": "Closes 1 of 1 remaining care actions",
+      "category": "gap_closure",
+      "measure_id": "colorectal_screening",
+      "financial_impact": null,
+      "closable_this_visit": false,
+      "provenance": {
+        "step": "quality",
+        "step_number": 3,
+        "member_id": "MBR-000210",
+        "measure_id": "colorectal_screening"
+      }
+    }
+  ],
+  "quality_gaps": [
+    {
+      "measure_id": "colorectal_screening",
+      "measure_name": "Colorectal Cancer Screening",
+      "action_needed": "Complete colorectal cancer screening (FIT kit or colonoscopy referral)",
+      "closable_this_visit": false,
+      "days_remaining": 69,
+      "financial_weight": 0.2,
+      "priority_score": 0.504,
+      "provenance": {
+        "step": "quality",
+        "step_number": 3,
+        "member_id": "MBR-000210",
+        "measure_id": "colorectal_screening"
+      }
+    }
+  ],
+  "total_gap_count": 1,
+  "closable_this_visit_count": 0,
+  "hcc_opportunities": [],
+  "recent_utilization": [],
+  "cost_context": {
+    "ytd_cost": 0.0,
+    "expected_cost": 0.0,
+    "cost_status": "at_expected",
+    "cost_ratio": 1.0,
+    "top_cost_driver": null,
+    "pmpm": 0.0,
+    "benchmark_pmpm": 1187.0,
+    "provenance": {}
+  },
+  "demo_role": "high_cost",
+  "is_crossover_patient": false,
+  "crossover_discrepancy": null,
+  "is_feedback_patient": false
+}

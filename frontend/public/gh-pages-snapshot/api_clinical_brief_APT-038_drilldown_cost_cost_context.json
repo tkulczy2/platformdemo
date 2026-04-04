@@ -1,0 +1,24 @@
+{
+  "item_type": "cost",
+  "item_id": "cost_context",
+  "detail": {
+    "ytd_cost": 151695.02,
+    "expected_cost": 14244.0,
+    "cost_status": "above_expected",
+    "cost_ratio": 10.65,
+    "top_cost_driver": "Inpatient admissions",
+    "pmpm": 12641.25,
+    "benchmark_pmpm": 1187.0,
+    "provenance": {
+      "step": "cost",
+      "step_number": 4,
+      "member_id": "MBR-000540"
+    }
+  },
+  "provenance": {
+    "step": "cost",
+    "step_number": 4,
+    "member_id": "MBR-000540"
+  },
+  "clinical_question": "What does this patient's cost trajectory look like?"
+}

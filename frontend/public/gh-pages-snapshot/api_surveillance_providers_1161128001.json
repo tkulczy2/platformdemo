@@ -1,0 +1,574 @@
+{
+  "provider": {
+    "provider_npi": "1161128001",
+    "provider_name": "Ramirez, Cynthia M",
+    "specialty": "Family Medicine",
+    "current_panel_size": 49,
+    "jan_panel_size": 51,
+    "net_change": -2,
+    "net_change_pct": -0.0392,
+    "churn_rate_annualized": 0.06,
+    "members_at_risk": 5,
+    "financial_exposure": 3180.83,
+    "quality_impact": {},
+    "monthly_trend": [
+      51,
+      50,
+      49,
+      49,
+      51,
+      51,
+      51,
+      51,
+      51,
+      50,
+      49,
+      49
+    ],
+    "cascade_flag": false
+  },
+  "change_events": [
+    {
+      "event_id": "CHG-00004",
+      "member_id": "MBR-000723",
+      "event_month": "2025-02",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "new_provider": {
+        "npi": "9339670711",
+        "name": "Dr. Michael Crawford"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 4 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 371.17,
+        "lost_quality_bonus_contribution": 84.26,
+        "total_impact": 455.43
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed"
+      ],
+      "intervention": {
+        "window_remaining_months": 10,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.65,
+        "roi_if_recovered": 296.03
+      },
+      "member_risk_score": 2.01,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000723"
+      }
+    },
+    {
+      "event_id": "CHG-00017",
+      "member_id": "MBR-000623",
+      "event_month": "2025-03",
+      "event_type": "reassignment",
+      "change_classification": "reassignment_within_aco",
+      "prior_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "new_provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      },
+      "reason": "Patient's visit pattern shifted plurality to a different ACO provider",
+      "financial_impact": {
+        "lost_tcoc_contribution": 0,
+        "lost_shared_savings_contribution": 0,
+        "lost_quality_bonus_contribution": 0,
+        "total_impact": 0
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 9,
+        "recommended_action": "Coordinate care transition between ACO providers",
+        "estimated_intervention_cost": 100.0,
+        "estimated_recovery_probability": 0.85,
+        "roi_if_recovered": 0.0
+      },
+      "member_risk_score": 1.31,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000623"
+      }
+    },
+    {
+      "event_id": "CHG-00037",
+      "member_id": "MBR-000483",
+      "event_month": "2025-05",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 226.18,
+        "lost_quality_bonus_contribution": 51.35,
+        "total_impact": 277.53
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.22,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000483"
+      }
+    },
+    {
+      "event_id": "CHG-00038",
+      "member_id": "MBR-000272",
+      "event_month": "2025-05",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 205.13,
+        "lost_quality_bonus_contribution": 46.57,
+        "total_impact": 251.7
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.11,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000272"
+      }
+    },
+    {
+      "event_id": "CHG-00061",
+      "member_id": "MBR-000182",
+      "event_month": "2025-08",
+      "event_type": "reassignment",
+      "change_classification": "reassignment_within_aco",
+      "prior_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "new_provider": {
+        "npi": "1899100857",
+        "name": "Wolfe, Matthew E"
+      },
+      "reason": "Patient's visit pattern shifted plurality to a different ACO provider",
+      "financial_impact": {
+        "lost_tcoc_contribution": 0,
+        "lost_shared_savings_contribution": 0,
+        "lost_quality_bonus_contribution": 0,
+        "total_impact": 0
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 4,
+        "recommended_action": "Coordinate care transition between ACO providers",
+        "estimated_intervention_cost": 100.0,
+        "estimated_recovery_probability": 0.85,
+        "roi_if_recovered": 0.0
+      },
+      "member_risk_score": 0.77,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000182"
+      }
+    },
+    {
+      "event_id": "CHG-00063",
+      "member_id": "MBR-000202",
+      "event_month": "2025-08",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 399.62,
+        "lost_quality_bonus_contribution": 90.72,
+        "total_impact": 490.34
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 2.16,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000202"
+      }
+    },
+    {
+      "event_id": "CHG-00078",
+      "member_id": "MBR-000773",
+      "event_month": "2025-10",
+      "event_type": "lost_attribution",
+      "change_classification": "enrollment_termination",
+      "prior_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "new_provider": null,
+      "reason": "Patient deceased or permanently left Medicare FFS",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 153.33,
+        "lost_quality_bonus_contribution": 34.81,
+        "total_impact": 188.14
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "intervention": null,
+      "member_risk_score": 0.83,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000773"
+      }
+    },
+    {
+      "event_id": "CHG-00088",
+      "member_id": "MBR-000083",
+      "event_month": "2025-11",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "new_provider": {
+        "npi": "9395310485",
+        "name": "Dr. Robert Chambers"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 3 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 197.25,
+        "lost_quality_bonus_contribution": 44.78,
+        "total_impact": 242.03
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "intervention": {
+        "window_remaining_months": 1,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.65,
+        "roi_if_recovered": 157.32
+      },
+      "member_risk_score": 1.07,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000083"
+      }
+    }
+  ],
+  "at_risk_members": [
+    {
+      "rank": 41,
+      "member_id": "MBR-000705",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1270524222"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1270524222"
+      ],
+      "competing_provider": {
+        "npi": "1270524222",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 48,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": true,
+      "next_appointment_date": "2025-10-21"
+    },
+    {
+      "rank": 46,
+      "member_id": "MBR-000769",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1270524222"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1270524222"
+      ],
+      "competing_provider": {
+        "npi": "1270524222",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 89,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 78,
+      "member_id": "MBR-000676",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1520048902"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1520048902"
+      ],
+      "competing_provider": {
+        "npi": "1520048902",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 23,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 91,
+      "member_id": "MBR-000249",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1168708867"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1168708867"
+      ],
+      "competing_provider": {
+        "npi": "1168708867",
+        "visit_count": 2
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 47,
+      "financial_impact_if_lost": {
+        "tcoc": 109441.7,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 123,
+      "member_id": "MBR-000468",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": []
+      },
+      "risk_factors": [],
+      "competing_provider": null,
+      "days_since_last_visit": 0,
+      "visits_this_year": 22,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [],
+      "recommended_action": "Schedule care coordination visit",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.65,
+      "roi_estimate": 0.59,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    }
+  ]
+}

@@ -1,0 +1,3669 @@
+{
+  "total": 104,
+  "offset": 0,
+  "limit": 200,
+  "events": [
+    {
+      "event_id": "CHG-00001",
+      "member_id": "MBR-000483",
+      "event_month": "2025-02",
+      "event_type": "lost_attribution",
+      "change_classification": "data_lag",
+      "prior_provider": {
+        "npi": "1462172927",
+        "name": "Sanchez, Donald D"
+      },
+      "new_provider": null,
+      "reason": "Attribution change due to late-arriving claims data",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 226.18,
+        "lost_quality_bonus_contribution": 51.35,
+        "total_impact": 277.53
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "No qualifying colorectal screening found",
+        "Depression screening completed during performance year"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Mammogram completed within 27 months",
+        "Depression screening completed during performance year"
+      ],
+      "intervention": null,
+      "member_risk_score": 1.22,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000483"
+      }
+    },
+    {
+      "event_id": "CHG-00002",
+      "member_id": "MBR-000979",
+      "event_month": "2025-02",
+      "event_type": "lost_attribution",
+      "change_classification": "data_lag",
+      "prior_provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      },
+      "new_provider": null,
+      "reason": "Attribution change due to late-arriving claims data",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 285.07,
+        "lost_quality_bonus_contribution": 64.72,
+        "total_impact": 349.78
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Colorectal screening completed",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Colorectal screening completed"
+      ],
+      "intervention": null,
+      "member_risk_score": 1.54,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000979"
+      }
+    },
+    {
+      "event_id": "CHG-00003",
+      "member_id": "MBR-000452",
+      "event_month": "2025-02",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "new_provider": {
+        "npi": "9362950628",
+        "name": "Dr. Jennifer Patterson"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 5 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 186.54,
+        "lost_quality_bonus_contribution": 42.35,
+        "total_impact": 228.88
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "No qualifying colorectal screening found",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Mammogram completed within 27 months"
+      ],
+      "intervention": {
+        "window_remaining_months": 10,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.45,
+        "roi_if_recovered": 103.0
+      },
+      "member_risk_score": 1.01,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000452"
+      }
+    },
+    {
+      "event_id": "CHG-00004",
+      "member_id": "MBR-000723",
+      "event_month": "2025-02",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "new_provider": {
+        "npi": "9339670711",
+        "name": "Dr. Michael Crawford"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 4 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 371.17,
+        "lost_quality_bonus_contribution": 84.26,
+        "total_impact": 455.43
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed"
+      ],
+      "intervention": {
+        "window_remaining_months": 10,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.65,
+        "roi_if_recovered": 296.03
+      },
+      "member_risk_score": 2.01,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000723"
+      }
+    },
+    {
+      "event_id": "CHG-00005",
+      "member_id": "MBR-000028",
+      "event_month": "2025-02",
+      "event_type": "lost_attribution",
+      "change_classification": "enrollment_gap",
+      "prior_provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      },
+      "new_provider": null,
+      "reason": "Patient disenrolled from Medicare FFS \u2014 possible transition to Medicare Advantage",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 156.62,
+        "lost_quality_bonus_contribution": 35.56,
+        "total_impact": 192.18
+      },
+      "quality_measures_affected": [
+        "HbA1c 7.1% \u2264 9% \u2014 adequate control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Colorectal screening completed",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "Colorectal screening completed"
+      ],
+      "intervention": {
+        "window_remaining_months": 10,
+        "recommended_action": "Contact member to verify enrollment status and schedule follow-up",
+        "estimated_intervention_cost": 150.0,
+        "estimated_recovery_probability": 0.6,
+        "roi_if_recovered": 115.31
+      },
+      "member_risk_score": 0.85,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000028"
+      }
+    },
+    {
+      "event_id": "CHG-00006",
+      "member_id": "MBR-000151",
+      "event_month": "2025-02",
+      "event_type": "reassignment",
+      "change_classification": "reassignment_within_aco",
+      "prior_provider": {
+        "npi": "1782278965",
+        "name": "Stanley, Kendra C"
+      },
+      "new_provider": {
+        "npi": "1668497958",
+        "name": "Miller, Kelly M"
+      },
+      "reason": "Patient's visit pattern shifted plurality to a different ACO provider",
+      "financial_impact": {
+        "lost_tcoc_contribution": 0,
+        "lost_shared_savings_contribution": 0,
+        "lost_quality_bonus_contribution": 0,
+        "total_impact": 0
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 10,
+        "recommended_action": "Coordinate care transition between ACO providers",
+        "estimated_intervention_cost": 100.0,
+        "estimated_recovery_probability": 0.85,
+        "roi_if_recovered": 0.0
+      },
+      "member_risk_score": 2.17,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000151"
+      }
+    },
+    {
+      "event_id": "CHG-00007",
+      "member_id": "MBR-000166",
+      "event_month": "2025-02",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 422.63,
+        "lost_quality_bonus_contribution": 95.95,
+        "total_impact": 518.58
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 2.28,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000166"
+      }
+    },
+    {
+      "event_id": "CHG-00008",
+      "member_id": "MBR-000799",
+      "event_month": "2025-02",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1182922322",
+        "name": "Barnes, Shane J"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 128.13,
+        "lost_quality_bonus_contribution": 29.09,
+        "total_impact": 157.22
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.69,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000799"
+      }
+    },
+    {
+      "event_id": "CHG-00009",
+      "member_id": "MBR-000892",
+      "event_month": "2025-02",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1157435530",
+        "name": "Lewis, Kathryn D"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 417.06,
+        "lost_quality_bonus_contribution": 94.68,
+        "total_impact": 511.75
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 2.25,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000892"
+      }
+    },
+    {
+      "event_id": "CHG-00010",
+      "member_id": "MBR-000556",
+      "event_month": "2025-02",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1499072778",
+        "name": "Garza, Anthony C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 177.51,
+        "lost_quality_bonus_contribution": 40.3,
+        "total_impact": 217.81
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.96,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000556"
+      }
+    },
+    {
+      "event_id": "CHG-00011",
+      "member_id": "MBR-000685",
+      "event_month": "2025-02",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 337.44,
+        "lost_quality_bonus_contribution": 76.61,
+        "total_impact": 414.05
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.82,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000685"
+      }
+    },
+    {
+      "event_id": "CHG-00012",
+      "member_id": "MBR-000817",
+      "event_month": "2025-02",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1782278965",
+        "name": "Stanley, Kendra C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 172.46,
+        "lost_quality_bonus_contribution": 39.15,
+        "total_impact": 211.61
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.93,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000817"
+      }
+    },
+    {
+      "event_id": "CHG-00013",
+      "member_id": "MBR-000927",
+      "event_month": "2025-03",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1462172927",
+        "name": "Sanchez, Donald D"
+      },
+      "new_provider": {
+        "npi": "9896233790",
+        "name": "Dr. Patricia Blackwell"
+      },
+      "reason": "Patient visited Dr. Patricia Blackwell (Blackwell Medical Group) 3 times in Q4 2024/Q1 2025, exceeding ACO PCP visit count",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 205.81,
+        "lost_quality_bonus_contribution": 46.73,
+        "total_impact": 252.54
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "BP 167.0/93.0 \u2265 140/90 \u2014 uncontrolled",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "No qualifying colorectal screening found",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control"
+      ],
+      "intervention": {
+        "window_remaining_months": 9,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.65,
+        "roi_if_recovered": 164.15
+      },
+      "member_risk_score": 1.11,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000927"
+      }
+    },
+    {
+      "event_id": "CHG-00014",
+      "member_id": "MBR-000640",
+      "event_month": "2025-03",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1899100857",
+        "name": "Wolfe, Matthew E"
+      },
+      "new_provider": {
+        "npi": "9362950628",
+        "name": "Dr. Jennifer Patterson"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 2 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 211.79,
+        "lost_quality_bonus_contribution": 48.08,
+        "total_impact": 259.87
+      },
+      "quality_measures_affected": [
+        "HbA1c 5.5% \u2264 9% \u2014 adequate control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed",
+        "No depression screening found during performance year"
+      ],
+      "quality_numerator_losses": [
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed"
+      ],
+      "intervention": {
+        "window_remaining_months": 9,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.45,
+        "roi_if_recovered": 116.94
+      },
+      "member_risk_score": 1.14,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000640"
+      }
+    },
+    {
+      "event_id": "CHG-00015",
+      "member_id": "MBR-000505",
+      "event_month": "2025-03",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1899100857",
+        "name": "Wolfe, Matthew E"
+      },
+      "new_provider": {
+        "npi": "9362950628",
+        "name": "Dr. Jennifer Patterson"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 3 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 130.13,
+        "lost_quality_bonus_contribution": 29.54,
+        "total_impact": 159.67
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Colorectal screening completed",
+        "No depression screening found during performance year"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Colorectal screening completed"
+      ],
+      "intervention": {
+        "window_remaining_months": 9,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.45,
+        "roi_if_recovered": 71.85
+      },
+      "member_risk_score": 0.7,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000505"
+      }
+    },
+    {
+      "event_id": "CHG-00016",
+      "member_id": "MBR-000553",
+      "event_month": "2025-03",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1872462163",
+        "name": "Davis, Colin M"
+      },
+      "new_provider": {
+        "npi": "9395310485",
+        "name": "Dr. Robert Chambers"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 2 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 208.79,
+        "lost_quality_bonus_contribution": 47.4,
+        "total_impact": 256.19
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "No mammogram found within 27 months",
+        "No qualifying colorectal screening found",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control"
+      ],
+      "intervention": {
+        "window_remaining_months": 9,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.65,
+        "roi_if_recovered": 166.52
+      },
+      "member_risk_score": 1.13,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000553"
+      }
+    },
+    {
+      "event_id": "CHG-00017",
+      "member_id": "MBR-000623",
+      "event_month": "2025-03",
+      "event_type": "reassignment",
+      "change_classification": "reassignment_within_aco",
+      "prior_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "new_provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      },
+      "reason": "Patient's visit pattern shifted plurality to a different ACO provider",
+      "financial_impact": {
+        "lost_tcoc_contribution": 0,
+        "lost_shared_savings_contribution": 0,
+        "lost_quality_bonus_contribution": 0,
+        "total_impact": 0
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 9,
+        "recommended_action": "Coordinate care transition between ACO providers",
+        "estimated_intervention_cost": 100.0,
+        "estimated_recovery_probability": 0.85,
+        "roi_if_recovered": 0.0
+      },
+      "member_risk_score": 1.31,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000623"
+      }
+    },
+    {
+      "event_id": "CHG-00018",
+      "member_id": "MBR-000178",
+      "event_month": "2025-03",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1973628220",
+        "name": "Martin, Michael J"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 480.43,
+        "lost_quality_bonus_contribution": 109.07,
+        "total_impact": 589.5
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 2.6,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000178"
+      }
+    },
+    {
+      "event_id": "CHG-00019",
+      "member_id": "MBR-000971",
+      "event_month": "2025-03",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 182.17,
+        "lost_quality_bonus_contribution": 41.36,
+        "total_impact": 223.53
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.98,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000971"
+      }
+    },
+    {
+      "event_id": "CHG-00020",
+      "member_id": "MBR-000453",
+      "event_month": "2025-03",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1899100857",
+        "name": "Wolfe, Matthew E"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 649.05,
+        "lost_quality_bonus_contribution": 147.35,
+        "total_impact": 796.41
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 3.51,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000453"
+      }
+    },
+    {
+      "event_id": "CHG-00021",
+      "member_id": "MBR-000478",
+      "event_month": "2025-03",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1182922322",
+        "name": "Barnes, Shane J"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 110.09,
+        "lost_quality_bonus_contribution": 24.99,
+        "total_impact": 135.09
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.6,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000478"
+      }
+    },
+    {
+      "event_id": "CHG-00022",
+      "member_id": "MBR-000999",
+      "event_month": "2025-03",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 458.13,
+        "lost_quality_bonus_contribution": 104.01,
+        "total_impact": 562.14
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 2.48,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000999"
+      }
+    },
+    {
+      "event_id": "CHG-00023",
+      "member_id": "MBR-000640",
+      "event_month": "2025-03",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 211.79,
+        "lost_quality_bonus_contribution": 48.08,
+        "total_impact": 259.87
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.14,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000640"
+      }
+    },
+    {
+      "event_id": "CHG-00024",
+      "member_id": "MBR-000055",
+      "event_month": "2025-04",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1899100857",
+        "name": "Wolfe, Matthew E"
+      },
+      "new_provider": {
+        "npi": "9362950628",
+        "name": "Dr. Jennifer Patterson"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 5 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 221.59,
+        "lost_quality_bonus_contribution": 50.31,
+        "total_impact": 271.9
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "No qualifying colorectal screening found",
+        "Depression screening completed during performance year"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Depression screening completed during performance year"
+      ],
+      "intervention": {
+        "window_remaining_months": 8,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.65,
+        "roi_if_recovered": 176.73
+      },
+      "member_risk_score": 1.2,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000055"
+      }
+    },
+    {
+      "event_id": "CHG-00025",
+      "member_id": "MBR-000923",
+      "event_month": "2025-04",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1899100857",
+        "name": "Wolfe, Matthew E"
+      },
+      "new_provider": {
+        "npi": "9339670711",
+        "name": "Dr. Michael Crawford"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 3 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 209.44,
+        "lost_quality_bonus_contribution": 47.55,
+        "total_impact": 256.99
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Colorectal screening completed",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Colorectal screening completed"
+      ],
+      "intervention": {
+        "window_remaining_months": 8,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.45,
+        "roi_if_recovered": 115.65
+      },
+      "member_risk_score": 1.13,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000923"
+      }
+    },
+    {
+      "event_id": "CHG-00026",
+      "member_id": "MBR-000312",
+      "event_month": "2025-04",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1973628220",
+        "name": "Martin, Michael J"
+      },
+      "new_provider": {
+        "npi": "9362950628",
+        "name": "Dr. Jennifer Patterson"
+      },
+      "reason": "High-value quality member lost \u2014 was meeting numerator criteria for 2 measures (No HbA1c test found \u2014 counted as poor control, Colorectal screening completed). Compound quality score impact.",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 118.77,
+        "lost_quality_bonus_contribution": 26.96,
+        "total_impact": 145.73
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Colorectal screening completed",
+        "No depression screening found during performance year"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Colorectal screening completed"
+      ],
+      "intervention": {
+        "window_remaining_months": 8,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.45,
+        "roi_if_recovered": 65.58
+      },
+      "member_risk_score": 0.64,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000312"
+      }
+    },
+    {
+      "event_id": "CHG-00027",
+      "member_id": "MBR-000106",
+      "event_month": "2025-04",
+      "event_type": "reassignment",
+      "change_classification": "reassignment_within_aco",
+      "prior_provider": {
+        "npi": "1668497958",
+        "name": "Miller, Kelly M"
+      },
+      "new_provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      },
+      "reason": "Patient's visit pattern shifted plurality to a different ACO provider",
+      "financial_impact": {
+        "lost_tcoc_contribution": 0,
+        "lost_shared_savings_contribution": 0,
+        "lost_quality_bonus_contribution": 0,
+        "total_impact": 0
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 8,
+        "recommended_action": "Coordinate care transition between ACO providers",
+        "estimated_intervention_cost": 100.0,
+        "estimated_recovery_probability": 0.85,
+        "roi_if_recovered": 0.0
+      },
+      "member_risk_score": 0.84,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000106"
+      }
+    },
+    {
+      "event_id": "CHG-00028",
+      "member_id": "MBR-000078",
+      "event_month": "2025-04",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 227.11,
+        "lost_quality_bonus_contribution": 51.56,
+        "total_impact": 278.67
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.23,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000078"
+      }
+    },
+    {
+      "event_id": "CHG-00029",
+      "member_id": "MBR-000120",
+      "event_month": "2025-04",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 162.23,
+        "lost_quality_bonus_contribution": 36.83,
+        "total_impact": 199.06
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.88,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000120"
+      }
+    },
+    {
+      "event_id": "CHG-00030",
+      "member_id": "MBR-000531",
+      "event_month": "2025-04",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 142.54,
+        "lost_quality_bonus_contribution": 32.36,
+        "total_impact": 174.9
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.77,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000531"
+      }
+    },
+    {
+      "event_id": "CHG-00031",
+      "member_id": "MBR-000055",
+      "event_month": "2025-04",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 221.59,
+        "lost_quality_bonus_contribution": 50.31,
+        "total_impact": 271.9
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.2,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000055"
+      }
+    },
+    {
+      "event_id": "CHG-00032",
+      "member_id": "MBR-000312",
+      "event_month": "2025-04",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 118.77,
+        "lost_quality_bonus_contribution": 26.96,
+        "total_impact": 145.73
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.64,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000312"
+      }
+    },
+    {
+      "event_id": "CHG-00033",
+      "member_id": "MBR-000734",
+      "event_month": "2025-05",
+      "event_type": "lost_attribution",
+      "change_classification": "enrollment_termination",
+      "prior_provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      },
+      "new_provider": null,
+      "reason": "Patient deceased or permanently left Medicare FFS",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 389.74,
+        "lost_quality_bonus_contribution": 88.48,
+        "total_impact": 478.22
+      },
+      "quality_measures_affected": [
+        "HbA1c 8.0% \u2264 9% \u2014 adequate control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "No qualifying colorectal screening found",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 2.11,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000734"
+      }
+    },
+    {
+      "event_id": "CHG-00034",
+      "member_id": "MBR-000760",
+      "event_month": "2025-05",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1899100857",
+        "name": "Wolfe, Matthew E"
+      },
+      "new_provider": {
+        "npi": "9339670711",
+        "name": "Dr. Michael Crawford"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 4 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 206.98,
+        "lost_quality_bonus_contribution": 46.99,
+        "total_impact": 253.97
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed"
+      ],
+      "intervention": {
+        "window_remaining_months": 7,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.45,
+        "roi_if_recovered": 114.29
+      },
+      "member_risk_score": 1.12,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000760"
+      }
+    },
+    {
+      "event_id": "CHG-00035",
+      "member_id": "MBR-000388",
+      "event_month": "2025-05",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1973628220",
+        "name": "Martin, Michael J"
+      },
+      "new_provider": {
+        "npi": "9339670711",
+        "name": "Dr. Michael Crawford"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 3 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 135.49,
+        "lost_quality_bonus_contribution": 30.76,
+        "total_impact": 166.25
+      },
+      "quality_measures_affected": [
+        "HbA1c 12.0% > 9% \u2014 poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Colorectal screening completed",
+        "No depression screening found during performance year"
+      ],
+      "quality_numerator_losses": [
+        "HbA1c 12.0% > 9% \u2014 poor control",
+        "Colorectal screening completed"
+      ],
+      "intervention": {
+        "window_remaining_months": 7,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.65,
+        "roi_if_recovered": 108.06
+      },
+      "member_risk_score": 0.73,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000388"
+      }
+    },
+    {
+      "event_id": "CHG-00036",
+      "member_id": "MBR-000018",
+      "event_month": "2025-05",
+      "event_type": "reassignment",
+      "change_classification": "reassignment_within_aco",
+      "prior_provider": {
+        "npi": "1499072778",
+        "name": "Garza, Anthony C"
+      },
+      "new_provider": {
+        "npi": "1668497958",
+        "name": "Miller, Kelly M"
+      },
+      "reason": "Patient's visit pattern shifted plurality to a different ACO provider",
+      "financial_impact": {
+        "lost_tcoc_contribution": 0,
+        "lost_shared_savings_contribution": 0,
+        "lost_quality_bonus_contribution": 0,
+        "total_impact": 0
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 7,
+        "recommended_action": "Coordinate care transition between ACO providers",
+        "estimated_intervention_cost": 100.0,
+        "estimated_recovery_probability": 0.85,
+        "roi_if_recovered": 0.0
+      },
+      "member_risk_score": 0.63,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000018"
+      }
+    },
+    {
+      "event_id": "CHG-00037",
+      "member_id": "MBR-000483",
+      "event_month": "2025-05",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 226.18,
+        "lost_quality_bonus_contribution": 51.35,
+        "total_impact": 277.53
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.22,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000483"
+      }
+    },
+    {
+      "event_id": "CHG-00038",
+      "member_id": "MBR-000272",
+      "event_month": "2025-05",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 205.13,
+        "lost_quality_bonus_contribution": 46.57,
+        "total_impact": 251.7
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.11,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000272"
+      }
+    },
+    {
+      "event_id": "CHG-00039",
+      "member_id": "MBR-000906",
+      "event_month": "2025-05",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 182.08,
+        "lost_quality_bonus_contribution": 41.34,
+        "total_impact": 223.41
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.98,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000906"
+      }
+    },
+    {
+      "event_id": "CHG-00040",
+      "member_id": "MBR-000774",
+      "event_month": "2025-05",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1899100857",
+        "name": "Wolfe, Matthew E"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 343.08,
+        "lost_quality_bonus_contribution": 77.89,
+        "total_impact": 420.97
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.85,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000774"
+      }
+    },
+    {
+      "event_id": "CHG-00041",
+      "member_id": "MBR-000028",
+      "event_month": "2025-05",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1899100857",
+        "name": "Wolfe, Matthew E"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 156.62,
+        "lost_quality_bonus_contribution": 35.56,
+        "total_impact": 192.18
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.85,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000028"
+      }
+    },
+    {
+      "event_id": "CHG-00042",
+      "member_id": "MBR-000927",
+      "event_month": "2025-06",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1462172927",
+        "name": "Sanchez, Donald D"
+      },
+      "reason": "Retention visit in May re-established plurality with ACO PCP. Intervention cost: $250. Attribution recovered.",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 205.81,
+        "lost_quality_bonus_contribution": 46.73,
+        "total_impact": 252.54
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "BP 167.0/93.0 \u2265 140/90 \u2014 uncontrolled",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "No qualifying colorectal screening found",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control"
+      ],
+      "intervention": null,
+      "member_risk_score": 1.11,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000927"
+      }
+    },
+    {
+      "event_id": "CHG-00043",
+      "member_id": "MBR-000961",
+      "event_month": "2025-06",
+      "event_type": "lost_attribution",
+      "change_classification": "data_lag",
+      "prior_provider": {
+        "npi": "1872462163",
+        "name": "Davis, Colin M"
+      },
+      "new_provider": null,
+      "reason": "Attribution change due to late-arriving claims data",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 278.2,
+        "lost_quality_bonus_contribution": 63.16,
+        "total_impact": 341.36
+      },
+      "quality_measures_affected": [
+        "Does not meet denominator criteria for Diabetes: HbA1c Poor Control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Does not meet denominator criteria for Colorectal Cancer Screening",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.5,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000961"
+      }
+    },
+    {
+      "event_id": "CHG-00044",
+      "member_id": "MBR-000385",
+      "event_month": "2025-06",
+      "event_type": "lost_attribution",
+      "change_classification": "data_lag",
+      "prior_provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      },
+      "new_provider": null,
+      "reason": "Attribution change due to late-arriving claims data",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 218.65,
+        "lost_quality_bonus_contribution": 49.64,
+        "total_impact": 268.29
+      },
+      "quality_measures_affected": [
+        "HbA1c 9.6% > 9% \u2014 poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "No mammogram found within 27 months",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "quality_numerator_losses": [
+        "HbA1c 9.6% > 9% \u2014 poor control",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "intervention": null,
+      "member_risk_score": 1.18,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000385"
+      }
+    },
+    {
+      "event_id": "CHG-00045",
+      "member_id": "MBR-000131",
+      "event_month": "2025-06",
+      "event_type": "lost_attribution",
+      "change_classification": "enrollment_gap",
+      "prior_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "new_provider": null,
+      "reason": "Patient disenrolled from Medicare FFS \u2014 possible transition to Medicare Advantage",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 394.25,
+        "lost_quality_bonus_contribution": 89.51,
+        "total_impact": 483.76
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "intervention": {
+        "window_remaining_months": 6,
+        "recommended_action": "Contact member to verify enrollment status and schedule follow-up",
+        "estimated_intervention_cost": 150.0,
+        "estimated_recovery_probability": 0.6,
+        "roi_if_recovered": 290.26
+      },
+      "member_risk_score": 2.13,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000131"
+      }
+    },
+    {
+      "event_id": "CHG-00046",
+      "member_id": "MBR-000601",
+      "event_month": "2025-06",
+      "event_type": "reassignment",
+      "change_classification": "reassignment_within_aco",
+      "prior_provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      },
+      "new_provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      },
+      "reason": "Patient's visit pattern shifted plurality to a different ACO provider",
+      "financial_impact": {
+        "lost_tcoc_contribution": 0,
+        "lost_shared_savings_contribution": 0,
+        "lost_quality_bonus_contribution": 0,
+        "total_impact": 0
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 6,
+        "recommended_action": "Coordinate care transition between ACO providers",
+        "estimated_intervention_cost": 100.0,
+        "estimated_recovery_probability": 0.85,
+        "roi_if_recovered": 0.0
+      },
+      "member_risk_score": 1.35,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000601"
+      }
+    },
+    {
+      "event_id": "CHG-00047",
+      "member_id": "MBR-000388",
+      "event_month": "2025-06",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 135.49,
+        "lost_quality_bonus_contribution": 30.76,
+        "total_impact": 166.25
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.73,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000388"
+      }
+    },
+    {
+      "event_id": "CHG-00048",
+      "member_id": "MBR-000300",
+      "event_month": "2025-06",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 153.27,
+        "lost_quality_bonus_contribution": 34.8,
+        "total_impact": 188.07
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.83,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000300"
+      }
+    },
+    {
+      "event_id": "CHG-00049",
+      "member_id": "MBR-000943",
+      "event_month": "2025-06",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 230.55,
+        "lost_quality_bonus_contribution": 52.34,
+        "total_impact": 282.89
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.25,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000943"
+      }
+    },
+    {
+      "event_id": "CHG-00050",
+      "member_id": "MBR-000542",
+      "event_month": "2025-07",
+      "event_type": "lost_attribution",
+      "change_classification": "enrollment_gap",
+      "prior_provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      },
+      "new_provider": null,
+      "reason": "Patient disenrolled from Medicare FFS \u2014 possible transition to Medicare Advantage",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 173.72,
+        "lost_quality_bonus_contribution": 39.44,
+        "total_impact": 213.15
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed"
+      ],
+      "intervention": {
+        "window_remaining_months": 5,
+        "recommended_action": "Contact member to verify enrollment status and schedule follow-up",
+        "estimated_intervention_cost": 150.0,
+        "estimated_recovery_probability": 0.6,
+        "roi_if_recovered": 127.89
+      },
+      "member_risk_score": 0.94,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000542"
+      }
+    },
+    {
+      "event_id": "CHG-00051",
+      "member_id": "MBR-000202",
+      "event_month": "2025-07",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      },
+      "new_provider": {
+        "npi": "9339670711",
+        "name": "Dr. Michael Crawford"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 3 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 399.62,
+        "lost_quality_bonus_contribution": 90.72,
+        "total_impact": 490.34
+      },
+      "quality_measures_affected": [
+        "Does not meet denominator criteria for Diabetes: HbA1c Poor Control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Does not meet denominator criteria for Colorectal Cancer Screening",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 5,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.45,
+        "roi_if_recovered": 220.65
+      },
+      "member_risk_score": 2.16,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000202"
+      }
+    },
+    {
+      "event_id": "CHG-00052",
+      "member_id": "MBR-000523",
+      "event_month": "2025-07",
+      "event_type": "lost_attribution",
+      "change_classification": "enrollment_gap",
+      "prior_provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      },
+      "new_provider": null,
+      "reason": "Patient disenrolled from Medicare FFS \u2014 possible transition to Medicare Advantage",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 128.09,
+        "lost_quality_bonus_contribution": 29.08,
+        "total_impact": 157.17
+      },
+      "quality_measures_affected": [
+        "Does not meet denominator criteria for Diabetes: HbA1c Poor Control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Does not meet denominator criteria for Colorectal Cancer Screening",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 5,
+        "recommended_action": "Contact member to verify enrollment status and schedule follow-up",
+        "estimated_intervention_cost": 150.0,
+        "estimated_recovery_probability": 0.6,
+        "roi_if_recovered": 94.3
+      },
+      "member_risk_score": 0.69,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000523"
+      }
+    },
+    {
+      "event_id": "CHG-00053",
+      "member_id": "MBR-000192",
+      "event_month": "2025-07",
+      "event_type": "reassignment",
+      "change_classification": "reassignment_within_aco",
+      "prior_provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      },
+      "new_provider": {
+        "npi": "1668497958",
+        "name": "Miller, Kelly M"
+      },
+      "reason": "Patient's visit pattern shifted plurality to a different ACO provider",
+      "financial_impact": {
+        "lost_tcoc_contribution": 0,
+        "lost_shared_savings_contribution": 0,
+        "lost_quality_bonus_contribution": 0,
+        "total_impact": 0
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 5,
+        "recommended_action": "Coordinate care transition between ACO providers",
+        "estimated_intervention_cost": 100.0,
+        "estimated_recovery_probability": 0.85,
+        "roi_if_recovered": 0.0
+      },
+      "member_risk_score": 0.58,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000192"
+      }
+    },
+    {
+      "event_id": "CHG-00054",
+      "member_id": "MBR-000723",
+      "event_month": "2025-07",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 371.17,
+        "lost_quality_bonus_contribution": 84.26,
+        "total_impact": 455.43
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 2.01,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000723"
+      }
+    },
+    {
+      "event_id": "CHG-00055",
+      "member_id": "MBR-000385",
+      "event_month": "2025-07",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1899100857",
+        "name": "Wolfe, Matthew E"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 218.65,
+        "lost_quality_bonus_contribution": 49.64,
+        "total_impact": 268.29
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.18,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000385"
+      }
+    },
+    {
+      "event_id": "CHG-00056",
+      "member_id": "MBR-000734",
+      "event_month": "2025-07",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 389.74,
+        "lost_quality_bonus_contribution": 88.48,
+        "total_impact": 478.22
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 2.11,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000734"
+      }
+    },
+    {
+      "event_id": "CHG-00057",
+      "member_id": "MBR-000523",
+      "event_month": "2025-07",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1157435530",
+        "name": "Lewis, Kathryn D"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 128.09,
+        "lost_quality_bonus_contribution": 29.08,
+        "total_impact": 157.17
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.69,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000523"
+      }
+    },
+    {
+      "event_id": "CHG-00058",
+      "member_id": "MBR-000270",
+      "event_month": "2025-08",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      },
+      "new_provider": {
+        "npi": "9126855092",
+        "name": "Dr. James Morrison"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 2 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 310.34,
+        "lost_quality_bonus_contribution": 70.45,
+        "total_impact": 380.79
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "No qualifying colorectal screening found",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Mammogram completed within 27 months"
+      ],
+      "intervention": {
+        "window_remaining_months": 4,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.65,
+        "roi_if_recovered": 247.51
+      },
+      "member_risk_score": 1.68,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000270"
+      }
+    },
+    {
+      "event_id": "CHG-00059",
+      "member_id": "MBR-000146",
+      "event_month": "2025-08",
+      "event_type": "lost_attribution",
+      "change_classification": "enrollment_gap",
+      "prior_provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      },
+      "new_provider": null,
+      "reason": "Patient disenrolled from Medicare FFS \u2014 possible transition to Medicare Advantage",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 119.75,
+        "lost_quality_bonus_contribution": 27.19,
+        "total_impact": 146.94
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "No qualifying colorectal screening found",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Mammogram completed within 27 months"
+      ],
+      "intervention": {
+        "window_remaining_months": 4,
+        "recommended_action": "Contact member to verify enrollment status and schedule follow-up",
+        "estimated_intervention_cost": 150.0,
+        "estimated_recovery_probability": 0.6,
+        "roi_if_recovered": 88.16
+      },
+      "member_risk_score": 0.65,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000146"
+      }
+    },
+    {
+      "event_id": "CHG-00060",
+      "member_id": "MBR-000524",
+      "event_month": "2025-08",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1973628220",
+        "name": "Martin, Michael J"
+      },
+      "new_provider": {
+        "npi": "9395310485",
+        "name": "Dr. Robert Chambers"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 2 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 344.29,
+        "lost_quality_bonus_contribution": 78.16,
+        "total_impact": 422.45
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "No qualifying colorectal screening found",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Mammogram completed within 27 months"
+      ],
+      "intervention": {
+        "window_remaining_months": 4,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.65,
+        "roi_if_recovered": 274.59
+      },
+      "member_risk_score": 1.86,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000524"
+      }
+    },
+    {
+      "event_id": "CHG-00061",
+      "member_id": "MBR-000182",
+      "event_month": "2025-08",
+      "event_type": "reassignment",
+      "change_classification": "reassignment_within_aco",
+      "prior_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "new_provider": {
+        "npi": "1899100857",
+        "name": "Wolfe, Matthew E"
+      },
+      "reason": "Patient's visit pattern shifted plurality to a different ACO provider",
+      "financial_impact": {
+        "lost_tcoc_contribution": 0,
+        "lost_shared_savings_contribution": 0,
+        "lost_quality_bonus_contribution": 0,
+        "total_impact": 0
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 4,
+        "recommended_action": "Coordinate care transition between ACO providers",
+        "estimated_intervention_cost": 100.0,
+        "estimated_recovery_probability": 0.85,
+        "roi_if_recovered": 0.0
+      },
+      "member_risk_score": 0.77,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000182"
+      }
+    },
+    {
+      "event_id": "CHG-00062",
+      "member_id": "MBR-000979",
+      "event_month": "2025-08",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1419073370",
+        "name": "Wyatt, Michelle N"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 285.07,
+        "lost_quality_bonus_contribution": 64.72,
+        "total_impact": 349.78
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.54,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000979"
+      }
+    },
+    {
+      "event_id": "CHG-00063",
+      "member_id": "MBR-000202",
+      "event_month": "2025-08",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 399.62,
+        "lost_quality_bonus_contribution": 90.72,
+        "total_impact": 490.34
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 2.16,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000202"
+      }
+    },
+    {
+      "event_id": "CHG-00064",
+      "member_id": "MBR-000146",
+      "event_month": "2025-08",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1599126307",
+        "name": "Pacheco, Adam F"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 119.75,
+        "lost_quality_bonus_contribution": 27.19,
+        "total_impact": 146.94
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.65,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000146"
+      }
+    },
+    {
+      "event_id": "CHG-00065",
+      "member_id": "MBR-000760",
+      "event_month": "2025-08",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 206.98,
+        "lost_quality_bonus_contribution": 46.99,
+        "total_impact": 253.97
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.12,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000760"
+      }
+    },
+    {
+      "event_id": "CHG-00066",
+      "member_id": "MBR-000404",
+      "event_month": "2025-09",
+      "event_type": "lost_attribution",
+      "change_classification": "enrollment_termination",
+      "prior_provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      },
+      "new_provider": null,
+      "reason": "Patient deceased or permanently left Medicare FFS",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 201.58,
+        "lost_quality_bonus_contribution": 45.76,
+        "total_impact": 247.34
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "No mammogram found within 27 months",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "intervention": null,
+      "member_risk_score": 1.09,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000404"
+      }
+    },
+    {
+      "event_id": "CHG-00067",
+      "member_id": "MBR-000521",
+      "event_month": "2025-09",
+      "event_type": "lost_attribution",
+      "change_classification": "enrollment_gap",
+      "prior_provider": {
+        "npi": "1499072778",
+        "name": "Garza, Anthony C"
+      },
+      "new_provider": null,
+      "reason": "Patient disenrolled from Medicare FFS \u2014 possible transition to Medicare Advantage",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 178.62,
+        "lost_quality_bonus_contribution": 40.55,
+        "total_impact": 219.17
+      },
+      "quality_measures_affected": [
+        "HbA1c 8.8% \u2264 9% \u2014 adequate control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "No qualifying colorectal screening found",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "Mammogram completed within 27 months"
+      ],
+      "intervention": {
+        "window_remaining_months": 3,
+        "recommended_action": "Contact member to verify enrollment status and schedule follow-up",
+        "estimated_intervention_cost": 150.0,
+        "estimated_recovery_probability": 0.6,
+        "roi_if_recovered": 131.5
+      },
+      "member_risk_score": 0.97,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000521"
+      }
+    },
+    {
+      "event_id": "CHG-00068",
+      "member_id": "MBR-000688",
+      "event_month": "2025-09",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      },
+      "new_provider": {
+        "npi": "9395310485",
+        "name": "Dr. Robert Chambers"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 5 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 181.06,
+        "lost_quality_bonus_contribution": 41.11,
+        "total_impact": 222.16
+      },
+      "quality_measures_affected": [
+        "Does not meet denominator criteria for Diabetes: HbA1c Poor Control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Does not meet denominator criteria for Colorectal Cancer Screening",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 3,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.65,
+        "roi_if_recovered": 144.4
+      },
+      "member_risk_score": 0.98,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000688"
+      }
+    },
+    {
+      "event_id": "CHG-00069",
+      "member_id": "MBR-000784",
+      "event_month": "2025-09",
+      "event_type": "reassignment",
+      "change_classification": "reassignment_within_aco",
+      "prior_provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      },
+      "new_provider": {
+        "npi": "1419073370",
+        "name": "Wyatt, Michelle N"
+      },
+      "reason": "Patient's visit pattern shifted plurality to a different ACO provider",
+      "financial_impact": {
+        "lost_tcoc_contribution": 0,
+        "lost_shared_savings_contribution": 0,
+        "lost_quality_bonus_contribution": 0,
+        "total_impact": 0
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 3,
+        "recommended_action": "Coordinate care transition between ACO providers",
+        "estimated_intervention_cost": 100.0,
+        "estimated_recovery_probability": 0.85,
+        "roi_if_recovered": 0.0
+      },
+      "member_risk_score": 1.31,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000784"
+      }
+    },
+    {
+      "event_id": "CHG-00070",
+      "member_id": "MBR-000404",
+      "event_month": "2025-09",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 201.58,
+        "lost_quality_bonus_contribution": 45.76,
+        "total_impact": 247.34
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.09,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000404"
+      }
+    },
+    {
+      "event_id": "CHG-00071",
+      "member_id": "MBR-000131",
+      "event_month": "2025-09",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 394.25,
+        "lost_quality_bonus_contribution": 89.51,
+        "total_impact": 483.76
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 2.13,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000131"
+      }
+    },
+    {
+      "event_id": "CHG-00072",
+      "member_id": "MBR-000688",
+      "event_month": "2025-09",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 181.06,
+        "lost_quality_bonus_contribution": 41.11,
+        "total_impact": 222.16
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.98,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000688"
+      }
+    },
+    {
+      "event_id": "CHG-00073",
+      "member_id": "MBR-000542",
+      "event_month": "2025-09",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 173.72,
+        "lost_quality_bonus_contribution": 39.44,
+        "total_impact": 213.15
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.94,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000542"
+      }
+    },
+    {
+      "event_id": "CHG-00074",
+      "member_id": "MBR-000452",
+      "event_month": "2025-09",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1590886206",
+        "name": "Rhodes, Patricia C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 186.54,
+        "lost_quality_bonus_contribution": 42.35,
+        "total_impact": 228.88
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.01,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000452"
+      }
+    },
+    {
+      "event_id": "CHG-00075",
+      "member_id": "MBR-000400",
+      "event_month": "2025-10",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "new_provider": {
+        "npi": "9362950628",
+        "name": "Dr. Jennifer Patterson"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 3 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 122.77,
+        "lost_quality_bonus_contribution": 27.87,
+        "total_impact": 150.64
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "intervention": {
+        "window_remaining_months": 2,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.45,
+        "roi_if_recovered": 67.79
+      },
+      "member_risk_score": 0.66,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000400"
+      }
+    },
+    {
+      "event_id": "CHG-00076",
+      "member_id": "MBR-000305",
+      "event_month": "2025-10",
+      "event_type": "lost_attribution",
+      "change_classification": "data_lag",
+      "prior_provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      },
+      "new_provider": null,
+      "reason": "Attribution change due to late-arriving claims data",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 595.35,
+        "lost_quality_bonus_contribution": 135.16,
+        "total_impact": 730.51
+      },
+      "quality_measures_affected": [
+        "HbA1c 7.7% \u2264 9% \u2014 adequate control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "No qualifying colorectal screening found",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 3.22,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000305"
+      }
+    },
+    {
+      "event_id": "CHG-00077",
+      "member_id": "MBR-000190",
+      "event_month": "2025-10",
+      "event_type": "lost_attribution",
+      "change_classification": "enrollment_gap",
+      "prior_provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      },
+      "new_provider": null,
+      "reason": "Patient disenrolled from Medicare FFS \u2014 possible transition to Medicare Advantage",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 216.39,
+        "lost_quality_bonus_contribution": 49.13,
+        "total_impact": 265.52
+      },
+      "quality_measures_affected": [
+        "Does not meet denominator criteria for Diabetes: HbA1c Poor Control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Does not meet denominator criteria for Colorectal Cancer Screening",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 2,
+        "recommended_action": "Contact member to verify enrollment status and schedule follow-up",
+        "estimated_intervention_cost": 150.0,
+        "estimated_recovery_probability": 0.6,
+        "roi_if_recovered": 159.31
+      },
+      "member_risk_score": 1.17,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000190"
+      }
+    },
+    {
+      "event_id": "CHG-00078",
+      "member_id": "MBR-000773",
+      "event_month": "2025-10",
+      "event_type": "lost_attribution",
+      "change_classification": "enrollment_termination",
+      "prior_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "new_provider": null,
+      "reason": "Patient deceased or permanently left Medicare FFS",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 153.33,
+        "lost_quality_bonus_contribution": 34.81,
+        "total_impact": 188.14
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "intervention": null,
+      "member_risk_score": 0.83,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000773"
+      }
+    },
+    {
+      "event_id": "CHG-00079",
+      "member_id": "MBR-000193",
+      "event_month": "2025-10",
+      "event_type": "reassignment",
+      "change_classification": "reassignment_within_aco",
+      "prior_provider": {
+        "npi": "1157435530",
+        "name": "Lewis, Kathryn D"
+      },
+      "new_provider": {
+        "npi": "1872462163",
+        "name": "Davis, Colin M"
+      },
+      "reason": "Patient's visit pattern shifted plurality to a different ACO provider",
+      "financial_impact": {
+        "lost_tcoc_contribution": 0,
+        "lost_shared_savings_contribution": 0,
+        "lost_quality_bonus_contribution": 0,
+        "total_impact": 0
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 2,
+        "recommended_action": "Coordinate care transition between ACO providers",
+        "estimated_intervention_cost": 100.0,
+        "estimated_recovery_probability": 0.85,
+        "roi_if_recovered": 0.0
+      },
+      "member_risk_score": 1.5,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000193"
+      }
+    },
+    {
+      "event_id": "CHG-00080",
+      "member_id": "MBR-000159",
+      "event_month": "2025-10",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1899100857",
+        "name": "Wolfe, Matthew E"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 397.77,
+        "lost_quality_bonus_contribution": 90.3,
+        "total_impact": 488.07
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 2.15,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000159"
+      }
+    },
+    {
+      "event_id": "CHG-00081",
+      "member_id": "MBR-000400",
+      "event_month": "2025-10",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1419073370",
+        "name": "Wyatt, Michelle N"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 122.77,
+        "lost_quality_bonus_contribution": 27.87,
+        "total_impact": 150.64
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.66,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000400"
+      }
+    },
+    {
+      "event_id": "CHG-00082",
+      "member_id": "MBR-000270",
+      "event_month": "2025-10",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 310.34,
+        "lost_quality_bonus_contribution": 70.45,
+        "total_impact": 380.79
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.68,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000270"
+      }
+    },
+    {
+      "event_id": "CHG-00083",
+      "member_id": "MBR-000505",
+      "event_month": "2025-10",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1872462163",
+        "name": "Davis, Colin M"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 130.13,
+        "lost_quality_bonus_contribution": 29.54,
+        "total_impact": 159.67
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.7,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000505"
+      }
+    },
+    {
+      "event_id": "CHG-00084",
+      "member_id": "MBR-000190",
+      "event_month": "2025-10",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1668497958",
+        "name": "Miller, Kelly M"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 216.39,
+        "lost_quality_bonus_contribution": 49.13,
+        "total_impact": 265.52
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.17,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000190"
+      }
+    },
+    {
+      "event_id": "CHG-00085",
+      "member_id": "MBR-000853",
+      "event_month": "2025-11",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1182922322",
+        "name": "Barnes, Shane J"
+      },
+      "new_provider": {
+        "npi": "9339670711",
+        "name": "Dr. Michael Crawford"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 4 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 340.07,
+        "lost_quality_bonus_contribution": 77.2,
+        "total_impact": 417.27
+      },
+      "quality_measures_affected": [
+        "HbA1c 6.7% \u2264 9% \u2014 adequate control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "No qualifying colorectal screening found",
+        "No depression screening found during performance year"
+      ],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 1,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.65,
+        "roi_if_recovered": 271.23
+      },
+      "member_risk_score": 1.84,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000853"
+      }
+    },
+    {
+      "event_id": "CHG-00086",
+      "member_id": "MBR-000239",
+      "event_month": "2025-11",
+      "event_type": "lost_attribution",
+      "change_classification": "data_lag",
+      "prior_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "new_provider": null,
+      "reason": "Attribution change due to late-arriving claims data",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 297.63,
+        "lost_quality_bonus_contribution": 67.57,
+        "total_impact": 365.2
+      },
+      "quality_measures_affected": [
+        "HbA1c 12.4% > 9% \u2014 poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "HbA1c 12.4% > 9% \u2014 poor control",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed"
+      ],
+      "intervention": null,
+      "member_risk_score": 1.61,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000239"
+      }
+    },
+    {
+      "event_id": "CHG-00087",
+      "member_id": "MBR-000822",
+      "event_month": "2025-11",
+      "event_type": "lost_attribution",
+      "change_classification": "enrollment_gap",
+      "prior_provider": {
+        "npi": "1419073370",
+        "name": "Wyatt, Michelle N"
+      },
+      "new_provider": null,
+      "reason": "Patient disenrolled from Medicare FFS \u2014 possible transition to Medicare Advantage",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 146.65,
+        "lost_quality_bonus_contribution": 33.29,
+        "total_impact": 179.94
+      },
+      "quality_measures_affected": [
+        "Does not meet denominator criteria for Diabetes: HbA1c Poor Control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Does not meet denominator criteria for Colorectal Cancer Screening",
+        "No depression screening found during performance year"
+      ],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 1,
+        "recommended_action": "Contact member to verify enrollment status and schedule follow-up",
+        "estimated_intervention_cost": 150.0,
+        "estimated_recovery_probability": 0.6,
+        "roi_if_recovered": 107.96
+      },
+      "member_risk_score": 0.79,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000822"
+      }
+    },
+    {
+      "event_id": "CHG-00088",
+      "member_id": "MBR-000083",
+      "event_month": "2025-11",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1161128001",
+        "name": "Ramirez, Cynthia M"
+      },
+      "new_provider": {
+        "npi": "9395310485",
+        "name": "Dr. Robert Chambers"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 3 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 197.25,
+        "lost_quality_bonus_contribution": 44.78,
+        "total_impact": 242.03
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Mammogram completed within 27 months",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "intervention": {
+        "window_remaining_months": 1,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.65,
+        "roi_if_recovered": 157.32
+      },
+      "member_risk_score": 1.07,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000083"
+      }
+    },
+    {
+      "event_id": "CHG-00089",
+      "member_id": "MBR-000929",
+      "event_month": "2025-11",
+      "event_type": "reassignment",
+      "change_classification": "reassignment_within_aco",
+      "prior_provider": {
+        "npi": "1499072778",
+        "name": "Garza, Anthony C"
+      },
+      "new_provider": {
+        "npi": "1899100857",
+        "name": "Wolfe, Matthew E"
+      },
+      "reason": "Patient's visit pattern shifted plurality to a different ACO provider",
+      "financial_impact": {
+        "lost_tcoc_contribution": 0,
+        "lost_shared_savings_contribution": 0,
+        "lost_quality_bonus_contribution": 0,
+        "total_impact": 0
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 1,
+        "recommended_action": "Coordinate care transition between ACO providers",
+        "estimated_intervention_cost": 100.0,
+        "estimated_recovery_probability": 0.85,
+        "roi_if_recovered": 0.0
+      },
+      "member_risk_score": 1.25,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000929"
+      }
+    },
+    {
+      "event_id": "CHG-00090",
+      "member_id": "MBR-000239",
+      "event_month": "2025-11",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 297.63,
+        "lost_quality_bonus_contribution": 67.57,
+        "total_impact": 365.2
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.61,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000239"
+      }
+    },
+    {
+      "event_id": "CHG-00091",
+      "member_id": "MBR-000822",
+      "event_month": "2025-11",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1782278965",
+        "name": "Stanley, Kendra C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 146.65,
+        "lost_quality_bonus_contribution": 33.29,
+        "total_impact": 179.94
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.79,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000822"
+      }
+    },
+    {
+      "event_id": "CHG-00092",
+      "member_id": "MBR-000773",
+      "event_month": "2025-11",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1419073370",
+        "name": "Wyatt, Michelle N"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 153.33,
+        "lost_quality_bonus_contribution": 34.81,
+        "total_impact": 188.14
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.83,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000773"
+      }
+    },
+    {
+      "event_id": "CHG-00093",
+      "member_id": "MBR-000524",
+      "event_month": "2025-11",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 344.29,
+        "lost_quality_bonus_contribution": 78.16,
+        "total_impact": 422.45
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.86,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000524"
+      }
+    },
+    {
+      "event_id": "CHG-00094",
+      "member_id": "MBR-000923",
+      "event_month": "2025-11",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 209.44,
+        "lost_quality_bonus_contribution": 47.55,
+        "total_impact": 256.99
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.13,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000923"
+      }
+    },
+    {
+      "event_id": "CHG-00095",
+      "member_id": "MBR-000181",
+      "event_month": "2025-12",
+      "event_type": "lost_attribution",
+      "change_classification": "enrollment_gap",
+      "prior_provider": {
+        "npi": "1844868053",
+        "name": "Munoz, Lindsay R"
+      },
+      "new_provider": null,
+      "reason": "Patient disenrolled from Medicare FFS \u2014 possible transition to Medicare Advantage",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 264.61,
+        "lost_quality_bonus_contribution": 60.07,
+        "total_impact": 324.68
+      },
+      "quality_measures_affected": [
+        "Does not meet denominator criteria for Diabetes: HbA1c Poor Control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Does not meet denominator criteria for Colorectal Cancer Screening",
+        "Depression screening completed during performance year"
+      ],
+      "quality_numerator_losses": [
+        "Depression screening completed during performance year"
+      ],
+      "intervention": null,
+      "member_risk_score": 1.43,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000181"
+      }
+    },
+    {
+      "event_id": "CHG-00096",
+      "member_id": "MBR-000467",
+      "event_month": "2025-12",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      },
+      "new_provider": {
+        "npi": "9362950628",
+        "name": "Dr. Jennifer Patterson"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 4 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 293.0,
+        "lost_quality_bonus_contribution": 66.52,
+        "total_impact": 359.52
+      },
+      "quality_measures_affected": [
+        "HbA1c 7.9% \u2264 9% \u2014 adequate control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "No mammogram found within 27 months",
+        "No qualifying colorectal screening found",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.58,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000467"
+      }
+    },
+    {
+      "event_id": "CHG-00097",
+      "member_id": "MBR-000270",
+      "event_month": "2025-12",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      },
+      "new_provider": {
+        "npi": "9395310485",
+        "name": "Dr. Robert Chambers"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 5 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 310.34,
+        "lost_quality_bonus_contribution": 70.45,
+        "total_impact": 380.79
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "No qualifying colorectal screening found",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Mammogram completed within 27 months"
+      ],
+      "intervention": null,
+      "member_risk_score": 1.68,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000270"
+      }
+    },
+    {
+      "event_id": "CHG-00098",
+      "member_id": "MBR-000370",
+      "event_month": "2025-12",
+      "event_type": "lost_attribution",
+      "change_classification": "enrollment_termination",
+      "prior_provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      },
+      "new_provider": null,
+      "reason": "Patient deceased or permanently left Medicare FFS",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 148.7,
+        "lost_quality_bonus_contribution": 33.76,
+        "total_impact": 182.46
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Colorectal screening completed",
+        "No depression screening found during performance year"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Colorectal screening completed"
+      ],
+      "intervention": null,
+      "member_risk_score": 0.8,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000370"
+      }
+    },
+    {
+      "event_id": "CHG-00099",
+      "member_id": "MBR-000720",
+      "event_month": "2025-12",
+      "event_type": "reassignment",
+      "change_classification": "reassignment_within_aco",
+      "prior_provider": {
+        "npi": "1501118737",
+        "name": "Miles, Frances C"
+      },
+      "new_provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      },
+      "reason": "Patient's visit pattern shifted plurality to a different ACO provider",
+      "financial_impact": {
+        "lost_tcoc_contribution": 0,
+        "lost_shared_savings_contribution": 0,
+        "lost_quality_bonus_contribution": 0,
+        "total_impact": 0
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.2,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000720"
+      }
+    },
+    {
+      "event_id": "CHG-00100",
+      "member_id": "MBR-000181",
+      "event_month": "2025-12",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 264.61,
+        "lost_quality_bonus_contribution": 60.07,
+        "total_impact": 324.68
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.43,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000181"
+      }
+    },
+    {
+      "event_id": "CHG-00101",
+      "member_id": "MBR-000521",
+      "event_month": "2025-12",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1782278965",
+        "name": "Stanley, Kendra C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 178.62,
+        "lost_quality_bonus_contribution": 40.55,
+        "total_impact": 219.17
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.97,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000521"
+      }
+    },
+    {
+      "event_id": "CHG-00102",
+      "member_id": "MBR-000467",
+      "event_month": "2025-12",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1899100857",
+        "name": "Wolfe, Matthew E"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 293.0,
+        "lost_quality_bonus_contribution": 66.52,
+        "total_impact": 359.52
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.58,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000467"
+      }
+    },
+    {
+      "event_id": "CHG-00103",
+      "member_id": "MBR-000853",
+      "event_month": "2025-12",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1182922322",
+        "name": "Barnes, Shane J"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 340.07,
+        "lost_quality_bonus_contribution": 77.2,
+        "total_impact": 417.27
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.84,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000853"
+      }
+    },
+    {
+      "event_id": "CHG-00104",
+      "member_id": "MBR-000083",
+      "event_month": "2025-12",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 197.25,
+        "lost_quality_bonus_contribution": 44.78,
+        "total_impact": 242.03
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.07,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000083"
+      }
+    }
+  ]
+}

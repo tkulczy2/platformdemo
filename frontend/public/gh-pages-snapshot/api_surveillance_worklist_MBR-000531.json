@@ -1,0 +1,188 @@
+{
+  "member": {
+    "rank": 129,
+    "member_id": "MBR-000531",
+    "member_demographics": {
+      "age": 0,
+      "sex": ""
+    },
+    "attributed_provider": {
+      "npi": "1679478607",
+      "name": "Fowler, Angel J"
+    },
+    "attribution_risk": {
+      "status": "moderate_risk",
+      "stability_score": 0.5,
+      "risk_factors": [
+        "Competing visits with provider 1182922322",
+        "Fewer than 2 visits with attributed provider this year"
+      ]
+    },
+    "risk_factors": [
+      "Competing visits with provider 1182922322",
+      "Fewer than 2 visits with attributed provider this year"
+    ],
+    "competing_provider": {
+      "npi": "1182922322",
+      "visit_count": 10
+    },
+    "days_since_last_visit": 0,
+    "visits_this_year": 0,
+    "financial_impact_if_lost": {
+      "tcoc": 12400,
+      "shared_savings": 185.0,
+      "quality_bonus": 42.0,
+      "total": 227.0
+    },
+    "quality_measures_at_stake": [
+      {
+        "measure_id": "hba1c_poor_control",
+        "measure_name": "Hba1C Poor Control",
+        "currently_met": true,
+        "rate_impact": -0.001
+      },
+      {
+        "measure_id": "colorectal_screening",
+        "measure_name": "Colorectal Screening",
+        "currently_met": true,
+        "rate_impact": -0.001
+      },
+      {
+        "measure_id": "depression_screening",
+        "measure_name": "Depression Screening",
+        "currently_met": true,
+        "rate_impact": -0.001
+      }
+    ],
+    "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+    "intervention_cost_estimate": 250.0,
+    "recovery_probability": 0.45,
+    "roi_estimate": 0.41,
+    "days_remaining_in_period": 73,
+    "urgency": "moderate",
+    "has_upcoming_appointment": false,
+    "next_appointment_date": null
+  },
+  "attribution_history": [
+    {
+      "month": "2025-01",
+      "status": "not_attributed",
+      "provider": null
+    },
+    {
+      "month": "2025-02",
+      "status": "not_attributed",
+      "provider": null
+    },
+    {
+      "month": "2025-03",
+      "status": "not_attributed",
+      "provider": null
+    },
+    {
+      "month": "2025-04",
+      "status": "attributed",
+      "provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      }
+    },
+    {
+      "month": "2025-05",
+      "status": "attributed",
+      "provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      }
+    },
+    {
+      "month": "2025-06",
+      "status": "attributed",
+      "provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      }
+    },
+    {
+      "month": "2025-07",
+      "status": "attributed",
+      "provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      }
+    },
+    {
+      "month": "2025-08",
+      "status": "attributed",
+      "provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      }
+    },
+    {
+      "month": "2025-09",
+      "status": "attributed",
+      "provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      }
+    },
+    {
+      "month": "2025-10",
+      "status": "attributed",
+      "provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      }
+    },
+    {
+      "month": "2025-11",
+      "status": "attributed",
+      "provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      }
+    },
+    {
+      "month": "2025-12",
+      "status": "attributed",
+      "provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      }
+    }
+  ],
+  "change_events": [
+    {
+      "event_id": "CHG-00030",
+      "member_id": "MBR-000531",
+      "event_month": "2025-04",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 142.54,
+        "lost_quality_bonus_contribution": 32.36,
+        "total_impact": 174.9
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.77,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000531"
+      }
+    }
+  ],
+  "clinical_brief_link": null,
+  "reconciliation_link": null
+}

@@ -1,0 +1,221 @@
+{
+  "member": {
+    "rank": 127,
+    "member_id": "MBR-000927",
+    "member_demographics": {
+      "age": 0,
+      "sex": ""
+    },
+    "attributed_provider": {
+      "npi": "1462172927",
+      "name": "Sanchez, Donald D"
+    },
+    "attribution_risk": {
+      "status": "high_risk",
+      "stability_score": 0.3,
+      "risk_factors": []
+    },
+    "risk_factors": [],
+    "competing_provider": null,
+    "days_since_last_visit": 0,
+    "visits_this_year": 3,
+    "financial_impact_if_lost": {
+      "tcoc": 12400,
+      "shared_savings": 185.0,
+      "quality_bonus": 42.0,
+      "total": 227.0
+    },
+    "quality_measures_at_stake": [
+      {
+        "measure_id": "hba1c_poor_control",
+        "measure_name": "Hba1C Poor Control",
+        "currently_met": true,
+        "rate_impact": -0.001
+      }
+    ],
+    "recommended_action": "Schedule care coordination visit",
+    "intervention_cost_estimate": 250.0,
+    "recovery_probability": 0.65,
+    "roi_estimate": 0.59,
+    "days_remaining_in_period": 73,
+    "urgency": "critical",
+    "has_upcoming_appointment": false,
+    "next_appointment_date": null
+  },
+  "attribution_history": [
+    {
+      "month": "2025-01",
+      "status": "attributed",
+      "provider": {
+        "npi": "1462172927",
+        "name": "Sanchez, Donald D"
+      }
+    },
+    {
+      "month": "2025-02",
+      "status": "attributed",
+      "provider": {
+        "npi": "1462172927",
+        "name": "Sanchez, Donald D"
+      }
+    },
+    {
+      "month": "2025-03",
+      "status": "not_attributed",
+      "provider": null
+    },
+    {
+      "month": "2025-04",
+      "status": "not_attributed",
+      "provider": null
+    },
+    {
+      "month": "2025-05",
+      "status": "not_attributed",
+      "provider": null
+    },
+    {
+      "month": "2025-06",
+      "status": "attributed",
+      "provider": {
+        "npi": "1462172927",
+        "name": "Sanchez, Donald D"
+      }
+    },
+    {
+      "month": "2025-07",
+      "status": "attributed",
+      "provider": {
+        "npi": "1462172927",
+        "name": "Sanchez, Donald D"
+      }
+    },
+    {
+      "month": "2025-08",
+      "status": "attributed",
+      "provider": {
+        "npi": "1462172927",
+        "name": "Sanchez, Donald D"
+      }
+    },
+    {
+      "month": "2025-09",
+      "status": "attributed",
+      "provider": {
+        "npi": "1462172927",
+        "name": "Sanchez, Donald D"
+      }
+    },
+    {
+      "month": "2025-10",
+      "status": "attributed",
+      "provider": {
+        "npi": "1462172927",
+        "name": "Sanchez, Donald D"
+      }
+    },
+    {
+      "month": "2025-11",
+      "status": "attributed",
+      "provider": {
+        "npi": "1462172927",
+        "name": "Sanchez, Donald D"
+      }
+    },
+    {
+      "month": "2025-12",
+      "status": "attributed",
+      "provider": {
+        "npi": "1462172927",
+        "name": "Sanchez, Donald D"
+      }
+    }
+  ],
+  "change_events": [
+    {
+      "event_id": "CHG-00013",
+      "member_id": "MBR-000927",
+      "event_month": "2025-03",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1462172927",
+        "name": "Sanchez, Donald D"
+      },
+      "new_provider": {
+        "npi": "9896233790",
+        "name": "Dr. Patricia Blackwell"
+      },
+      "reason": "Patient visited Dr. Patricia Blackwell (Blackwell Medical Group) 3 times in Q4 2024/Q1 2025, exceeding ACO PCP visit count",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 205.81,
+        "lost_quality_bonus_contribution": 46.73,
+        "total_impact": 252.54
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "BP 167.0/93.0 \u2265 140/90 \u2014 uncontrolled",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "No qualifying colorectal screening found",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control"
+      ],
+      "intervention": {
+        "window_remaining_months": 9,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.65,
+        "roi_if_recovered": 164.15
+      },
+      "member_risk_score": 1.11,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000927"
+      }
+    },
+    {
+      "event_id": "CHG-00042",
+      "member_id": "MBR-000927",
+      "event_month": "2025-06",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1462172927",
+        "name": "Sanchez, Donald D"
+      },
+      "reason": "Retention visit in May re-established plurality with ACO PCP. Intervention cost: $250. Attribution recovered.",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 205.81,
+        "lost_quality_bonus_contribution": 46.73,
+        "total_impact": 252.54
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "BP 167.0/93.0 \u2265 140/90 \u2014 uncontrolled",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "No qualifying colorectal screening found",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control"
+      ],
+      "intervention": null,
+      "member_risk_score": 1.11,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000927"
+      }
+    }
+  ],
+  "clinical_brief_link": null,
+  "reconciliation_link": null
+}

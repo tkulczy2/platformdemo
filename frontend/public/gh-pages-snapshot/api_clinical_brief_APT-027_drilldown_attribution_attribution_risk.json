@@ -1,0 +1,29 @@
+{
+  "item_type": "attribution",
+  "item_id": "attribution_risk",
+  "detail": {
+    "status": "high_risk",
+    "stability_score": 0.35,
+    "risk_factors": [
+      "Significant visits with providers outside your practice"
+    ],
+    "recommended_action": "Schedule a retention visit. A qualifying visit today strengthens the care relationship.",
+    "competing_provider": {
+      "npi": "1427515427",
+      "visit_count": 1
+    },
+    "days_since_last_visit": 0,
+    "visits_this_year": 30,
+    "provenance": {
+      "step": "attribution",
+      "step_number": 2,
+      "member_id": "MBR-000639"
+    }
+  },
+  "provenance": {
+    "step": "attribution",
+    "step_number": 2,
+    "member_id": "MBR-000639"
+  },
+  "clinical_question": "What is this patient's panel assignment status?"
+}

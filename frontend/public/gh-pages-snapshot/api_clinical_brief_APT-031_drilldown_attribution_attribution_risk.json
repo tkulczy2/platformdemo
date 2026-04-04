@@ -1,0 +1,27 @@
+{
+  "item_type": "attribution",
+  "item_id": "attribution_risk",
+  "detail": {
+    "status": "stable",
+    "stability_score": 1.0,
+    "risk_factors": [],
+    "recommended_action": null,
+    "competing_provider": {
+      "npi": "1168708867",
+      "visit_count": 1
+    },
+    "days_since_last_visit": 0,
+    "visits_this_year": 41,
+    "provenance": {
+      "step": "attribution",
+      "step_number": 2,
+      "member_id": "MBR-000286"
+    }
+  },
+  "provenance": {
+    "step": "attribution",
+    "step_number": 2,
+    "member_id": "MBR-000286"
+  },
+  "clinical_question": "What is this patient's panel assignment status?"
+}

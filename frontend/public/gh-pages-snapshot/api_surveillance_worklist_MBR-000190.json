@@ -1,0 +1,219 @@
+{
+  "member": {
+    "rank": 132,
+    "member_id": "MBR-000190",
+    "member_demographics": {
+      "age": 0,
+      "sex": ""
+    },
+    "attributed_provider": {
+      "npi": "1668497958",
+      "name": "Miller, Kelly M"
+    },
+    "attribution_risk": {
+      "status": "moderate_risk",
+      "stability_score": 0.5,
+      "risk_factors": [
+        "Competing visits with provider 1304514849",
+        "Fewer than 2 visits with attributed provider this year"
+      ]
+    },
+    "risk_factors": [
+      "Competing visits with provider 1304514849",
+      "Fewer than 2 visits with attributed provider this year"
+    ],
+    "competing_provider": {
+      "npi": "1304514849",
+      "visit_count": 21
+    },
+    "days_since_last_visit": 0,
+    "visits_this_year": 0,
+    "financial_impact_if_lost": {
+      "tcoc": 12400,
+      "shared_savings": 185.0,
+      "quality_bonus": 42.0,
+      "total": 227.0
+    },
+    "quality_measures_at_stake": [],
+    "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+    "intervention_cost_estimate": 250.0,
+    "recovery_probability": 0.45,
+    "roi_estimate": 0.41,
+    "days_remaining_in_period": 73,
+    "urgency": "moderate",
+    "has_upcoming_appointment": false,
+    "next_appointment_date": null
+  },
+  "attribution_history": [
+    {
+      "month": "2025-01",
+      "status": "attributed",
+      "provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      }
+    },
+    {
+      "month": "2025-02",
+      "status": "attributed",
+      "provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      }
+    },
+    {
+      "month": "2025-03",
+      "status": "attributed",
+      "provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      }
+    },
+    {
+      "month": "2025-04",
+      "status": "attributed",
+      "provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      }
+    },
+    {
+      "month": "2025-05",
+      "status": "attributed",
+      "provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      }
+    },
+    {
+      "month": "2025-06",
+      "status": "attributed",
+      "provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      }
+    },
+    {
+      "month": "2025-07",
+      "status": "attributed",
+      "provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      }
+    },
+    {
+      "month": "2025-08",
+      "status": "attributed",
+      "provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      }
+    },
+    {
+      "month": "2025-09",
+      "status": "attributed",
+      "provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      }
+    },
+    {
+      "month": "2025-10",
+      "status": "attributed",
+      "provider": {
+        "npi": "1668497958",
+        "name": "Miller, Kelly M"
+      }
+    },
+    {
+      "month": "2025-11",
+      "status": "attributed",
+      "provider": {
+        "npi": "1668497958",
+        "name": "Miller, Kelly M"
+      }
+    },
+    {
+      "month": "2025-12",
+      "status": "attributed",
+      "provider": {
+        "npi": "1668497958",
+        "name": "Miller, Kelly M"
+      }
+    }
+  ],
+  "change_events": [
+    {
+      "event_id": "CHG-00077",
+      "member_id": "MBR-000190",
+      "event_month": "2025-10",
+      "event_type": "lost_attribution",
+      "change_classification": "enrollment_gap",
+      "prior_provider": {
+        "npi": "1304514849",
+        "name": "Hoffman, Jennifer W"
+      },
+      "new_provider": null,
+      "reason": "Patient disenrolled from Medicare FFS \u2014 possible transition to Medicare Advantage",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 216.39,
+        "lost_quality_bonus_contribution": 49.13,
+        "total_impact": 265.52
+      },
+      "quality_measures_affected": [
+        "Does not meet denominator criteria for Diabetes: HbA1c Poor Control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Does not meet denominator criteria for Breast Cancer Screening",
+        "Does not meet denominator criteria for Colorectal Cancer Screening",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 2,
+        "recommended_action": "Contact member to verify enrollment status and schedule follow-up",
+        "estimated_intervention_cost": 150.0,
+        "estimated_recovery_probability": 0.6,
+        "roi_if_recovered": 159.31
+      },
+      "member_risk_score": 1.17,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000190"
+      }
+    },
+    {
+      "event_id": "CHG-00084",
+      "member_id": "MBR-000190",
+      "event_month": "2025-10",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1668497958",
+        "name": "Miller, Kelly M"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 216.39,
+        "lost_quality_bonus_contribution": 49.13,
+        "total_impact": 265.52
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.17,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000190"
+      }
+    }
+  ],
+  "clinical_brief_link": null,
+  "reconciliation_link": null
+}

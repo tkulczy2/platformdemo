@@ -1,0 +1,26 @@
+{
+  "item_type": "gap",
+  "item_id": "colorectal_screening",
+  "detail": {
+    "measure_id": "colorectal_screening",
+    "measure_name": "Colorectal Cancer Screening",
+    "action_needed": "Complete colorectal cancer screening (FIT kit or colonoscopy referral)",
+    "closable_this_visit": false,
+    "days_remaining": 72,
+    "financial_weight": 0.2,
+    "priority_score": 0.501,
+    "provenance": {
+      "step": "quality",
+      "step_number": 3,
+      "member_id": "MBR-000599",
+      "measure_id": "colorectal_screening"
+    }
+  },
+  "provenance": {
+    "step": "quality",
+    "step_number": 3,
+    "member_id": "MBR-000599",
+    "measure_id": "colorectal_screening"
+  },
+  "clinical_question": "Why is Colorectal Cancer Screening showing as due for this patient?"
+}

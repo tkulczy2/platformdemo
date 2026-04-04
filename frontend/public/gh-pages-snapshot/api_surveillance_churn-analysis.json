@@ -1,0 +1,200 @@
+{
+  "by_classification": {
+    "data_lag": {
+      "count": 6,
+      "financial_impact": 2332.67
+    },
+    "competing_provider": {
+      "count": 20,
+      "financial_impact": 5773.41
+    },
+    "enrollment_gap": {
+      "count": 9,
+      "financial_impact": 2182.51
+    },
+    "reassignment_within_aco": {
+      "count": 11,
+      "financial_impact": 0
+    },
+    "new_enrollment": {
+      "count": 29,
+      "financial_impact": 8531.29
+    },
+    "new_plurality": {
+      "count": 25,
+      "financial_impact": 7807.58
+    },
+    "enrollment_termination": {
+      "count": 4,
+      "financial_impact": 1096.16
+    }
+  },
+  "by_quarter": {
+    "Q1": {
+      "new": 12,
+      "lost": 9,
+      "net": 3,
+      "reassignments": 2
+    },
+    "Q2": {
+      "new": 14,
+      "lost": 9,
+      "net": 5,
+      "reassignments": 3
+    },
+    "Q3": {
+      "new": 13,
+      "lost": 9,
+      "net": 4,
+      "reassignments": 3
+    },
+    "Q4": {
+      "new": 15,
+      "lost": 12,
+      "net": 3,
+      "reassignments": 3
+    }
+  },
+  "by_provider": [
+    {
+      "npi": "1899100857",
+      "name": "Wolfe, Matthew E",
+      "churn_rate": 0.2041,
+      "losses": 0
+    },
+    {
+      "npi": "1590886206",
+      "name": "Rhodes, Patricia C",
+      "churn_rate": 0.2,
+      "losses": 0
+    },
+    {
+      "npi": "1462172927",
+      "name": "Sanchez, Donald D",
+      "churn_rate": 0.1379,
+      "losses": 1
+    },
+    {
+      "npi": "1505413597",
+      "name": "Robinson, William A",
+      "churn_rate": 0.0779,
+      "losses": 1
+    },
+    {
+      "npi": "1161128001",
+      "name": "Ramirez, Cynthia M",
+      "churn_rate": 0.06,
+      "losses": 2
+    },
+    {
+      "npi": "1248706171",
+      "name": "Ray, Janet B",
+      "churn_rate": 0.058,
+      "losses": 6
+    },
+    {
+      "npi": "1419073370",
+      "name": "Wyatt, Michelle N",
+      "churn_rate": 0.0541,
+      "losses": 0
+    },
+    {
+      "npi": "1872462163",
+      "name": "Davis, Colin M",
+      "churn_rate": 0.0526,
+      "losses": 0
+    },
+    {
+      "npi": "1349083724",
+      "name": "Herrera, Teresa N",
+      "churn_rate": 0.0414,
+      "losses": 1
+    },
+    {
+      "npi": "1844868053",
+      "name": "Munoz, Lindsay R",
+      "churn_rate": 0.0368,
+      "losses": 1
+    },
+    {
+      "npi": "1973628220",
+      "name": "Martin, Michael J",
+      "churn_rate": 0.0349,
+      "losses": 2
+    },
+    {
+      "npi": "1304514849",
+      "name": "Hoffman, Jennifer W",
+      "churn_rate": 0.0345,
+      "losses": 0
+    },
+    {
+      "npi": "1182922322",
+      "name": "Barnes, Shane J",
+      "churn_rate": 0.0303,
+      "losses": 0
+    },
+    {
+      "npi": "1501118737",
+      "name": "Miles, Frances C",
+      "churn_rate": 0.0222,
+      "losses": 0
+    },
+    {
+      "npi": "1499072778",
+      "name": "Garza, Anthony C",
+      "churn_rate": 0.0086,
+      "losses": 2
+    }
+  ],
+  "seasonal_pattern": [
+    {
+      "month": "2025-01",
+      "churn_rate": 0.0
+    },
+    {
+      "month": "2025-02",
+      "churn_rate": 0.0051
+    },
+    {
+      "month": "2025-03",
+      "churn_rate": 0.0041
+    },
+    {
+      "month": "2025-04",
+      "churn_rate": 0.0031
+    },
+    {
+      "month": "2025-05",
+      "churn_rate": 0.0031
+    },
+    {
+      "month": "2025-06",
+      "churn_rate": 0.003
+    },
+    {
+      "month": "2025-07",
+      "churn_rate": 0.003
+    },
+    {
+      "month": "2025-08",
+      "churn_rate": 0.003
+    },
+    {
+      "month": "2025-09",
+      "churn_rate": 0.003
+    },
+    {
+      "month": "2025-10",
+      "churn_rate": 0.004
+    },
+    {
+      "month": "2025-11",
+      "churn_rate": 0.004
+    },
+    {
+      "month": "2025-12",
+      "churn_rate": 0.004
+    }
+  ]
+}

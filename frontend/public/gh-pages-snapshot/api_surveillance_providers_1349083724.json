@@ -1,0 +1,516 @@
+{
+  "provider": {
+    "provider_npi": "1349083724",
+    "provider_name": "Herrera, Teresa N",
+    "specialty": "Family Medicine",
+    "current_panel_size": 72,
+    "jan_panel_size": 73,
+    "net_change": -1,
+    "net_change_pct": -0.0137,
+    "churn_rate_annualized": 0.0414,
+    "members_at_risk": 6,
+    "financial_exposure": 3373.25,
+    "quality_impact": {},
+    "monthly_trend": [
+      73,
+      73,
+      73,
+      73,
+      73,
+      72,
+      72,
+      71,
+      72,
+      72,
+      73,
+      72
+    ],
+    "cascade_flag": false
+  },
+  "change_events": [
+    {
+      "event_id": "CHG-00044",
+      "member_id": "MBR-000385",
+      "event_month": "2025-06",
+      "event_type": "lost_attribution",
+      "change_classification": "data_lag",
+      "prior_provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      },
+      "new_provider": null,
+      "reason": "Attribution change due to late-arriving claims data",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 218.65,
+        "lost_quality_bonus_contribution": 49.64,
+        "total_impact": 268.29
+      },
+      "quality_measures_affected": [
+        "HbA1c 9.6% > 9% \u2014 poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "No mammogram found within 27 months",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "quality_numerator_losses": [
+        "HbA1c 9.6% > 9% \u2014 poor control",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "intervention": null,
+      "member_risk_score": 1.18,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000385"
+      }
+    },
+    {
+      "event_id": "CHG-00058",
+      "member_id": "MBR-000270",
+      "event_month": "2025-08",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      },
+      "new_provider": {
+        "npi": "9126855092",
+        "name": "Dr. James Morrison"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 2 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 310.34,
+        "lost_quality_bonus_contribution": 70.45,
+        "total_impact": 380.79
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "Mammogram completed within 27 months",
+        "No qualifying colorectal screening found",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Mammogram completed within 27 months"
+      ],
+      "intervention": {
+        "window_remaining_months": 4,
+        "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+        "estimated_intervention_cost": 250.0,
+        "estimated_recovery_probability": 0.65,
+        "roi_if_recovered": 247.51
+      },
+      "member_risk_score": 1.68,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000270"
+      }
+    },
+    {
+      "event_id": "CHG-00071",
+      "member_id": "MBR-000131",
+      "event_month": "2025-09",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 394.25,
+        "lost_quality_bonus_contribution": 89.51,
+        "total_impact": 483.76
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 2.13,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000131"
+      }
+    },
+    {
+      "event_id": "CHG-00094",
+      "member_id": "MBR-000923",
+      "event_month": "2025-11",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 209.44,
+        "lost_quality_bonus_contribution": 47.55,
+        "total_impact": 256.99
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.13,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000923"
+      }
+    },
+    {
+      "event_id": "CHG-00096",
+      "member_id": "MBR-000467",
+      "event_month": "2025-12",
+      "event_type": "lost_attribution",
+      "change_classification": "competing_provider",
+      "prior_provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      },
+      "new_provider": {
+        "npi": "9362950628",
+        "name": "Dr. Jennifer Patterson"
+      },
+      "reason": "Patient established plurality with non-ACO PCP based on 4 visits in the prior quarter",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 293.0,
+        "lost_quality_bonus_contribution": 66.52,
+        "total_impact": 359.52
+      },
+      "quality_measures_affected": [
+        "HbA1c 7.9% \u2264 9% \u2014 adequate control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "No mammogram found within 27 months",
+        "No qualifying colorectal screening found",
+        "Excluded: existing depression/bipolar with active treatment"
+      ],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.58,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000467"
+      }
+    }
+  ],
+  "at_risk_members": [
+    {
+      "rank": 29,
+      "member_id": "MBR-000356",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      },
+      "attribution_risk": {
+        "status": "high_risk",
+        "stability_score": 0.3,
+        "risk_factors": [
+          "Competing visits with provider 1903809008"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1903809008"
+      ],
+      "competing_provider": {
+        "npi": "1903809008",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 11,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "critical",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 94,
+      "member_id": "MBR-000201",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1930275054",
+          "Fewer than 2 visits with attributed provider this year"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1930275054",
+        "Fewer than 2 visits with attributed provider this year"
+      ],
+      "competing_provider": {
+        "npi": "1930275054",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 1,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "controlling_bp",
+          "measure_name": "Controlling Bp",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 97,
+      "member_id": "MBR-000507",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      },
+      "attribution_risk": {
+        "status": "high_risk",
+        "stability_score": 0.3,
+        "risk_factors": [
+          "Competing visits with provider 1427515427"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1427515427"
+      ],
+      "competing_provider": {
+        "npi": "1427515427",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 22,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "critical",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 105,
+      "member_id": "MBR-000316",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1516646513"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1516646513"
+      ],
+      "competing_provider": {
+        "npi": "1516646513",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 5,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 106,
+      "member_id": "MBR-000371",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      },
+      "attribution_risk": {
+        "status": "high_risk",
+        "stability_score": 0.3,
+        "risk_factors": [
+          "Competing visits with provider 1528134432"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1528134432"
+      ],
+      "competing_provider": {
+        "npi": "1528134432",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 9,
+      "financial_impact_if_lost": {
+        "tcoc": 106662.53,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "critical",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 121,
+      "member_id": "MBR-000126",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1349083724",
+        "name": "Herrera, Teresa N"
+      },
+      "attribution_risk": {
+        "status": "high_risk",
+        "stability_score": 0.3,
+        "risk_factors": []
+      },
+      "risk_factors": [],
+      "competing_provider": null,
+      "days_since_last_visit": 0,
+      "visits_this_year": 18,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule care coordination visit",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.65,
+      "roi_estimate": 0.59,
+      "days_remaining_in_period": 73,
+      "urgency": "critical",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    }
+  ]
+}

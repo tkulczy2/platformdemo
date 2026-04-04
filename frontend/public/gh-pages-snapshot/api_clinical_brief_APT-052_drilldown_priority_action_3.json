@@ -1,0 +1,24 @@
+{
+  "item_type": "priority_action",
+  "item_id": "3",
+  "detail": {
+    "rank": 3,
+    "action_text": "Schedule a follow-up visit within 30 days to strengthen the care relationship",
+    "reason_text": "This patient is at risk of leaving your panel",
+    "category": "attribution_retention",
+    "measure_id": null,
+    "financial_impact": null,
+    "closable_this_visit": false,
+    "provenance": {
+      "step": "attribution",
+      "step_number": 2,
+      "member_id": "MBR-000464"
+    }
+  },
+  "provenance": {
+    "step": "attribution",
+    "step_number": 2,
+    "member_id": "MBR-000464"
+  },
+  "clinical_question": "Why is 'Schedule a follow-up visit within 30 days to strengthen the care relationship' the #3 priority?"
+}

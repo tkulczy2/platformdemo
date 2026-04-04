@@ -8,7 +8,7 @@ interface Step {
   matchPaths: string[];
 }
 
-const STEPS: Step[] = [
+const PERFORMANCE_STEPS: Step[] = [
   { number: 1, label: 'Data Upload', path: '/', matchPaths: ['/'] },
   { number: 2, label: 'Contract Config', path: '/contract', matchPaths: ['/contract'] },
   { number: 3, label: 'Dashboard', path: '/dashboard', matchPaths: ['/dashboard'] },
@@ -16,28 +16,37 @@ const STEPS: Step[] = [
   { number: 5, label: 'Reconciliation', path: '/reconciliation', matchPaths: ['/reconciliation'] },
 ];
 
-function stepStatus(step: Step, pathname: string): 'active' | 'completed' | 'upcoming' {
+const PANEL_STEPS: Step[] = [
+  { number: 1, label: 'Attribution Surveillance', path: '/surveillance', matchPaths: ['/surveillance'] },
+  { number: 2, label: 'Clinical Briefs', path: '/clinical', matchPaths: ['/clinical'] },
+];
+
+function stepStatus(step: Step, pathname: string, allSteps: Step[]): 'active' | 'completed' | 'upcoming' {
   const isMatch = step.matchPaths.some((p) =>
     p === '/' ? pathname === '/' : pathname.startsWith(p),
   );
   if (isMatch) return 'active';
 
-  // Determine completed vs upcoming based on the step order relative to the active step
-  const activeIndex = STEPS.findIndex((s) =>
+  const activeIndex = allSteps.findIndex((s) =>
     s.matchPaths.some((p) => (p === '/' ? pathname === '/' : pathname.startsWith(p))),
   );
   if (activeIndex === -1) return 'upcoming';
-  const thisIndex = STEPS.indexOf(step);
+  const thisIndex = allSteps.indexOf(step);
   return thisIndex < activeIndex ? 'completed' : 'upcoming';
 }
 
-export default function StepIndicator() {
+interface StepIndicatorProps {
+  panelActive: boolean;
+}
+
+export default function StepIndicator({ panelActive }: StepIndicatorProps) {
   const { pathname } = useLocation();
+  const steps = panelActive ? PANEL_STEPS : PERFORMANCE_STEPS;
 
   return (
     <nav className="flex items-center gap-1" aria-label="Progress">
-      {STEPS.map((step, i) => {
-        const status = stepStatus(step, pathname);
+      {steps.map((step, i) => {
+        const status = stepStatus(step, pathname, steps);
         return (
           <div key={step.number} className="flex items-center">
             <Link
@@ -72,7 +81,7 @@ export default function StepIndicator() {
               <span className="hidden sm:inline">{step.label}</span>
             </Link>
 
-            {i < STEPS.length - 1 && (
+            {i < steps.length - 1 && (
               <svg
                 className="mx-1 h-4 w-4 flex-shrink-0 text-gray-300"
                 fill="currentColor"

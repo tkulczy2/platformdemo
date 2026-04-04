@@ -1,0 +1,51 @@
+{
+  "appointment_id": "APT-049",
+  "member_id": "MBR-000813",
+  "member_demographics": {
+    "member_id": "MBR-000813"
+  },
+  "appointment_date": "2025-10-24",
+  "appointment_time": "10:55",
+  "provider_name": "Fowler, Angel J",
+  "provider_npi": "1679478607",
+  "contract_name": "Medicare Shared Savings Program \u2014 ACO Agreement 2025",
+  "performance_period_end": "2025-12-31",
+  "days_remaining_in_period": 68,
+  "attribution_risk": {
+    "status": "stable",
+    "stability_score": 1.0,
+    "risk_factors": [],
+    "recommended_action": null,
+    "competing_provider": {
+      "npi": "1397176699",
+      "visit_count": 1
+    },
+    "days_since_last_visit": 0,
+    "visits_this_year": 19,
+    "provenance": {
+      "step": "attribution",
+      "step_number": 2,
+      "member_id": "MBR-000813"
+    }
+  },
+  "priority_actions": [],
+  "quality_gaps": [],
+  "total_gap_count": 0,
+  "closable_this_visit_count": 0,
+  "hcc_opportunities": [],
+  "recent_utilization": [],
+  "cost_context": {
+    "ytd_cost": 0.0,
+    "expected_cost": 0.0,
+    "cost_status": "at_expected",
+    "cost_ratio": 1.0,
+    "top_cost_driver": null,
+    "pmpm": 0.0,
+    "benchmark_pmpm": 1187.0,
+    "provenance": {}
+  },
+  "demo_role": "routine_low_gap",
+  "is_crossover_patient": false,
+  "crossover_discrepancy": null,
+  "is_feedback_patient": false
+}

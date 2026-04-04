@@ -1,0 +1,128 @@
+{
+  "date": "2025-10-23",
+  "day_name": "Thursday",
+  "narrative_theme": "High-Cost Patient Day",
+  "appointments": [
+    {
+      "appointment_id": "APT-032",
+      "time": "08:30",
+      "member_id": "MBR-000261",
+      "provider_npi": "1679478607",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "routine_low_gap",
+      "demo_notes": "Routine visit, 0-1 open gaps. Establishes baseline brief experience.",
+      "_date": "2025-10-23"
+    },
+    {
+      "appointment_id": "APT-033",
+      "time": "08:50",
+      "member_id": "MBR-000003",
+      "provider_npi": "1462172927",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "routine_low_gap",
+      "demo_notes": "Routine visit, 0-1 open gaps. Establishes baseline brief experience.",
+      "_date": "2025-10-23"
+    },
+    {
+      "appointment_id": "APT-034",
+      "time": "09:15",
+      "member_id": "MBR-000760",
+      "provider_npi": "1590886206",
+      "appointment_type": "Annual Wellness",
+      "duration_minutes": 20,
+      "demo_role": "routine_low_gap",
+      "demo_notes": "Routine visit, 0-1 open gaps. Establishes baseline brief experience.",
+      "_date": "2025-10-23"
+    },
+    {
+      "appointment_id": "APT-035",
+      "time": "09:35",
+      "member_id": "MBR-000873",
+      "provider_npi": "1679478607",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 30,
+      "demo_role": "routine_low_gap",
+      "demo_notes": "Routine visit, 0-1 open gaps. Establishes baseline brief experience.",
+      "_date": "2025-10-23"
+    },
+    {
+      "appointment_id": "APT-036",
+      "time": "10:00",
+      "member_id": "MBR-000631",
+      "provider_npi": "1462172927",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 30,
+      "demo_role": "routine_low_gap",
+      "demo_notes": "Routine visit, 0-1 open gaps. Establishes baseline brief experience.",
+      "_date": "2025-10-23"
+    },
+    {
+      "appointment_id": "APT-037",
+      "time": "10:25",
+      "member_id": "MBR-000065",
+      "provider_npi": "1590886206",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 30,
+      "demo_role": "routine_low_gap",
+      "demo_notes": "Routine visit, 0-1 open gaps. Establishes baseline brief experience.",
+      "_date": "2025-10-23"
+    },
+    {
+      "appointment_id": "APT-038",
+      "time": "10:50",
+      "member_id": "MBR-000540",
+      "provider_npi": "1679478607",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "high_cost",
+      "demo_notes": "Top decile cost. Shows cost context and utilization timeline.",
+      "_date": "2025-10-23"
+    },
+    {
+      "appointment_id": "APT-039",
+      "time": "11:10",
+      "member_id": "MBR-000210",
+      "provider_npi": "1462172927",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 30,
+      "demo_role": "high_cost",
+      "demo_notes": "Top decile cost. Shows cost context and utilization timeline.",
+      "_date": "2025-10-23"
+    },
+    {
+      "appointment_id": "APT-040",
+      "time": "11:40",
+      "member_id": "MBR-000163",
+      "provider_npi": "1590886206",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "attribution_risk_competing",
+      "demo_notes": "Competing provider visits detected. At risk of leaving panel.",
+      "_date": "2025-10-23"
+    },
+    {
+      "appointment_id": "APT-041",
+      "time": "13:00",
+      "member_id": "MBR-000896",
+      "provider_npi": "1679478607",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 30,
+      "demo_role": "attribution_risk_enrollment",
+      "demo_notes": "Enrollment gap detected. Care relationship continuity uncertain.",
+      "_date": "2025-10-23"
+    },
+    {
+      "appointment_id": "APT-042",
+      "time": "13:25",
+      "member_id": "MBR-000830",
+      "provider_npi": "1462172927",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "high_gap",
+      "demo_notes": "4+ open quality gaps. Shows high-gap workflow.",
+      "_date": "2025-10-23"
+    }
+  ]
+}

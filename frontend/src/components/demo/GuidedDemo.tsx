@@ -15,23 +15,24 @@ interface DemoStep {
 }
 
 const STEPS: DemoStep[] = [
+  // ── Performance Intelligence ──────────────────────────────────────────────
   {
-    title: 'Welcome to VBC Performance Intelligence',
+    title: 'Welcome to the Value Based Intelligence Platform',
     description:
-      'This tool demonstrates how a neutral calculation layer can transparently compute VBC performance metrics. Every number you see can be traced back to its source data, governing contract language, and executing code.',
+      'This platform demonstrates how a neutral calculation layer can transparently compute VBC performance metrics — and deliver those insights to every audience that needs them. Every number can be traced back to its source data, governing contract language, and executing code.',
     targetPath: '/',
   },
   {
     title: 'Load the Data',
     description:
-      'Start by loading demo data -- synthetic claims, eligibility, clinical records, and provider rosters for 1,000 Medicare beneficiaries. The platform validates each file and scores data quality automatically.',
+      'Start by loading demo data — synthetic claims, eligibility, clinical records, and provider rosters for 1,000 Medicare beneficiaries. The platform validates each file and scores data quality automatically.',
     actionHint: 'Click "Load Demo Data" to populate the platform with synthetic data.',
     targetPath: '/',
   },
   {
     title: 'Review the Contract',
     description:
-      'The contract defines the rules: how members are attributed, which quality measures are evaluated, how costs are calculated, and the shared savings formula. Every parameter is editable -- and changes re-run the affected calculations.',
+      'The contract defines the rules: how members are attributed, which quality measures are evaluated, how costs are calculated, and the shared savings formula. Every parameter is editable — and changes re-run the affected calculations.',
     actionHint: 'Click "Load Sample Contract" to load an MSSP-style contract, then review the attribution and quality parameters.',
     targetPath: '/contract',
   },
@@ -59,16 +60,88 @@ const STEPS: DemoStep[] = [
   {
     title: 'Find the Discrepancies',
     description:
-      'The reconciliation view shows every difference between the platform and payer calculations. Each discrepancy links to the specific members, data rows, and contract clauses involved -- enabling evidence-based dispute resolution.',
+      'The reconciliation view shows every difference between the platform and payer calculations. Each discrepancy links to the specific members, data rows, and contract clauses involved — enabling evidence-based dispute resolution.',
     actionHint: 'Drill into a discrepancy category to see per-member details and the data driving each difference.',
     targetPath: '/reconciliation',
   },
   {
     title: 'What If We Change the Rules?',
     description:
-      'Go back to the contract, change a parameter -- like the attribution method, quality measure weights, or minimum savings rate -- and recalculate. Instantly see how different contract terms change outcomes. This is the power of a transparent calculation layer.',
+      'Go back to the contract, change a parameter — like the attribution method, quality measure weights, or minimum savings rate — and recalculate. Instantly see how different contract terms change outcomes. This is the power of a transparent calculation layer.',
     actionHint: 'Navigate to Contract, adjust a parameter, then recalculate to see the impact.',
     targetPath: '/contract',
+  },
+
+  // ── Panel Intelligence: Attribution Surveillance ──────────────────────────
+  {
+    title: 'Panel Intelligence: Attribution Is a Moving Target',
+    description:
+      'Attribution does not stand still between performance years. Members transfer providers, lapse eligibility, and get claimed by competing ACOs — each event carrying direct financial consequences. The Attribution Surveillance tab makes panel dynamics visible in real time.',
+    targetPath: '/surveillance',
+  },
+  {
+    title: 'Panel Overview: Know Your Exposure',
+    description:
+      'The Panel Overview surfaces the headline numbers a VP of Population Health or CFO needs first: how many members are at risk of leaving, what dollar exposure that represents, and how your panel\'s churn compares to benchmark. The attribution timeline shows net panel change month by month.',
+    actionHint: 'Click a bar in the attribution timeline to filter the change events table to that month.',
+    targetPath: '/surveillance',
+  },
+  {
+    title: 'Provider Panels: Who Carries the Risk?',
+    description:
+      'Provider Panels ranks each physician by financial exposure — not just panel size. Cards flag providers with cascade risk (where losing one anchor patient could trigger a chain of losses) so retention efforts can be targeted where they matter most.',
+    actionHint: 'Click any provider card to drill into that provider\'s specific change events and at-risk member list.',
+    targetPath: '/surveillance',
+  },
+  {
+    title: 'Retention Worklist: Prioritized by ROI',
+    description:
+      'The Retention Worklist ranks every at-risk member by return on intervention — financial exposure minus estimated outreach cost, divided by likelihood of retention. The highest-value actions surface first. Urgency filters and expand rows show exactly what is at stake for each member.',
+    actionHint: 'Expand a worklist row to see member details. Use the urgency filter to focus on critical cases.',
+    targetPath: '/surveillance',
+  },
+  {
+    title: 'Financial Impact & Projections: The CFO Story',
+    description:
+      'The Financial Impact tab translates attribution churn into cumulative settlement impact — exposure, intervention cost, and expected recovery on one chart. The Projections tab models three scenarios (current trajectory, with intervention, worst case) so leadership can quantify the value of acting now versus waiting.',
+    actionHint: 'Switch between the Financial Impact and Projections tabs to see scenario modeling.',
+    targetPath: '/surveillance',
+  },
+
+  // ── Panel Intelligence: Clinical Briefs ───────────────────────────────────
+  {
+    title: 'Clinical Briefs: One Engine, Two Audiences',
+    description:
+      'The same calculation pipeline that powers the CFO\'s reconciliation report also powers the clinician\'s pre-visit brief — translated into plain clinical language. This is Panel Intelligence: delivering the right insight to the right person at the right moment.',
+    targetPath: '/clinical',
+  },
+  {
+    title: 'Weekly Schedule: The Panel at a Glance',
+    description:
+      'The weekly schedule shows every patient appointment across the practice week. Each slot surfaces the member\'s visit type and attribution risk at a glance. Special indicators flag crossover patients (who also appear in the reconciliation view) and the feedback patient for the interactive demo.',
+    actionHint: 'Click any appointment slot to open the pre-visit patient brief.',
+    targetPath: '/clinical',
+  },
+  {
+    title: 'Pre-Visit Brief: Closing Gaps in the Exam Room',
+    description:
+      'The patient brief gives the clinician a ranked action list before the visit starts: quality gaps that can be closed today, HCC conditions that need documentation, and cost context so the provider understands the member\'s financial footprint. Priority actions are scored by financial impact, urgency, closability, and time pressure.',
+    actionHint: 'Click a priority action or care gap row to open the three-panel provenance drill-down.',
+    targetPath: '/clinical',
+  },
+  {
+    title: 'Provenance in the Exam Room',
+    description:
+      'Every recommendation in the brief is traceable. Clicking a priority action opens the same three-panel drill-down used in the finance view — contract language, data interpretation, and source code — now reframed in clinical terms. Trust is built by showing your work, whether the audience is a CFO or a physician.',
+    actionHint: 'Click any item in the brief to see the contract, data, and code that produced that recommendation.',
+    targetPath: '/clinical',
+  },
+  {
+    title: 'Week in Review: Closing the Loop',
+    description:
+      'The Week in Review aggregates the practice\'s performance across all scheduled visits: gaps closed, at-risk encounters, quality measure progress, and cost benchmarking. It closes the loop between individual visit actions and panel-level financial outcomes — the same outcomes measured in the Performance Intelligence tab.',
+    actionHint: 'Click "Week in Review" in the schedule header to see aggregate weekly statistics.',
+    targetPath: '/clinical',
   },
 ];
 

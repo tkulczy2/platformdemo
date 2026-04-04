@@ -1,0 +1,390 @@
+{
+  "provider": {
+    "provider_npi": "1679478607",
+    "provider_name": "Fowler, Angel J",
+    "specialty": "Family Medicine",
+    "current_panel_size": 34,
+    "jan_panel_size": 28,
+    "net_change": 6,
+    "net_change_pct": 0.2143,
+    "churn_rate_annualized": 0.0,
+    "members_at_risk": 3,
+    "financial_exposure": 744.0,
+    "quality_impact": {},
+    "monthly_trend": [
+      28,
+      28,
+      28,
+      31,
+      31,
+      33,
+      33,
+      33,
+      33,
+      33,
+      33,
+      34
+    ],
+    "cascade_flag": false
+  },
+  "change_events": [
+    {
+      "event_id": "CHG-00030",
+      "member_id": "MBR-000531",
+      "event_month": "2025-04",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 142.54,
+        "lost_quality_bonus_contribution": 32.36,
+        "total_impact": 174.9
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.77,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000531"
+      }
+    },
+    {
+      "event_id": "CHG-00031",
+      "member_id": "MBR-000055",
+      "event_month": "2025-04",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 221.59,
+        "lost_quality_bonus_contribution": 50.31,
+        "total_impact": 271.9
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.2,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000055"
+      }
+    },
+    {
+      "event_id": "CHG-00032",
+      "member_id": "MBR-000312",
+      "event_month": "2025-04",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 118.77,
+        "lost_quality_bonus_contribution": 26.96,
+        "total_impact": 145.73
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.64,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000312"
+      }
+    },
+    {
+      "event_id": "CHG-00047",
+      "member_id": "MBR-000388",
+      "event_month": "2025-06",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 135.49,
+        "lost_quality_bonus_contribution": 30.76,
+        "total_impact": 166.25
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.73,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000388"
+      }
+    },
+    {
+      "event_id": "CHG-00049",
+      "member_id": "MBR-000943",
+      "event_month": "2025-06",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 230.55,
+        "lost_quality_bonus_contribution": 52.34,
+        "total_impact": 282.89
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.25,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000943"
+      }
+    },
+    {
+      "event_id": "CHG-00104",
+      "member_id": "MBR-000083",
+      "event_month": "2025-12",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 197.25,
+        "lost_quality_bonus_contribution": 44.78,
+        "total_impact": 242.03
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.07,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000083"
+      }
+    }
+  ],
+  "at_risk_members": [
+    {
+      "rank": 23,
+      "member_id": "MBR-000539",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1427515427"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1427515427"
+      ],
+      "competing_provider": {
+        "npi": "1427515427",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 39,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "breast_cancer_screening",
+          "measure_name": "Breast Cancer Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 89,
+      "member_id": "MBR-000097",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1238860542"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1238860542"
+      ],
+      "competing_provider": {
+        "npi": "1238860542",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 37,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "breast_cancer_screening",
+          "measure_name": "Breast Cancer Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 129,
+      "member_id": "MBR-000531",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1679478607",
+        "name": "Fowler, Angel J"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1182922322",
+          "Fewer than 2 visits with attributed provider this year"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1182922322",
+        "Fewer than 2 visits with attributed provider this year"
+      ],
+      "competing_provider": {
+        "npi": "1182922322",
+        "visit_count": 10
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 0,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.45,
+      "roi_estimate": 0.41,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    }
+  ]
+}

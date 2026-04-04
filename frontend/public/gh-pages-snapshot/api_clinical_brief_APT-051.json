@@ -1,0 +1,143 @@
+{
+  "appointment_id": "APT-051",
+  "member_id": "MBR-000289",
+  "member_demographics": {
+    "member_id": "MBR-000289"
+  },
+  "appointment_date": "2025-10-24",
+  "appointment_time": "11:55",
+  "provider_name": "Rhodes, Patricia C",
+  "provider_npi": "1590886206",
+  "contract_name": "Medicare Shared Savings Program \u2014 ACO Agreement 2025",
+  "performance_period_end": "2025-12-31",
+  "days_remaining_in_period": 68,
+  "attribution_risk": {
+    "status": "stable",
+    "stability_score": 1.0,
+    "risk_factors": [],
+    "recommended_action": null,
+    "competing_provider": {
+      "npi": "1238860542",
+      "visit_count": 1
+    },
+    "days_since_last_visit": 0,
+    "visits_this_year": 37,
+    "provenance": {
+      "step": "attribution",
+      "step_number": 2,
+      "member_id": "MBR-000289"
+    }
+  },
+  "priority_actions": [
+    {
+      "rank": 1,
+      "action_text": "Review HbA1c results and adjust diabetes management plan",
+      "reason_text": "Closes 1 of 3 remaining care actions",
+      "category": "gap_closure",
+      "measure_id": "hba1c_poor_control",
+      "financial_impact": null,
+      "closable_this_visit": true,
+      "provenance": {
+        "step": "quality",
+        "step_number": 3,
+        "member_id": "MBR-000289",
+        "measure_id": "hba1c_poor_control"
+      }
+    },
+    {
+      "rank": 2,
+      "action_text": "Order screening mammogram",
+      "reason_text": "Closes 1 of 3 remaining care actions",
+      "category": "gap_closure",
+      "measure_id": "breast_cancer_screening",
+      "financial_impact": null,
+      "closable_this_visit": false,
+      "provenance": {
+        "step": "quality",
+        "step_number": 3,
+        "member_id": "MBR-000289",
+        "measure_id": "breast_cancer_screening"
+      }
+    },
+    {
+      "rank": 3,
+      "action_text": "Complete colorectal cancer screening (FIT kit or colonoscopy referral)",
+      "reason_text": "Closes 1 of 3 remaining care actions",
+      "category": "gap_closure",
+      "measure_id": "colorectal_screening",
+      "financial_impact": null,
+      "closable_this_visit": false,
+      "provenance": {
+        "step": "quality",
+        "step_number": 3,
+        "member_id": "MBR-000289",
+        "measure_id": "colorectal_screening"
+      }
+    }
+  ],
+  "quality_gaps": [
+    {
+      "measure_id": "hba1c_poor_control",
+      "measure_name": "Diabetes Blood Sugar Control (HbA1c)",
+      "action_needed": "Review HbA1c results and adjust diabetes management plan",
+      "closable_this_visit": true,
+      "days_remaining": 68,
+      "financial_weight": 0.2,
+      "priority_score": 0.605,
+      "provenance": {
+        "step": "quality",
+        "step_number": 3,
+        "member_id": "MBR-000289",
+        "measure_id": "hba1c_poor_control"
+      }
+    },
+    {
+      "measure_id": "breast_cancer_screening",
+      "measure_name": "Breast Cancer Screening (Mammogram)",
+      "action_needed": "Order screening mammogram",
+      "closable_this_visit": false,
+      "days_remaining": 68,
+      "financial_weight": 0.2,
+      "priority_score": 0.505,
+      "provenance": {
+        "step": "quality",
+        "step_number": 3,
+        "member_id": "MBR-000289",
+        "measure_id": "breast_cancer_screening"
+      }
+    },
+    {
+      "measure_id": "colorectal_screening",
+      "measure_name": "Colorectal Cancer Screening",
+      "action_needed": "Complete colorectal cancer screening (FIT kit or colonoscopy referral)",
+      "closable_this_visit": false,
+      "days_remaining": 68,
+      "financial_weight": 0.2,
+      "priority_score": 0.505,
+      "provenance": {
+        "step": "quality",
+        "step_number": 3,
+        "member_id": "MBR-000289",
+        "measure_id": "colorectal_screening"
+      }
+    }
+  ],
+  "total_gap_count": 3,
+  "closable_this_visit_count": 1,
+  "hcc_opportunities": [],
+  "recent_utilization": [],
+  "cost_context": {
+    "ytd_cost": 0.0,
+    "expected_cost": 0.0,
+    "cost_status": "at_expected",
+    "cost_ratio": 1.0,
+    "top_cost_driver": null,
+    "pmpm": 0.0,
+    "benchmark_pmpm": 1187.0,
+    "provenance": {}
+  },
+  "demo_role": "moderate_gap",
+  "is_crossover_patient": false,
+  "crossover_discrepancy": null,
+  "is_feedback_patient": false
+}

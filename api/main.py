@@ -171,6 +171,7 @@ from api.routes_reconciliation import router as reconciliation_router
 from api.routes_code import router as code_router
 from api.routes_export import router as export_router
 from api.routes_clinical import router as clinical_router
+from api.routes_surveillance import router as surveillance_router
 
 app.include_router(data_router)
 app.include_router(contract_router)
@@ -180,6 +181,7 @@ app.include_router(reconciliation_router)
 app.include_router(code_router)
 app.include_router(export_router)
 app.include_router(clinical_router)
+app.include_router(surveillance_router)
 
 
 @app.get("/")

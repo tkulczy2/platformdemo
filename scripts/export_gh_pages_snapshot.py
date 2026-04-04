@@ -173,12 +173,71 @@ def main() -> int:
         for mid in member_ids_for_cross_step:
             get_save(f"/api/drilldown/member/{mid}")
 
+        # ── Surveillance endpoints ────────────────────────────────────────
+        get_save_optional("/api/surveillance/overview")
+        get_save_optional("/api/surveillance/changes?limit=200")
+        providers_data = get_save_optional("/api/surveillance/providers")
+        worklist_data = get_save_optional("/api/surveillance/worklist")
+        get_save_optional("/api/surveillance/financial-impact")
+        get_save_optional("/api/surveillance/quality-impact")
+        get_save_optional("/api/surveillance/projections")
+        get_save_optional("/api/surveillance/churn-analysis")
+
+        if providers_data and isinstance(providers_data, list):
+            for prov in providers_data:
+                if isinstance(prov, dict) and prov.get("provider_npi"):
+                    get_save_optional(f"/api/surveillance/providers/{prov['provider_npi']}")
+
+        if worklist_data and isinstance(worklist_data, dict):
+            for item in worklist_data.get("items", []):
+                if isinstance(item, dict) and item.get("member_id"):
+                    get_save_optional(f"/api/surveillance/worklist/{item['member_id']}")
+
+        # ── Clinical endpoints ────────────────────────────────────────────
+        schedule = get_save_optional("/api/clinical/schedule")
+        get_save_optional("/api/clinical/week-summary")
+
+        # Snapshot each day and each appointment brief + drilldowns
+        if schedule and isinstance(schedule, dict):
+            for day in schedule.get("days", []):
+                if isinstance(day, dict) and day.get("date"):
+                    get_save_optional(f"/api/clinical/schedule/{day['date']}")
+                    for appt in day.get("appointments", []):
+                        if not isinstance(appt, dict):
+                            continue
+                        aid = appt.get("appointment_id")
+                        if not aid:
+                            continue
+                        brief = get_save_optional(f"/api/clinical/brief/{aid}")
+                        if not brief or not isinstance(brief, dict):
+                            continue
+                        # Drilldown for each quality gap
+                        for gap in brief.get("quality_gaps", []):
+                            if isinstance(gap, dict) and gap.get("measure_id"):
+                                get_save_optional(
+                                    f"/api/clinical/brief/{aid}/drilldown/gap/{gap['measure_id']}"
+                                )
+                        # Drilldown for each HCC opportunity
+                        for hcc in brief.get("hcc_opportunities", []):
+                            if isinstance(hcc, dict) and hcc.get("hcc_category"):
+                                get_save_optional(
+                                    f"/api/clinical/brief/{aid}/drilldown/hcc/{hcc['hcc_category']}"
+                                )
+                        # Drilldown for attribution and cost
+                        get_save_optional(f"/api/clinical/brief/{aid}/drilldown/attribution/attribution_risk")
+                        get_save_optional(f"/api/clinical/brief/{aid}/drilldown/cost/cost_context")
+                        # Drilldown for priority actions
+                        for i, _action in enumerate(brief.get("priority_actions", []), start=1):
+                            get_save_optional(
+                                f"/api/clinical/brief/{aid}/drilldown/priority_action/{i}"
+                            )
+
+        # ── Code viewer snapshots ─────────────────────────────────────────
         for mod, fn in sorted(code_pairs):
             path = f"/api/code/{mod}/{fn}"
             try:
                 get_save(path)
             except RuntimeError:
-                # Optional introspection — skip if function renamed
                 print(f"WARN: skip code snapshot {path}", file=sys.stderr)
 
         write_json(

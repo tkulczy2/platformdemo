@@ -1,0 +1,121 @@
+{
+  "appointment_id": "APT-021",
+  "member_id": "MBR-000473",
+  "member_demographics": {
+    "member_id": "MBR-000473"
+  },
+  "appointment_date": "2025-10-21",
+  "appointment_time": "13:50",
+  "provider_name": "Sanchez, Donald D",
+  "provider_npi": "1462172927",
+  "contract_name": "Medicare Shared Savings Program \u2014 ACO Agreement 2025",
+  "performance_period_end": "2025-12-31",
+  "days_remaining_in_period": 71,
+  "attribution_risk": {
+    "status": "stable",
+    "stability_score": 1.0,
+    "risk_factors": [],
+    "recommended_action": null,
+    "competing_provider": {
+      "npi": "1270524222",
+      "visit_count": 1
+    },
+    "days_since_last_visit": 0,
+    "visits_this_year": 34,
+    "provenance": {
+      "step": "attribution",
+      "step_number": 2,
+      "member_id": "MBR-000473"
+    }
+  },
+  "priority_actions": [
+    {
+      "rank": 1,
+      "action_text": "Complete depression screening (PHQ-9)",
+      "reason_text": "Closes 1 of 2 remaining care actions",
+      "category": "gap_closure",
+      "measure_id": "depression_screening",
+      "financial_impact": null,
+      "closable_this_visit": true,
+      "provenance": {
+        "step": "quality",
+        "step_number": 3,
+        "member_id": "MBR-000473",
+        "measure_id": "depression_screening"
+      }
+    },
+    {
+      "rank": 2,
+      "action_text": "Complete colorectal cancer screening (FIT kit or colonoscopy referral)",
+      "reason_text": "Closes 1 of 2 remaining care actions",
+      "category": "gap_closure",
+      "measure_id": "colorectal_screening",
+      "financial_impact": null,
+      "closable_this_visit": false,
+      "provenance": {
+        "step": "quality",
+        "step_number": 3,
+        "member_id": "MBR-000473",
+        "measure_id": "colorectal_screening"
+      }
+    }
+  ],
+  "quality_gaps": [
+    {
+      "measure_id": "depression_screening",
+      "measure_name": "Depression Screening (PHQ-9)",
+      "action_needed": "Complete depression screening (PHQ-9)",
+      "closable_this_visit": true,
+      "days_remaining": 71,
+      "financial_weight": 0.2,
+      "priority_score": 0.602,
+      "provenance": {
+        "step": "quality",
+        "step_number": 3,
+        "member_id": "MBR-000473",
+        "measure_id": "depression_screening"
+      }
+    },
+    {
+      "measure_id": "colorectal_screening",
+      "measure_name": "Colorectal Cancer Screening",
+      "action_needed": "Complete colorectal cancer screening (FIT kit or colonoscopy referral)",
+      "closable_this_visit": false,
+      "days_remaining": 71,
+      "financial_weight": 0.2,
+      "priority_score": 0.502,
+      "provenance": {
+        "step": "quality",
+        "step_number": 3,
+        "member_id": "MBR-000473",
+        "measure_id": "colorectal_screening"
+      }
+    }
+  ],
+  "total_gap_count": 2,
+  "closable_this_visit_count": 1,
+  "hcc_opportunities": [],
+  "recent_utilization": [],
+  "cost_context": {
+    "ytd_cost": 0.0,
+    "expected_cost": 0.0,
+    "cost_status": "at_expected",
+    "cost_ratio": 1.0,
+    "top_cost_driver": null,
+    "pmpm": 0.0,
+    "benchmark_pmpm": 1187.0,
+    "provenance": {}
+  },
+  "demo_role": "crossover_patient",
+  "is_crossover_patient": true,
+  "crossover_discrepancy": {
+    "discrepancy_id": "DISC-002",
+    "category": "quality",
+    "metric": "quality_hba1c_poor_control",
+    "metric_label": "HbA1c Poor Control Rate",
+    "platform_value": 80.69,
+    "payer_value": 23.9,
+    "description": "Your organization's calculation includes this patient in the HbA1c Poor Control Rate measure. The payer's settlement report disagrees. This discrepancy is documented in the Settlement Reconciliation view."
+  },
+  "is_feedback_patient": false
+}

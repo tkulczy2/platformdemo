@@ -1,0 +1,26 @@
+{
+  "item_type": "priority_action",
+  "item_id": "1",
+  "detail": {
+    "rank": 1,
+    "action_text": "Review HbA1c results and adjust diabetes management plan",
+    "reason_text": "Closes 1 of 2 remaining care actions",
+    "category": "gap_closure",
+    "measure_id": "hba1c_poor_control",
+    "financial_impact": null,
+    "closable_this_visit": true,
+    "provenance": {
+      "step": "quality",
+      "step_number": 3,
+      "member_id": "MBR-000703",
+      "measure_id": "hba1c_poor_control"
+    }
+  },
+  "provenance": {
+    "step": "quality",
+    "step_number": 3,
+    "member_id": "MBR-000703",
+    "measure_id": "hba1c_poor_control"
+  },
+  "clinical_question": "Why is 'Review HbA1c results and adjust diabetes management plan' the #1 priority?"
+}

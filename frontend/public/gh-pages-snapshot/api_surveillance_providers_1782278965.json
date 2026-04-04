@@ -1,0 +1,542 @@
+{
+  "provider": {
+    "provider_npi": "1782278965",
+    "provider_name": "Stanley, Kendra C",
+    "specialty": "Family Medicine",
+    "current_panel_size": 44,
+    "jan_panel_size": 42,
+    "net_change": 2,
+    "net_change_pct": 0.0476,
+    "churn_rate_annualized": 0.0,
+    "members_at_risk": 7,
+    "financial_exposure": 4521.9,
+    "quality_impact": {},
+    "monthly_trend": [
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      43,
+      44
+    ],
+    "cascade_flag": false
+  },
+  "change_events": [
+    {
+      "event_id": "CHG-00006",
+      "member_id": "MBR-000151",
+      "event_month": "2025-02",
+      "event_type": "reassignment",
+      "change_classification": "reassignment_within_aco",
+      "prior_provider": {
+        "npi": "1782278965",
+        "name": "Stanley, Kendra C"
+      },
+      "new_provider": {
+        "npi": "1668497958",
+        "name": "Miller, Kelly M"
+      },
+      "reason": "Patient's visit pattern shifted plurality to a different ACO provider",
+      "financial_impact": {
+        "lost_tcoc_contribution": 0,
+        "lost_shared_savings_contribution": 0,
+        "lost_quality_bonus_contribution": 0,
+        "total_impact": 0
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": {
+        "window_remaining_months": 10,
+        "recommended_action": "Coordinate care transition between ACO providers",
+        "estimated_intervention_cost": 100.0,
+        "estimated_recovery_probability": 0.85,
+        "roi_if_recovered": 0.0
+      },
+      "member_risk_score": 2.17,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000151"
+      }
+    },
+    {
+      "event_id": "CHG-00012",
+      "member_id": "MBR-000817",
+      "event_month": "2025-02",
+      "event_type": "new_attribution",
+      "change_classification": "new_enrollment",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1782278965",
+        "name": "Stanley, Kendra C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 172.46,
+        "lost_quality_bonus_contribution": 39.15,
+        "total_impact": 211.61
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.93,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000817"
+      }
+    },
+    {
+      "event_id": "CHG-00091",
+      "member_id": "MBR-000822",
+      "event_month": "2025-11",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1782278965",
+        "name": "Stanley, Kendra C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 146.65,
+        "lost_quality_bonus_contribution": 33.29,
+        "total_impact": 179.94
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.79,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000822"
+      }
+    },
+    {
+      "event_id": "CHG-00101",
+      "member_id": "MBR-000521",
+      "event_month": "2025-12",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1782278965",
+        "name": "Stanley, Kendra C"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 178.62,
+        "lost_quality_bonus_contribution": 40.55,
+        "total_impact": 219.17
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 0.97,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000521"
+      }
+    }
+  ],
+  "at_risk_members": [
+    {
+      "rank": 4,
+      "member_id": "MBR-000540",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1782278965",
+        "name": "Stanley, Kendra C"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1304218413"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1304218413"
+      ],
+      "competing_provider": {
+        "npi": "1304218413",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 76,
+      "financial_impact_if_lost": {
+        "tcoc": 151695.02,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": true,
+      "next_appointment_date": "2025-10-23"
+    },
+    {
+      "rank": 26,
+      "member_id": "MBR-000410",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1782278965",
+        "name": "Stanley, Kendra C"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1393242821"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1393242821"
+      ],
+      "competing_provider": {
+        "npi": "1393242821",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 41,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 47,
+      "member_id": "MBR-000913",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1782278965",
+        "name": "Stanley, Kendra C"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1427515427"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1427515427"
+      ],
+      "competing_provider": {
+        "npi": "1427515427",
+        "visit_count": 2
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 43,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "depression_screening",
+          "measure_name": "Depression Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 49,
+      "member_id": "MBR-000423",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1782278965",
+        "name": "Stanley, Kendra C"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1216929354"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1216929354"
+      ],
+      "competing_provider": {
+        "npi": "1216929354",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 30,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": true,
+      "next_appointment_date": "2025-10-24"
+    },
+    {
+      "rank": 81,
+      "member_id": "MBR-000115",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1782278965",
+        "name": "Stanley, Kendra C"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1238860542"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1238860542"
+      ],
+      "competing_provider": {
+        "npi": "1238860542",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 35,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "breast_cancer_screening",
+          "measure_name": "Breast Cancer Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 102,
+      "member_id": "MBR-000155",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1782278965",
+        "name": "Stanley, Kendra C"
+      },
+      "attribution_risk": {
+        "status": "high_risk",
+        "stability_score": 0.3,
+        "risk_factors": [
+          "Competing visits with provider 1522600229"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1522600229"
+      ],
+      "competing_provider": {
+        "npi": "1522600229",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 29,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [
+        {
+          "measure_id": "hba1c_poor_control",
+          "measure_name": "Hba1C Poor Control",
+          "currently_met": true,
+          "rate_impact": -0.001
+        },
+        {
+          "measure_id": "colorectal_screening",
+          "measure_name": "Colorectal Screening",
+          "currently_met": true,
+          "rate_impact": -0.001
+        }
+      ],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "critical",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    },
+    {
+      "rank": 113,
+      "member_id": "MBR-000822",
+      "member_demographics": {
+        "age": 0,
+        "sex": ""
+      },
+      "attributed_provider": {
+        "npi": "1782278965",
+        "name": "Stanley, Kendra C"
+      },
+      "attribution_risk": {
+        "status": "moderate_risk",
+        "stability_score": 0.5,
+        "risk_factors": [
+          "Competing visits with provider 1238860542",
+          "Fewer than 2 visits with attributed provider this year",
+          "Recently attributed \u2014 care relationship not established"
+        ]
+      },
+      "risk_factors": [
+        "Competing visits with provider 1238860542",
+        "Fewer than 2 visits with attributed provider this year",
+        "Recently attributed \u2014 care relationship not established"
+      ],
+      "competing_provider": {
+        "npi": "1238860542",
+        "visit_count": 1
+      },
+      "days_since_last_visit": 0,
+      "visits_this_year": 0,
+      "financial_impact_if_lost": {
+        "tcoc": 12400,
+        "shared_savings": 185.0,
+        "quality_bonus": 42.0,
+        "total": 227.0
+      },
+      "quality_measures_at_stake": [],
+      "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+      "intervention_cost_estimate": 250.0,
+      "recovery_probability": 0.7,
+      "roi_estimate": 0.64,
+      "days_remaining_in_period": 73,
+      "urgency": "moderate",
+      "has_upcoming_appointment": false,
+      "next_appointment_date": null
+    }
+  ]
+}

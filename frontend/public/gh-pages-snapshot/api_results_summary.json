@@ -73,19 +73,19 @@
     "msr_passed": false,
     "quality_gate_passed": true
   },
-  "total_execution_time_ms": 2290,
+  "total_execution_time_ms": 2244,
   "steps": [
     {
       "step_number": 1,
       "step_name": "eligibility",
-      "execution_time_ms": 255,
+      "execution_time_ms": 236,
       "member_count": 1000,
       "data_quality_flags": []
     },
     {
       "step_number": 2,
       "step_name": "attribution",
-      "execution_time_ms": 1030,
+      "execution_time_ms": 1015,
       "member_count": 982,
       "data_quality_flags": []
     },
@@ -99,7 +99,7 @@
     {
       "step_number": 4,
       "step_name": "cost",
-      "execution_time_ms": 531,
+      "execution_time_ms": 520,
       "member_count": 20,
       "data_quality_flags": []
     },

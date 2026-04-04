@@ -1,0 +1,128 @@
+{
+  "date": "2025-10-21",
+  "day_name": "Tuesday",
+  "narrative_theme": "Gap Closure Opportunity Day",
+  "appointments": [
+    {
+      "appointment_id": "APT-011",
+      "time": "08:30",
+      "member_id": "MBR-000767",
+      "provider_npi": "1679478607",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "moderate_gap",
+      "demo_notes": "2-3 open quality gaps. Shows prioritization within the brief.",
+      "_date": "2025-10-21"
+    },
+    {
+      "appointment_id": "APT-012",
+      "time": "08:55",
+      "member_id": "MBR-000669",
+      "provider_npi": "1462172927",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "moderate_gap",
+      "demo_notes": "2-3 open quality gaps. Shows prioritization within the brief.",
+      "_date": "2025-10-21"
+    },
+    {
+      "appointment_id": "APT-013",
+      "time": "09:20",
+      "member_id": "MBR-000442",
+      "provider_npi": "1590886206",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "moderate_gap",
+      "demo_notes": "2-3 open quality gaps. Shows prioritization within the brief.",
+      "_date": "2025-10-21"
+    },
+    {
+      "appointment_id": "APT-014",
+      "time": "09:45",
+      "member_id": "MBR-000321",
+      "provider_npi": "1679478607",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "moderate_gap",
+      "demo_notes": "2-3 open quality gaps. Shows prioritization within the brief.",
+      "_date": "2025-10-21"
+    },
+    {
+      "appointment_id": "APT-015",
+      "time": "10:10",
+      "member_id": "MBR-000551",
+      "provider_npi": "1462172927",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "high_gap",
+      "demo_notes": "4+ open quality gaps. Shows high-gap workflow.",
+      "_date": "2025-10-21"
+    },
+    {
+      "appointment_id": "APT-016",
+      "time": "10:40",
+      "member_id": "MBR-000903",
+      "provider_npi": "1590886206",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 30,
+      "demo_role": "high_gap",
+      "demo_notes": "4+ open quality gaps. Shows high-gap workflow.",
+      "_date": "2025-10-21"
+    },
+    {
+      "appointment_id": "APT-017",
+      "time": "11:00",
+      "member_id": "MBR-000705",
+      "provider_npi": "1679478607",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "high_gap",
+      "demo_notes": "4+ open quality gaps. Shows high-gap workflow.",
+      "_date": "2025-10-21"
+    },
+    {
+      "appointment_id": "APT-018",
+      "time": "11:30",
+      "member_id": "MBR-000177",
+      "provider_npi": "1462172927",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 30,
+      "demo_role": "routine_low_gap",
+      "demo_notes": "Routine visit, 0-1 open gaps. Establishes baseline brief experience.",
+      "_date": "2025-10-21"
+    },
+    {
+      "appointment_id": "APT-019",
+      "time": "13:00",
+      "member_id": "MBR-000033",
+      "provider_npi": "1590886206",
+      "appointment_type": "Annual Wellness",
+      "duration_minutes": 30,
+      "demo_role": "routine_low_gap",
+      "demo_notes": "Routine visit, 0-1 open gaps. Establishes baseline brief experience.",
+      "_date": "2025-10-21"
+    },
+    {
+      "appointment_id": "APT-020",
+      "time": "13:20",
+      "member_id": "MBR-000520",
+      "provider_npi": "1679478607",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "high_cost",
+      "demo_notes": "Top decile cost. Shows cost context and utilization timeline.",
+      "_date": "2025-10-21"
+    },
+    {
+      "appointment_id": "APT-021",
+      "time": "13:50",
+      "member_id": "MBR-000473",
+      "provider_npi": "1462172927",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "crossover_patient",
+      "demo_notes": "Quality gap + reconciliation discrepancy. Crossover between clinical and settlement views.",
+      "_date": "2025-10-21"
+    }
+  ]
+}

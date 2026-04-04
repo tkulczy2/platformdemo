@@ -1,0 +1,24 @@
+{
+  "item_type": "priority_action",
+  "item_id": "1",
+  "detail": {
+    "rank": 1,
+    "action_text": "Document Diabetes with Chronic Complications if clinically appropriate",
+    "reason_text": "Condition to document \u2014 supports accurate care needs assessment",
+    "category": "hcc_recapture",
+    "measure_id": null,
+    "financial_impact": null,
+    "closable_this_visit": true,
+    "provenance": {
+      "step": "quality",
+      "step_number": 3,
+      "member_id": "MBR-000146"
+    }
+  },
+  "provenance": {
+    "step": "quality",
+    "step_number": 3,
+    "member_id": "MBR-000146"
+  },
+  "clinical_question": "Why is 'Document Diabetes with Chronic Complications if clinically appropriate' the #1 priority?"
+}

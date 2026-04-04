@@ -1,0 +1,68 @@
+{
+  "appointment_id": "APT-041",
+  "member_id": "MBR-000896",
+  "member_demographics": {
+    "member_id": "MBR-000896"
+  },
+  "appointment_date": "2025-10-23",
+  "appointment_time": "13:00",
+  "provider_name": "Fowler, Angel J",
+  "provider_npi": "1679478607",
+  "contract_name": "Medicare Shared Savings Program \u2014 ACO Agreement 2025",
+  "performance_period_end": "2025-12-31",
+  "days_remaining_in_period": 69,
+  "attribution_risk": {
+    "status": "moderate_risk",
+    "stability_score": 0.45,
+    "risk_factors": [
+      "Enrollment gap detected during the contract year"
+    ],
+    "recommended_action": "Schedule a follow-up visit within 30 days to strengthen the care relationship",
+    "competing_provider": {
+      "npi": "1248706171",
+      "visit_count": 2
+    },
+    "days_since_last_visit": 0,
+    "visits_this_year": 14,
+    "provenance": {
+      "step": "attribution",
+      "step_number": 2,
+      "member_id": "MBR-000896"
+    }
+  },
+  "priority_actions": [
+    {
+      "rank": 1,
+      "action_text": "Schedule a follow-up visit within 30 days to strengthen the care relationship",
+      "reason_text": "This patient is at risk of leaving your panel",
+      "category": "attribution_retention",
+      "measure_id": null,
+      "financial_impact": null,
+      "closable_this_visit": false,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000896"
+      }
+    }
+  ],
+  "quality_gaps": [],
+  "total_gap_count": 0,
+  "closable_this_visit_count": 0,
+  "hcc_opportunities": [],
+  "recent_utilization": [],
+  "cost_context": {
+    "ytd_cost": 0.0,
+    "expected_cost": 0.0,
+    "cost_status": "at_expected",
+    "cost_ratio": 1.0,
+    "top_cost_driver": null,
+    "pmpm": 0.0,
+    "benchmark_pmpm": 1187.0,
+    "provenance": {}
+  },
+  "demo_role": "attribution_risk_enrollment",
+  "is_crossover_patient": false,
+  "crossover_discrepancy": null,
+  "is_feedback_patient": false
+}

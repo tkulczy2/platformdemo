@@ -269,6 +269,62 @@ export async function submitClinicalFeedback(
 }
 
 // ---------------------------------------------------------------------------
+// Surveillance API
+// ---------------------------------------------------------------------------
+
+export async function getSurveillanceOverview() {
+  return request<Record<string, unknown>>('/api/surveillance/overview');
+}
+
+export async function getSurveillanceChanges(params?: { month?: string; classification?: string; offset?: number; limit?: number }) {
+  const query = new URLSearchParams();
+  if (params?.month) query.set('month', params.month);
+  if (params?.classification) query.set('classification', params.classification);
+  if (params?.offset) query.set('offset', String(params.offset));
+  if (params?.limit) query.set('limit', String(params.limit));
+  const qs = query.toString();
+  return request<Record<string, unknown>>(`/api/surveillance/changes${qs ? '?' + qs : ''}`);
+}
+
+export async function getSurveillanceProviders() {
+  return request<Record<string, unknown>[]>('/api/surveillance/providers');
+}
+
+export async function getSurveillanceProviderDetail(npi: string) {
+  return request<Record<string, unknown>>(`/api/surveillance/providers/${npi}`);
+}
+
+export async function getSurveillanceWorklist(params?: { urgency?: string; provider_npi?: string; min_roi?: number; has_appointment?: boolean }) {
+  const query = new URLSearchParams();
+  if (params?.urgency) query.set('urgency', params.urgency);
+  if (params?.provider_npi) query.set('provider_npi', params.provider_npi);
+  if (params?.min_roi !== undefined) query.set('min_roi', String(params.min_roi));
+  if (params?.has_appointment !== undefined) query.set('has_appointment', String(params.has_appointment));
+  const qs = query.toString();
+  return request<Record<string, unknown>>(`/api/surveillance/worklist${qs ? '?' + qs : ''}`);
+}
+
+export async function getSurveillanceWorklistMember(memberId: string) {
+  return request<Record<string, unknown>>(`/api/surveillance/worklist/${memberId}`);
+}
+
+export async function getSurveillanceProjections() {
+  return request<Record<string, unknown>[]>('/api/surveillance/projections');
+}
+
+export async function getSurveillanceQualityImpact() {
+  return request<Record<string, unknown>>('/api/surveillance/quality-impact');
+}
+
+export async function getSurveillanceFinancialImpact() {
+  return request<Record<string, unknown>>('/api/surveillance/financial-impact');
+}
+
+export async function getSurveillanceChurnAnalysis() {
+  return request<Record<string, unknown>>('/api/surveillance/churn-analysis');
+}
+
+// ---------------------------------------------------------------------------
 // Response type aliases (light wrappers -- full types in types/index.ts)
 // ---------------------------------------------------------------------------
 

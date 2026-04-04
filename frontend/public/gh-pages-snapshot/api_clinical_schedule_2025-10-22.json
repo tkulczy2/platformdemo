@@ -1,0 +1,117 @@
+{
+  "date": "2025-10-22",
+  "day_name": "Wednesday",
+  "narrative_theme": "Attribution Risk Day",
+  "appointments": [
+    {
+      "appointment_id": "APT-022",
+      "time": "08:30",
+      "member_id": "MBR-000227",
+      "provider_npi": "1679478607",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "routine_low_gap",
+      "demo_notes": "Routine visit, 0-1 open gaps. Establishes baseline brief experience.",
+      "_date": "2025-10-22"
+    },
+    {
+      "appointment_id": "APT-023",
+      "time": "08:55",
+      "member_id": "MBR-000406",
+      "provider_npi": "1462172927",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "routine_low_gap",
+      "demo_notes": "Routine visit, 0-1 open gaps. Establishes baseline brief experience.",
+      "_date": "2025-10-22"
+    },
+    {
+      "appointment_id": "APT-024",
+      "time": "09:25",
+      "member_id": "MBR-000293",
+      "provider_npi": "1590886206",
+      "appointment_type": "Annual Wellness",
+      "duration_minutes": 20,
+      "demo_role": "routine_low_gap",
+      "demo_notes": "Routine visit, 0-1 open gaps. Establishes baseline brief experience.",
+      "_date": "2025-10-22"
+    },
+    {
+      "appointment_id": "APT-025",
+      "time": "09:50",
+      "member_id": "MBR-000872",
+      "provider_npi": "1679478607",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "routine_low_gap",
+      "demo_notes": "Routine visit, 0-1 open gaps. Establishes baseline brief experience.",
+      "_date": "2025-10-22"
+    },
+    {
+      "appointment_id": "APT-026",
+      "time": "10:20",
+      "member_id": "MBR-000635",
+      "provider_npi": "1462172927",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 30,
+      "demo_role": "routine_low_gap",
+      "demo_notes": "Routine visit, 0-1 open gaps. Establishes baseline brief experience.",
+      "_date": "2025-10-22"
+    },
+    {
+      "appointment_id": "APT-027",
+      "time": "10:50",
+      "member_id": "MBR-000639",
+      "provider_npi": "1590886206",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "attribution_risk_competing",
+      "demo_notes": "Competing provider visits detected. At risk of leaving panel.",
+      "_date": "2025-10-22"
+    },
+    {
+      "appointment_id": "APT-028",
+      "time": "11:20",
+      "member_id": "MBR-000956",
+      "provider_npi": "1679478607",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 30,
+      "demo_role": "attribution_risk_enrollment",
+      "demo_notes": "Enrollment gap detected. Care relationship continuity uncertain.",
+      "_date": "2025-10-22"
+    },
+    {
+      "appointment_id": "APT-029",
+      "time": "11:50",
+      "member_id": "MBR-000587",
+      "provider_npi": "1462172927",
+      "appointment_type": "New Patient",
+      "duration_minutes": 20,
+      "demo_role": "attribution_new",
+      "demo_notes": "New panel member. First visit opportunity.",
+      "_date": "2025-10-22"
+    },
+    {
+      "appointment_id": "APT-030",
+      "time": "13:00",
+      "member_id": "MBR-000703",
+      "provider_npi": "1590886206",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "moderate_gap",
+      "demo_notes": "2-3 open quality gaps. Shows prioritization within the brief.",
+      "_date": "2025-10-22"
+    },
+    {
+      "appointment_id": "APT-031",
+      "time": "13:30",
+      "member_id": "MBR-000286",
+      "provider_npi": "1679478607",
+      "appointment_type": "Follow-up",
+      "duration_minutes": 20,
+      "demo_role": "moderate_gap",
+      "demo_notes": "2-3 open quality gaps. Shows prioritization within the brief.",
+      "_date": "2025-10-22"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "item_type": "gap",
+  "item_id": "depression_screening",
+  "detail": {
+    "measure_id": "depression_screening",
+    "measure_name": "Depression Screening (PHQ-9)",
+    "action_needed": "Complete depression screening (PHQ-9)",
+    "closable_this_visit": true,
+    "days_remaining": 70,
+    "financial_weight": 0.2,
+    "priority_score": 0.603,
+    "provenance": {
+      "step": "quality",
+      "step_number": 3,
+      "member_id": "MBR-000703",
+      "measure_id": "depression_screening"
+    }
+  },
+  "provenance": {
+    "step": "quality",
+    "step_number": 3,
+    "member_id": "MBR-000703",
+    "measure_id": "depression_screening"
+  },
+  "clinical_question": "Why is Depression Screening (PHQ-9) showing as due for this patient?"
+}

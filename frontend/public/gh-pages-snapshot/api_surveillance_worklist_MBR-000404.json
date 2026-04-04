@@ -1,0 +1,236 @@
+{
+  "member": {
+    "rank": 130,
+    "member_id": "MBR-000404",
+    "member_demographics": {
+      "age": 0,
+      "sex": ""
+    },
+    "attributed_provider": {
+      "npi": "1505413597",
+      "name": "Robinson, William A"
+    },
+    "attribution_risk": {
+      "status": "moderate_risk",
+      "stability_score": 0.5,
+      "risk_factors": [
+        "Competing visits with provider 1248706171",
+        "Fewer than 2 visits with attributed provider this year"
+      ]
+    },
+    "risk_factors": [
+      "Competing visits with provider 1248706171",
+      "Fewer than 2 visits with attributed provider this year"
+    ],
+    "competing_provider": {
+      "npi": "1248706171",
+      "visit_count": 20
+    },
+    "days_since_last_visit": 0,
+    "visits_this_year": 0,
+    "financial_impact_if_lost": {
+      "tcoc": 12400,
+      "shared_savings": 185.0,
+      "quality_bonus": 42.0,
+      "total": 227.0
+    },
+    "quality_measures_at_stake": [
+      {
+        "measure_id": "hba1c_poor_control",
+        "measure_name": "Hba1C Poor Control",
+        "currently_met": true,
+        "rate_impact": -0.001
+      },
+      {
+        "measure_id": "colorectal_screening",
+        "measure_name": "Colorectal Screening",
+        "currently_met": true,
+        "rate_impact": -0.001
+      },
+      {
+        "measure_id": "depression_screening",
+        "measure_name": "Depression Screening",
+        "currently_met": true,
+        "rate_impact": -0.001
+      }
+    ],
+    "recommended_action": "Schedule wellness visit with attributed PCP to re-establish plurality",
+    "intervention_cost_estimate": 250.0,
+    "recovery_probability": 0.45,
+    "roi_estimate": 0.41,
+    "days_remaining_in_period": 73,
+    "urgency": "moderate",
+    "has_upcoming_appointment": false,
+    "next_appointment_date": null
+  },
+  "attribution_history": [
+    {
+      "month": "2025-01",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-02",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-03",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-04",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-05",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-06",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-07",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-08",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-09",
+      "status": "attributed",
+      "provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      }
+    },
+    {
+      "month": "2025-10",
+      "status": "attributed",
+      "provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      }
+    },
+    {
+      "month": "2025-11",
+      "status": "attributed",
+      "provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      }
+    },
+    {
+      "month": "2025-12",
+      "status": "attributed",
+      "provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      }
+    }
+  ],
+  "change_events": [
+    {
+      "event_id": "CHG-00066",
+      "member_id": "MBR-000404",
+      "event_month": "2025-09",
+      "event_type": "lost_attribution",
+      "change_classification": "enrollment_termination",
+      "prior_provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      },
+      "new_provider": null,
+      "reason": "Patient deceased or permanently left Medicare FFS",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 201.58,
+        "lost_quality_bonus_contribution": 45.76,
+        "total_impact": 247.34
+      },
+      "quality_measures_affected": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Excluded: ESRD, pregnancy, hospice, or dialysis",
+        "No mammogram found within 27 months",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "quality_numerator_losses": [
+        "No HbA1c test found \u2014 counted as poor control",
+        "Colorectal screening completed",
+        "Depression screening completed during performance year"
+      ],
+      "intervention": null,
+      "member_risk_score": 1.09,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000404"
+      }
+    },
+    {
+      "event_id": "CHG-00070",
+      "member_id": "MBR-000404",
+      "event_month": "2025-09",
+      "event_type": "new_attribution",
+      "change_classification": "new_plurality",
+      "prior_provider": null,
+      "new_provider": {
+        "npi": "1505413597",
+        "name": "Robinson, William A"
+      },
+      "reason": "Attribution change detected",
+      "financial_impact": {
+        "lost_tcoc_contribution": 12400.0,
+        "lost_shared_savings_contribution": 201.58,
+        "lost_quality_bonus_contribution": 45.76,
+        "total_impact": 247.34
+      },
+      "quality_measures_affected": [],
+      "quality_numerator_losses": [],
+      "intervention": null,
+      "member_risk_score": 1.09,
+      "member_annual_cost_estimate": 12400.0,
+      "provenance": {
+        "step": "attribution",
+        "step_number": 2,
+        "member_id": "MBR-000404"
+      }
+    }
+  ],
+  "clinical_brief_link": null,
+  "reconciliation_link": null
+}

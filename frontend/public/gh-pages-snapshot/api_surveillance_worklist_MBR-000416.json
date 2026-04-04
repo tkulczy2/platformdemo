@@ -1,0 +1,164 @@
+{
+  "member": {
+    "rank": 118,
+    "member_id": "MBR-000416",
+    "member_demographics": {
+      "age": 0,
+      "sex": ""
+    },
+    "attributed_provider": {
+      "npi": "1248706171",
+      "name": "Ray, Janet B"
+    },
+    "attribution_risk": {
+      "status": "moderate_risk",
+      "stability_score": 0.5,
+      "risk_factors": []
+    },
+    "risk_factors": [],
+    "competing_provider": null,
+    "days_since_last_visit": 0,
+    "visits_this_year": 17,
+    "financial_impact_if_lost": {
+      "tcoc": 12400,
+      "shared_savings": 185.0,
+      "quality_bonus": 42.0,
+      "total": 227.0
+    },
+    "quality_measures_at_stake": [
+      {
+        "measure_id": "hba1c_poor_control",
+        "measure_name": "Hba1C Poor Control",
+        "currently_met": true,
+        "rate_impact": -0.001
+      },
+      {
+        "measure_id": "breast_cancer_screening",
+        "measure_name": "Breast Cancer Screening",
+        "currently_met": true,
+        "rate_impact": -0.001
+      },
+      {
+        "measure_id": "colorectal_screening",
+        "measure_name": "Colorectal Screening",
+        "currently_met": true,
+        "rate_impact": -0.001
+      },
+      {
+        "measure_id": "depression_screening",
+        "measure_name": "Depression Screening",
+        "currently_met": true,
+        "rate_impact": -0.001
+      }
+    ],
+    "recommended_action": "Schedule care coordination visit",
+    "intervention_cost_estimate": 250.0,
+    "recovery_probability": 0.65,
+    "roi_estimate": 0.59,
+    "days_remaining_in_period": 73,
+    "urgency": "moderate",
+    "has_upcoming_appointment": false,
+    "next_appointment_date": null
+  },
+  "attribution_history": [
+    {
+      "month": "2025-01",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-02",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-03",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-04",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-05",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-06",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-07",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-08",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-09",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-10",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-11",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    },
+    {
+      "month": "2025-12",
+      "status": "attributed",
+      "provider": {
+        "npi": "1248706171",
+        "name": "Ray, Janet B"
+      }
+    }
+  ],
+  "change_events": [],
+  "clinical_brief_link": null,
+  "reconciliation_link": null
+}
