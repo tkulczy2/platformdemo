@@ -1,7 +1,7 @@
 {
   "module": "engine.step_3_quality",
   "function": "calculate_quality_measures",
-  "source_file": "/home/theodor/git/platformdemo/engine/step_3_quality.py",
+  "source_file": "engine/step_3_quality.py",
   "line_range": [
     33,
     119

@@ -41,7 +41,7 @@ reportlab>=4.0.0
 
 - [ ] **Step 2: Install the dependency**
 
-Run: `cd /home/theodor/git/platformdemo && pip install reportlab>=4.0.0`
+Run: `pip install reportlab>=4.0.0`
 Expected: Successfully installed reportlab
 
 - [ ] **Step 3: Create `api/routes_export.py` with all three endpoints**
@@ -336,7 +336,7 @@ app.include_router(export_router)
 
 - [ ] **Step 5: Verify backend starts**
 
-Run: `cd /home/theodor/git/platformdemo && python -c "from api.routes_export import router; print('Export router OK')" `
+Run: `python -c "from api.routes_export import router; print('Export router OK')" `
 Expected: `Export router OK`
 
 - [ ] **Step 6: Commit**
@@ -817,7 +817,7 @@ Insert before the final closing `</div>` (before line 91):
 
 - [ ] **Step 5: Verify frontend compiles**
 
-Run: `cd /home/theodor/git/platformdemo/frontend && npx tsc --noEmit`
+Run: `cd frontend && npx tsc --noEmit`
 Expected: No errors
 
 - [ ] **Step 6: Commit**
@@ -899,15 +899,15 @@ git commit -m "feat: improve error handling with prerequisite guidance"
 
 - [ ] **Step 1: Install backend dependencies**
 
-Run: `cd /home/theodor/git/platformdemo && pip install -r requirements.txt`
+Run: `pip install -r requirements.txt`
 
 - [ ] **Step 2: Check frontend compiles**
 
-Run: `cd /home/theodor/git/platformdemo/frontend && npx tsc --noEmit`
+Run: `cd frontend && npx tsc --noEmit`
 
 - [ ] **Step 3: Verify backend imports**
 
-Run: `cd /home/theodor/git/platformdemo && python -c "from api.main import app; print('Routes:', [r.path for r in app.routes][:5], '...')" `
+Run: `python -c "from api.main import app; print('Routes:', [r.path for r in app.routes][:5], '...')" `
 
 - [ ] **Step 4: Final commit (if any fixes needed)**
 

@@ -793,7 +793,7 @@ A simple modal that appears when the demo user clicks "Mark as addressed" or "Pa
 
 ### Guided Demo Mode
 
-Add an optional guided walkthrough mode that overlays the Clinical View with narrative prompts. This is for the demo presenter to use when walking through the product with a prospect like Keteyian.
+Add an optional guided walkthrough mode that overlays the Clinical View with narrative prompts. This is for the demo presenter to use when walking through the product with a prospective provider organization.
 
 **Implementation:** A simple step-by-step overlay system (not a full tour library — keep it lightweight).
 

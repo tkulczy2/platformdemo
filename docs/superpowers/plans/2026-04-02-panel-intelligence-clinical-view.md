@@ -329,7 +329,7 @@ class TestScheduleDemoRoles:
 
 - [ ] **Step 2: Run the tests — confirm they skip (no schedule yet)**
 
-Run: `cd /home/theodor/git/platformdemo && python -m pytest tests/test_clinical_schedule.py -v 2>&1 | head -30`
+Run: `python -m pytest tests/test_clinical_schedule.py -v 2>&1 | head -30`
 Expected: Tests skip with "weekly_schedule.json not generated yet"
 
 - [ ] **Step 3: Write the schedule generator**
@@ -746,12 +746,12 @@ if __name__ == "__main__":
 
 - [ ] **Step 4: Run the schedule generator**
 
-Run: `cd /home/theodor/git/platformdemo && python -m generator.clinical_schedule`
+Run: `python -m generator.clinical_schedule`
 Expected: Output showing ~50 appointments generated and saved to `data/synthetic/weekly_schedule.json`
 
 - [ ] **Step 5: Run the schedule tests**
 
-Run: `cd /home/theodor/git/platformdemo && python -m pytest tests/test_clinical_schedule.py -v`
+Run: `python -m pytest tests/test_clinical_schedule.py -v`
 Expected: All tests PASS
 
 - [ ] **Step 6: Commit**
@@ -866,7 +866,7 @@ class TestClinicalLanguage:
 
 - [ ] **Step 2: Run tests — confirm they fail (module not found)**
 
-Run: `cd /home/theodor/git/platformdemo && python -m pytest tests/test_brief_engine.py -v 2>&1 | head -10`
+Run: `python -m pytest tests/test_brief_engine.py -v 2>&1 | head -10`
 Expected: ImportError — `engine.brief_engine` does not exist
 
 - [ ] **Step 3: Write the brief engine**
@@ -1533,7 +1533,7 @@ class BriefEngine:
 
 - [ ] **Step 4: Run the brief engine tests**
 
-Run: `cd /home/theodor/git/platformdemo && python -m pytest tests/test_brief_engine.py -v`
+Run: `python -m pytest tests/test_brief_engine.py -v`
 Expected: All tests PASS
 
 - [ ] **Step 5: Commit**
@@ -1801,7 +1801,7 @@ app.include_router(clinical_router)
 
 - [ ] **Step 3: Verify the API starts and endpoints are accessible**
 
-Run: `cd /home/theodor/git/platformdemo && python -c "from api.routes_clinical import router; print('Import OK')"` 
+Run: `python -c "from api.routes_clinical import router; print('Import OK')"` 
 Expected: `Import OK`
 
 - [ ] **Step 4: Commit**
@@ -3087,7 +3087,7 @@ export default function FeedbackModal({ isOpen, onClose, onSubmit }: Props) {
 
 - [ ] **Step 7: Verify frontend builds**
 
-Run: `cd /home/theodor/git/platformdemo/frontend && npx tsc --noEmit 2>&1 | head -30`
+Run: `cd frontend && npx tsc --noEmit 2>&1 | head -30`
 Expected: No type errors (or only pre-existing ones)
 
 - [ ] **Step 8: Commit**
@@ -3121,22 +3121,22 @@ git commit -m "docs: add Phase 5 Panel Intelligence to CLAUDE.md"
 
 - [ ] **Step 1: Run all existing tests to confirm no regressions**
 
-Run: `cd /home/theodor/git/platformdemo && python -m pytest tests/ -v`
+Run: `python -m pytest tests/ -v`
 Expected: All existing tests PASS
 
 - [ ] **Step 2: Run the clinical schedule tests**
 
-Run: `cd /home/theodor/git/platformdemo && python -m pytest tests/test_clinical_schedule.py -v`
+Run: `python -m pytest tests/test_clinical_schedule.py -v`
 Expected: All PASS
 
 - [ ] **Step 3: Run the brief engine tests**
 
-Run: `cd /home/theodor/git/platformdemo && python -m pytest tests/test_brief_engine.py -v`
+Run: `python -m pytest tests/test_brief_engine.py -v`
 Expected: All PASS
 
 - [ ] **Step 4: Verify API endpoints manually**
 
-Run: `cd /home/theodor/git/platformdemo && python -c "
+Run: `python -c "
 from fastapi.testclient import TestClient
 from api.main import app, state
 from engine.data_loader import load_demo_data
@@ -3179,7 +3179,7 @@ Expected: All endpoints return 200 with valid data
 
 - [ ] **Step 5: Verify frontend compiles**
 
-Run: `cd /home/theodor/git/platformdemo/frontend && npm run build 2>&1 | tail -5`
+Run: `cd frontend && npm run build 2>&1 | tail -5`
 Expected: Build succeeds
 
 - [ ] **Step 6: Final commit**

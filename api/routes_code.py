@@ -2,8 +2,11 @@
 
 import importlib
 import inspect
+import os
 
 from fastapi import APIRouter, HTTPException
+
+_PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 
 router = APIRouter(prefix="/api/code", tags=["code"])
 
@@ -57,7 +60,8 @@ def get_source_code(module: str, function: str):
 
     try:
         source = inspect.getsource(obj)
-        source_file = inspect.getfile(obj)
+        source_file_abs = inspect.getfile(obj)
+        source_file = os.path.relpath(source_file_abs, _PROJECT_ROOT)
         lines, start_line = inspect.getsourcelines(obj)
         end_line = start_line + len(lines) - 1
     except (OSError, TypeError) as e:

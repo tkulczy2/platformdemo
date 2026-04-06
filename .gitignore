@@ -21,5 +21,8 @@ frontend/dist/
 *.swp
 *.swo
 
-# Local uploads (optional — uncomment if uploads should never be committed)
-# data/uploads/
+# Claude local settings
+.claude/
+
+# Local uploads
+data/uploads/

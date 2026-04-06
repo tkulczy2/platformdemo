@@ -1,7 +1,7 @@
 {
   "module": "engine.step_4_cost",
   "function": "calculate_cost",
-  "source_file": "/home/theodor/git/platformdemo/engine/step_4_cost.py",
+  "source_file": "engine/step_4_cost.py",
   "line_range": [
     51,
     240

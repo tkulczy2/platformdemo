@@ -1,7 +1,7 @@
 {
   "module": "engine.step_1_eligibility",
   "function": "determine_eligibility",
-  "source_file": "/home/theodor/git/platformdemo/engine/step_1_eligibility.py",
+  "source_file": "engine/step_1_eligibility.py",
   "line_range": [
     25,
     185

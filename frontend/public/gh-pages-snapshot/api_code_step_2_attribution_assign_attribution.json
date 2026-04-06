@@ -1,7 +1,7 @@
 {
   "module": "engine.step_2_attribution",
   "function": "assign_attribution",
-  "source_file": "/home/theodor/git/platformdemo/engine/step_2_attribution.py",
+  "source_file": "engine/step_2_attribution.py",
   "line_range": [
     28,
     248

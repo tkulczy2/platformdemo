@@ -1,7 +1,7 @@
 {
   "module": "engine.step_5_settlement",
   "function": "calculate_settlement",
-  "source_file": "/home/theodor/git/platformdemo/engine/step_5_settlement.py",
+  "source_file": "engine/step_5_settlement.py",
   "line_range": [
     19,
     153

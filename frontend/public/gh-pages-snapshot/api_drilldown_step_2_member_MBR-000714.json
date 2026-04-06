@@ -1,0 +1,356 @@
+{
+  "member_id": "MBR-000714",
+  "step_number": 2,
+  "step": 2,
+  "step_name": "attribution",
+  "detail": {
+    "outcome": "attributed",
+    "outcome_value": "Attributed to Ray, Janet B (NPI: 1248706171) via step1 \u2014 26 qualifying visit(s)",
+    "logic_trace": [
+      "Attributed to Ray, Janet B (NPI: 1248706171) via step1 \u2014 26 qualifying visit(s)"
+    ],
+    "flags": [],
+    "intermediate_values": [
+      {
+        "label": "visit_counts_by_provider",
+        "value": {
+          "1248706171": {
+            "count": 26,
+            "most_recent": "2025-11-26"
+          },
+          "1304218413": {
+            "count": 1,
+            "most_recent": "2025-08-13"
+          },
+          "1429978390": {
+            "count": 1,
+            "most_recent": "2025-10-07"
+          },
+          "1816111976": {
+            "count": 1,
+            "most_recent": "2025-08-14"
+          }
+        }
+      },
+      {
+        "label": "attributed_npi",
+        "value": "1248706171"
+      },
+      {
+        "label": "attribution_step",
+        "value": "step1"
+      }
+    ]
+  },
+  "data_references": [
+    {
+      "file": "claims_professional.csv",
+      "row_index": 36031,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "rendering_npi": null,
+        "procedure_code": null,
+        "service_date": null
+      },
+      "description": "29 qualifying claims across 4 provider(s)"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 36034,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "rendering_npi": null,
+        "procedure_code": null,
+        "service_date": null
+      },
+      "description": "29 qualifying claims across 4 provider(s)"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 36035,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "rendering_npi": null,
+        "procedure_code": null,
+        "service_date": null
+      },
+      "description": "29 qualifying claims across 4 provider(s)"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 36036,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "rendering_npi": null,
+        "procedure_code": null,
+        "service_date": null
+      },
+      "description": "29 qualifying claims across 4 provider(s)"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 36037,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "rendering_npi": null,
+        "procedure_code": null,
+        "service_date": null
+      },
+      "description": "29 qualifying claims across 4 provider(s)"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 36039,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "rendering_npi": null,
+        "procedure_code": null,
+        "service_date": null
+      },
+      "description": "29 qualifying claims across 4 provider(s)"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 36040,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "rendering_npi": null,
+        "procedure_code": null,
+        "service_date": null
+      },
+      "description": "29 qualifying claims across 4 provider(s)"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 36046,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "rendering_npi": null,
+        "procedure_code": null,
+        "service_date": null
+      },
+      "description": "29 qualifying claims across 4 provider(s)"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 36047,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "rendering_npi": null,
+        "procedure_code": null,
+        "service_date": null
+      },
+      "description": "29 qualifying claims across 4 provider(s)"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 36049,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "rendering_npi": null,
+        "procedure_code": null,
+        "service_date": null
+      },
+      "description": "29 qualifying claims across 4 provider(s)"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 36051,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "rendering_npi": null,
+        "procedure_code": null,
+        "service_date": null
+      },
+      "description": "29 qualifying claims across 4 provider(s)"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 36052,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "rendering_npi": null,
+        "procedure_code": null,
+        "service_date": null
+      },
+      "description": "29 qualifying claims across 4 provider(s)"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 36053,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "rendering_npi": null,
+        "procedure_code": null,
+        "service_date": null
+      },
+      "description": "29 qualifying claims across 4 provider(s)"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 36054,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "rendering_npi": null,
+        "procedure_code": null,
+        "service_date": null
+      },
+      "description": "29 qualifying claims across 4 provider(s)"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 36056,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "rendering_npi": null,
+        "procedure_code": null,
+        "service_date": null
+      },
+      "description": "29 qualifying claims across 4 provider(s)"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 36057,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "rendering_npi": null,
+        "procedure_code": null,
+        "service_date": null
+      },
+      "description": "29 qualifying claims across 4 provider(s)"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 36058,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "rendering_npi": null,
+        "procedure_code": null,
+        "service_date": null
+      },
+      "description": "29 qualifying claims across 4 provider(s)"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 36059,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "rendering_npi": null,
+        "procedure_code": null,
+        "service_date": null
+      },
+      "description": "29 qualifying claims across 4 provider(s)"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 36062,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "rendering_npi": null,
+        "procedure_code": null,
+        "service_date": null
+      },
+      "description": "29 qualifying claims across 4 provider(s)"
+    },
+    {
+      "file": "claims_professional.csv",
+      "row_index": 36063,
+      "columns": {
+        "claim_id": null,
+        "member_id": null,
+        "rendering_npi": null,
+        "procedure_code": null,
+        "service_date": null
+      },
+      "description": "29 qualifying claims across 4 provider(s)"
+    }
+  ],
+  "contract_clauses": [
+    {
+      "id": "ATTR-1.1",
+      "text": "Step 1: Assign each eligible beneficiary to the ACO participant (TIN/NPI) that provided the plurality of primary care services, as defined by CPT codes 99201-99215, 99381-99397, and G0438-G0439, during the most recent 12-month period.",
+      "section": "Filter professional claims to qualifying CPT codes (26 codes). In Step 1, consider only PCP providers. Assign member to provider with most qualifying visits (plurality).",
+      "title": "ATTR-1.1",
+      "parameters": {
+        "attribution_method": "plurality",
+        "qualifying_cpt_codes": [
+          "99201",
+          "99202",
+          "99203",
+          "99204",
+          "99205",
+          "99211",
+          "99212",
+          "99213",
+          "99214",
+          "99215",
+          "99381",
+          "99382",
+          "99383",
+          "99384",
+          "99385",
+          "99386",
+          "99387",
+          "99391",
+          "99392",
+          "99393",
+          "99394",
+          "99395",
+          "99396",
+          "99397",
+          "G0438",
+          "G0439"
+        ],
+        "provider_filter_step1": "pcp_only",
+        "lookback_months": 12
+      }
+    },
+    {
+      "id": "ATTR-1.2",
+      "text": "Step 2: For beneficiaries not assigned in Step 1, assign based on the plurality of primary care services provided by any ACO participant, including specialists who rendered qualifying primary care codes.",
+      "section": "For members not attributed in Step 1, expand the provider pool to all ACO participants including specialists.",
+      "title": "ATTR-1.2",
+      "parameters": {
+        "provider_filter_step2": "all_aco_participants"
+      }
+    },
+    {
+      "id": "ATTR-1.3",
+      "text": "In the event of a tie in service counts, the beneficiary shall be assigned to the provider whose most recent qualifying service was most recent in time.",
+      "section": "Tiebreaker method: most recent visit. When two providers have equal qualifying visit counts, the tie is broken by the most recent qualifying service date.",
+      "title": "ATTR-1.3",
+      "parameters": {
+        "tiebreaker": "most_recent_visit"
+      }
+    }
+  ],
+  "code_references": [
+    {
+      "module": "step_2_attribution",
+      "function": "assign_attribution",
+      "lines": "28-248",
+      "start_line": 28,
+      "end_line": 248,
+      "logic_summary": "Filter claims to qualifying E&M/wellness CPT codes. Step 1: Count qualifying visits per PCP provider, assign to plurality winner. Step 2: For unassigned members, expand to all ACO providers. Tiebreaker: most recent qualifying visit date."
+    }
+  ]
+}
