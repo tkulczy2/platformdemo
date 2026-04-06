@@ -2,6 +2,8 @@
 
 **Transparent, auditable value-based care calculations — where every number traces back to its source, and every insight reaches the right audience.**
 
+[View the demo tool](https://tkulczy2.github.io/platformdemo/)
+
 ---
 
 ## The Problem
