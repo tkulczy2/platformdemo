@@ -4,15 +4,10 @@ import { classNames } from '@/utils/formatters';
 import StepIndicator from './StepIndicator';
 import GuidedDemo from '@/components/demo/GuidedDemo';
 
-const PERFORMANCE_PATHS = ['/', '/contract', '/dashboard', '/drilldown', '/reconciliation'];
 const PANEL_PATHS = ['/surveillance', '/clinical'];
 
 function isPanelActive(pathname: string) {
   return PANEL_PATHS.some((p) => pathname.startsWith(p));
-}
-
-function isPerformanceActive(pathname: string) {
-  return !isPanelActive(pathname);
 }
 
 export default function AppShell() {
